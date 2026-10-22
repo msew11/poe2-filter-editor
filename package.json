@@ -11,7 +11,8 @@
     "preview": "vite preview --host 127.0.0.1",
     "test": "tsx --test src/lib/*.test.ts",
     "data:import-affixes": "tsx scripts/import-affixes.ts",
-    "data:build-affixes": "tsx scripts/import-affixes.ts --offline"
+    "data:build-affixes": "tsx scripts/import-affixes.ts --offline",
+    "data:build-crafting": "tsx scripts/build-crafting-data.ts"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

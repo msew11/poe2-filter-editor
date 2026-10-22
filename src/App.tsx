@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import { ArrowRight, Check, Gem, ListFilter, Palette, PanelsTopLeft, ScanEye, ScrollText, X } from 'lucide-react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
+import { ArrowRight, Check, FlaskConical, Gem, ListFilter, Palette, PanelsTopLeft, ScanEye, ScrollText, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { AppearancePage, PreviewPage, RulesPage } from '@/components/pages'
@@ -8,11 +8,14 @@ import { SettingsDialog } from '@/components/settings-dialog'
 import { readFilterDirectory, type FilterDirectory } from '@/lib/filter-directory'
 import { STORAGE_KEY, pageIds, pageLabels, readWorkspace, type PageId, type Workspace } from '@/lib/workspace'
 
+const CraftingPage = lazy(() => import('@/components/crafting-page').then(module => ({ default: module.CraftingPage })))
+
 const navigation = [
   { id: 'rules', icon: ListFilter, number: '01' },
   { id: 'appearance', icon: Palette, number: '02' },
   { id: 'preview', icon: ScanEye, number: '03' },
   { id: 'source', icon: ScrollText, number: '04' },
+  { id: 'crafting', icon: FlaskConical, number: '05' },
 ] as const
 
 export default function App() {
@@ -78,6 +81,7 @@ export default function App() {
           <TabsContent value="appearance" forceMount hidden={workspace.activeTab !== 'appearance'}><AppearancePage workspace={workspace} update={setWorkspace} /></TabsContent>
           <TabsContent value="preview" forceMount hidden={workspace.activeTab !== 'preview'}><PreviewPage workspace={workspace} /></TabsContent>
           <TabsContent value="source" forceMount hidden={workspace.activeTab !== 'source'}><FiltersPage workspace={workspace} update={setWorkspace} directory={directory} directoryLoading={directoryLoading} /></TabsContent>
+          <TabsContent value="crafting" className="crafting-tab" forceMount hidden={workspace.activeTab !== 'crafting'}>{workspace.openTabs.includes('crafting') && <Suspense fallback={<p role="status">正在加载做装模拟…</p>}><CraftingPage /></Suspense>}</TabsContent>
         </main>
         <footer className="status-bar"><span className="status-dot" /><span>{workspace.activeTab ? pageLabels[workspace.activeTab] : '工作区'}</span><span className="save-status" role="status">{saveStatus === 'saved' && <Check aria-hidden="true" />}{saveStatus === 'saved' ? '已保存至本机' : saveStatus === 'failed' ? '无法自动保存，请导出备份' : '正在保存…'}</span><span className="status-wordmark">PATH OF EXILE 2</span></footer>
       </Tabs>

@@ -1,7 +1,7 @@
 import { createField, parseRule, type Rule } from './rules'
 import { parseFilter, type Filter } from './filters'
 
-export const pageIds = ['rules', 'appearance', 'preview', 'source'] as const
+export const pageIds = ['rules', 'appearance', 'preview', 'source', 'crafting'] as const
 export type PageId = typeof pageIds[number]
 export interface Appearance { text: string; background: string; border: string; fontSize: number }
 export interface Workspace {
@@ -15,7 +15,7 @@ export interface Workspace {
 }
 // Retain the key so existing workspaces can be migrated without losing settings.
 export const STORAGE_KEY = 'exile-forge.workspace.v1'
-export const pageLabels: Record<PageId, string> = { rules: '规则编辑', appearance: '外观样式', preview: '掉落预览', source: '过滤器编辑' }
+export const pageLabels: Record<PageId, string> = { rules: '规则编辑', appearance: '外观样式', preview: '掉落预览', source: '过滤器编辑', crafting: '做装模拟' }
 
 function sampleRules(): Rule[] {
   const quality = createField('Quality'); quality.params = { operator: '>', value: '0' }

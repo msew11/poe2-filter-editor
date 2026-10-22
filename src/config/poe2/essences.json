@@ -1,0 +1,1295 @@
+{
+  "source": "https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/bb52d6b368307457eb9c54bb13f1829993d390b1/src/Data/Essence.lua",
+  "copyright": "Item data (c) Grinding Gear Games",
+  "essences": [
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceLife",
+      "name": "低阶肉体精华",
+      "english": "Lesser Essence of the Body",
+      "grade": "lesser",
+      "mods": {
+        "Helmet": "IncreasedLife3",
+        "Body Armour": "IncreasedLife3",
+        "Gloves": "IncreasedLife3",
+        "Boots": "IncreasedLife3",
+        "Shield": "IncreasedLife3",
+        "Belt": "IncreasedLife3",
+        "Buckler": "IncreasedLife3",
+        "Focus": "IncreasedLife3",
+        "Ring": "IncreasedLife2",
+        "Amulet": "IncreasedLife2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceMana",
+      "name": "低阶心灵精华",
+      "english": "Lesser Essence of the Mind",
+      "grade": "lesser",
+      "mods": {
+        "Belt": "IncreasedMana3",
+        "Boots": "IncreasedMana3",
+        "Gloves": "IncreasedMana3",
+        "Helmet": "IncreasedMana3",
+        "Amulet": "IncreasedMana3",
+        "Ring": "IncreasedMana3"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceDefences",
+      "name": "低阶强化精华",
+      "english": "Lesser Essence of Enhancement",
+      "grade": "lesser",
+      "mods": {
+        "Helmet": "EssenceDisplayDefences1",
+        "Body Armour": "EssenceDisplayDefences1",
+        "Gloves": "EssenceDisplayDefences1",
+        "Boots": "EssenceDisplayDefences1",
+        "Shield": "EssenceDisplayDefences1",
+        "Buckler": "EssenceDisplayDefences1",
+        "Focus": "EssenceDisplayDefences1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssencePhysical",
+      "name": "低阶磨蚀精华",
+      "english": "Lesser Essence of Abrasion",
+      "grade": "lesser",
+      "mods": {
+        "One Hand Sword": "LocalAddedPhysicalDamage2",
+        "One Hand Axe": "LocalAddedPhysicalDamage2",
+        "One Hand Mace": "LocalAddedPhysicalDamage2",
+        "Spear": "LocalAddedPhysicalDamage2",
+        "Dagger": "LocalAddedPhysicalDamage2",
+        "Bow": "LocalAddedPhysicalDamage2",
+        "Flail": "LocalAddedPhysicalDamage2",
+        "Two Hand Sword": "LocalAddedPhysicalDamageTwoHand2",
+        "Two Hand Axe": "LocalAddedPhysicalDamageTwoHand2",
+        "Two Hand Mace": "LocalAddedPhysicalDamageTwoHand2",
+        "Warstaff": "LocalAddedPhysicalDamageTwoHand2",
+        "Crossbow": "LocalAddedPhysicalDamageTwoHand2",
+        "Talisman": "LocalAddedPhysicalDamageTwoHand2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceFire",
+      "name": "低阶火焰精华",
+      "english": "Lesser Essence of Flames",
+      "grade": "lesser",
+      "mods": {
+        "One Hand Sword": "LocalAddedFireDamage2",
+        "One Hand Axe": "LocalAddedFireDamage2",
+        "One Hand Mace": "LocalAddedFireDamage2",
+        "Spear": "LocalAddedFireDamage2",
+        "Dagger": "LocalAddedFireDamage2",
+        "Bow": "LocalAddedFireDamage2",
+        "Flail": "LocalAddedFireDamage2",
+        "Two Hand Sword": "LocalAddedFireDamageTwoHand2",
+        "Two Hand Axe": "LocalAddedFireDamageTwoHand2",
+        "Two Hand Mace": "LocalAddedFireDamageTwoHand2",
+        "Warstaff": "LocalAddedFireDamageTwoHand2",
+        "Crossbow": "LocalAddedFireDamageTwoHand2",
+        "Talisman": "LocalAddedFireDamageTwoHand2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceCold",
+      "name": "低阶寒冰精华",
+      "english": "Lesser Essence of Ice",
+      "grade": "lesser",
+      "mods": {
+        "One Hand Sword": "LocalAddedColdDamage2",
+        "One Hand Axe": "LocalAddedColdDamage2",
+        "One Hand Mace": "LocalAddedColdDamage2",
+        "Spear": "LocalAddedColdDamage2",
+        "Dagger": "LocalAddedColdDamage2",
+        "Bow": "LocalAddedColdDamage2",
+        "Flail": "LocalAddedColdDamage2",
+        "Two Hand Sword": "LocalAddedColdDamageTwoHand2",
+        "Two Hand Axe": "LocalAddedColdDamageTwoHand2",
+        "Two Hand Mace": "LocalAddedColdDamageTwoHand2",
+        "Warstaff": "LocalAddedColdDamageTwoHand2",
+        "Crossbow": "LocalAddedColdDamageTwoHand2",
+        "Talisman": "LocalAddedColdDamageTwoHand2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceLightning",
+      "name": "低阶闪电精华",
+      "english": "Lesser Essence of Electricity",
+      "grade": "lesser",
+      "mods": {
+        "One Hand Sword": "LocalAddedLightningDamage2",
+        "One Hand Axe": "LocalAddedLightningDamage2",
+        "One Hand Mace": "LocalAddedLightningDamage2",
+        "Spear": "LocalAddedLightningDamage2",
+        "Dagger": "LocalAddedLightningDamage2",
+        "Bow": "LocalAddedLightningDamage2",
+        "Flail": "LocalAddedLightningDamage2",
+        "Two Hand Sword": "LocalAddedLightningDamageTwoHand2",
+        "Two Hand Axe": "LocalAddedLightningDamageTwoHand2",
+        "Two Hand Mace": "LocalAddedLightningDamageTwoHand2",
+        "Warstaff": "LocalAddedLightningDamageTwoHand2",
+        "Crossbow": "LocalAddedLightningDamageTwoHand2",
+        "Talisman": "LocalAddedLightningDamageTwoHand2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceChaos",
+      "name": "低阶毁灭精华",
+      "english": "Lesser Essence of Ruin",
+      "grade": "lesser",
+      "mods": {
+        "Helmet": "ChaosResist1",
+        "Body Armour": "ChaosResist1",
+        "Gloves": "ChaosResist1",
+        "Boots": "ChaosResist1",
+        "Shield": "ChaosResist1",
+        "Ring": "ChaosResist1",
+        "Amulet": "ChaosResist1",
+        "Belt": "ChaosResist1",
+        "Buckler": "ChaosResist1",
+        "Focus": "ChaosResist1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceAttack",
+      "name": "低阶战斗精华",
+      "english": "Lesser Essence of Battle",
+      "grade": "lesser",
+      "mods": {
+        "One Hand Sword": "LocalIncreasedAccuracy3",
+        "One Hand Axe": "LocalIncreasedAccuracy3",
+        "One Hand Mace": "LocalIncreasedAccuracy3",
+        "Two Hand Sword": "LocalIncreasedAccuracy3",
+        "Two Hand Axe": "LocalIncreasedAccuracy3",
+        "Two Hand Mace": "LocalIncreasedAccuracy3",
+        "Spear": "LocalIncreasedAccuracy3",
+        "Bow": "LocalIncreasedAccuracy3",
+        "Warstaff": "LocalIncreasedAccuracy3",
+        "Dagger": "LocalIncreasedAccuracy3",
+        "Crossbow": "LocalIncreasedAccuracy3",
+        "Flail": "LocalIncreasedAccuracy3",
+        "Talisman": "LocalIncreasedAccuracy3"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceCaster",
+      "name": "低阶巫术精华",
+      "english": "Lesser Essence of Sorcery",
+      "grade": "lesser",
+      "mods": {
+        "Focus": "SpellDamageOnWeapon2",
+        "Wand": "SpellDamageOnWeapon2",
+        "Staff": "SpellDamageOnTwoHandWeapon2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceSpeed",
+      "name": "低阶急速精华",
+      "english": "Lesser Essence of Haste",
+      "grade": "lesser",
+      "mods": {
+        "One Hand Sword": "LocalIncreasedAttackSpeed3",
+        "One Hand Axe": "LocalIncreasedAttackSpeed3",
+        "One Hand Mace": "LocalIncreasedAttackSpeed3",
+        "Two Hand Sword": "LocalIncreasedAttackSpeed3",
+        "Two Hand Axe": "LocalIncreasedAttackSpeed3",
+        "Two Hand Mace": "LocalIncreasedAttackSpeed3",
+        "Spear": "LocalIncreasedAttackSpeed3",
+        "Warstaff": "LocalIncreasedAttackSpeed3",
+        "Dagger": "LocalIncreasedAttackSpeed3",
+        "Flail": "LocalIncreasedAttackSpeed3",
+        "Talisman": "LocalIncreasedAttackSpeed3",
+        "Bow": "LocalIncreasedAttackSpeed2",
+        "Crossbow": "LocalIncreasedAttackSpeed2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceAttribute",
+      "name": "低阶无限精华",
+      "english": "Lesser Essence of the Infinite",
+      "grade": "lesser",
+      "mods": {
+        "One Hand Sword": "EssenceDisplayAttributes1",
+        "One Hand Axe": "EssenceDisplayAttributes1",
+        "One Hand Mace": "EssenceDisplayAttributes1",
+        "Two Hand Sword": "EssenceDisplayAttributes1",
+        "Two Hand Axe": "EssenceDisplayAttributes1",
+        "Two Hand Mace": "EssenceDisplayAttributes1",
+        "Spear": "EssenceDisplayAttributes1",
+        "Bow": "EssenceDisplayAttributes1",
+        "Warstaff": "EssenceDisplayAttributes1",
+        "Dagger": "EssenceDisplayAttributes1",
+        "Helmet": "EssenceDisplayAttributes1",
+        "Body Armour": "EssenceDisplayAttributes1",
+        "Gloves": "EssenceDisplayAttributes1",
+        "Boots": "EssenceDisplayAttributes1",
+        "Shield": "EssenceDisplayAttributes1",
+        "Staff": "EssenceDisplayAttributes1",
+        "Wand": "EssenceDisplayAttributes1",
+        "Sceptre": "EssenceDisplayAttributes1",
+        "Ring": "EssenceDisplayAttributes1",
+        "Amulet": "EssenceDisplayAttributes1",
+        "Belt": "EssenceDisplayAttributes1",
+        "Quiver": "EssenceDisplayAttributes1",
+        "Crossbow": "EssenceDisplayAttributes1",
+        "Flail": "EssenceDisplayAttributes1",
+        "Talisman": "EssenceDisplayAttributes1",
+        "Focus": "EssenceDisplayAttributes1",
+        "Buckler": "EssenceDisplayAttributes1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceLife",
+      "name": "肉体精华",
+      "english": "Essence of the Body",
+      "grade": "normal",
+      "mods": {
+        "Belt": "IncreasedLife7",
+        "Body Armour": "IncreasedLife7",
+        "Helmet": "IncreasedLife7",
+        "Shield": "IncreasedLife7",
+        "Buckler": "IncreasedLife7",
+        "Amulet": "IncreasedLife6",
+        "Boots": "IncreasedLife6",
+        "Gloves": "IncreasedLife6",
+        "Ring": "IncreasedLife6"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceMana",
+      "name": "心灵精华",
+      "english": "Essence of the Mind",
+      "grade": "normal",
+      "mods": {
+        "Boots": "IncreasedMana6",
+        "Gloves": "IncreasedMana6",
+        "Helmet": "IncreasedMana6",
+        "Belt": "IncreasedMana6",
+        "Ring": "IncreasedMana7",
+        "Amulet": "IncreasedMana7"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceDefences",
+      "name": "强化精华",
+      "english": "Essence of Enhancement",
+      "grade": "normal",
+      "mods": {
+        "Helmet": "EssenceDisplayDefences2",
+        "Body Armour": "EssenceDisplayDefences2",
+        "Gloves": "EssenceDisplayDefences2",
+        "Boots": "EssenceDisplayDefences2",
+        "Shield": "EssenceDisplayDefences2",
+        "Buckler": "EssenceDisplayDefences2",
+        "Focus": "EssenceDisplayDefences2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssencePhysical",
+      "name": "磨蚀精华",
+      "english": "Essence of Abrasion",
+      "grade": "normal",
+      "mods": {
+        "One Hand Sword": "LocalAddedPhysicalDamage5",
+        "One Hand Axe": "LocalAddedPhysicalDamage5",
+        "One Hand Mace": "LocalAddedPhysicalDamage5",
+        "Spear": "LocalAddedPhysicalDamage5",
+        "Dagger": "LocalAddedPhysicalDamage5",
+        "Bow": "LocalAddedPhysicalDamage5",
+        "Flail": "LocalAddedPhysicalDamage5",
+        "Two Hand Sword": "LocalAddedPhysicalDamageTwoHand5",
+        "Two Hand Axe": "LocalAddedPhysicalDamageTwoHand5",
+        "Two Hand Mace": "LocalAddedPhysicalDamageTwoHand5",
+        "Warstaff": "LocalAddedPhysicalDamageTwoHand5",
+        "Crossbow": "LocalAddedPhysicalDamageTwoHand5",
+        "Talisman": "LocalAddedPhysicalDamageTwoHand5"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceFire",
+      "name": "火焰精华",
+      "english": "Essence of Flames",
+      "grade": "normal",
+      "mods": {
+        "One Hand Sword": "LocalAddedFireDamage5",
+        "One Hand Axe": "LocalAddedFireDamage5",
+        "One Hand Mace": "LocalAddedFireDamage5",
+        "Spear": "LocalAddedFireDamage5",
+        "Dagger": "LocalAddedFireDamage5",
+        "Bow": "LocalAddedFireDamage5",
+        "Flail": "LocalAddedFireDamage5",
+        "Two Hand Sword": "LocalAddedFireDamageTwoHand5",
+        "Two Hand Axe": "LocalAddedFireDamageTwoHand5",
+        "Two Hand Mace": "LocalAddedFireDamageTwoHand5",
+        "Warstaff": "LocalAddedFireDamageTwoHand5",
+        "Crossbow": "LocalAddedFireDamageTwoHand5",
+        "Talisman": "LocalAddedFireDamageTwoHand5"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceCold",
+      "name": "寒冰精华",
+      "english": "Essence of Ice",
+      "grade": "normal",
+      "mods": {
+        "One Hand Sword": "LocalAddedColdDamage5",
+        "One Hand Axe": "LocalAddedColdDamage5",
+        "One Hand Mace": "LocalAddedColdDamage5",
+        "Spear": "LocalAddedColdDamage5",
+        "Dagger": "LocalAddedColdDamage5",
+        "Bow": "LocalAddedColdDamage5",
+        "Flail": "LocalAddedColdDamage5",
+        "Two Hand Sword": "LocalAddedColdDamageTwoHand5",
+        "Two Hand Axe": "LocalAddedColdDamageTwoHand5",
+        "Two Hand Mace": "LocalAddedColdDamageTwoHand5",
+        "Warstaff": "LocalAddedColdDamageTwoHand5",
+        "Crossbow": "LocalAddedColdDamageTwoHand5",
+        "Talisman": "LocalAddedColdDamageTwoHand5"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceLightning",
+      "name": "闪电精华",
+      "english": "Essence of Electricity",
+      "grade": "normal",
+      "mods": {
+        "One Hand Sword": "LocalAddedLightningDamage5",
+        "One Hand Axe": "LocalAddedLightningDamage5",
+        "One Hand Mace": "LocalAddedLightningDamage5",
+        "Spear": "LocalAddedLightningDamage5",
+        "Dagger": "LocalAddedLightningDamage5",
+        "Bow": "LocalAddedLightningDamage5",
+        "Flail": "LocalAddedLightningDamage5",
+        "Two Hand Sword": "LocalAddedLightningDamageTwoHand5",
+        "Two Hand Axe": "LocalAddedLightningDamageTwoHand5",
+        "Two Hand Mace": "LocalAddedLightningDamageTwoHand5",
+        "Warstaff": "LocalAddedLightningDamageTwoHand5",
+        "Crossbow": "LocalAddedLightningDamageTwoHand5",
+        "Talisman": "LocalAddedLightningDamageTwoHand5"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceChaos",
+      "name": "毁灭精华",
+      "english": "Essence of Ruin",
+      "grade": "normal",
+      "mods": {
+        "Helmet": "ChaosResist2",
+        "Body Armour": "ChaosResist2",
+        "Gloves": "ChaosResist2",
+        "Boots": "ChaosResist2",
+        "Shield": "ChaosResist2",
+        "Ring": "ChaosResist2",
+        "Amulet": "ChaosResist2",
+        "Belt": "ChaosResist2",
+        "Buckler": "ChaosResist2",
+        "Focus": "ChaosResist2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceAttack",
+      "name": "战斗精华",
+      "english": "Essence of Battle",
+      "grade": "normal",
+      "mods": {
+        "One Hand Sword": "LocalIncreasedAccuracy5",
+        "One Hand Axe": "LocalIncreasedAccuracy5",
+        "One Hand Mace": "LocalIncreasedAccuracy5",
+        "Two Hand Sword": "LocalIncreasedAccuracy5",
+        "Two Hand Axe": "LocalIncreasedAccuracy5",
+        "Two Hand Mace": "LocalIncreasedAccuracy5",
+        "Spear": "LocalIncreasedAccuracy5",
+        "Bow": "LocalIncreasedAccuracy5",
+        "Warstaff": "LocalIncreasedAccuracy5",
+        "Dagger": "LocalIncreasedAccuracy5",
+        "Crossbow": "LocalIncreasedAccuracy5",
+        "Flail": "LocalIncreasedAccuracy5",
+        "Talisman": "LocalIncreasedAccuracy5"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceCaster",
+      "name": "巫术精华",
+      "english": "Essence of Sorcery",
+      "grade": "normal",
+      "mods": {
+        "Focus": "SpellDamageOnWeapon4",
+        "Wand": "SpellDamageOnWeapon4",
+        "Staff": "SpellDamageOnTwoHandWeapon4"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceSpeed",
+      "name": "急速精华",
+      "english": "Essence of Haste",
+      "grade": "normal",
+      "mods": {
+        "One Hand Sword": "LocalIncreasedAttackSpeed5",
+        "One Hand Axe": "LocalIncreasedAttackSpeed5",
+        "One Hand Mace": "LocalIncreasedAttackSpeed5",
+        "Two Hand Sword": "LocalIncreasedAttackSpeed5",
+        "Two Hand Axe": "LocalIncreasedAttackSpeed5",
+        "Two Hand Mace": "LocalIncreasedAttackSpeed5",
+        "Spear": "LocalIncreasedAttackSpeed5",
+        "Warstaff": "LocalIncreasedAttackSpeed5",
+        "Dagger": "LocalIncreasedAttackSpeed5",
+        "Flail": "LocalIncreasedAttackSpeed5",
+        "Talisman": "LocalIncreasedAttackSpeed5",
+        "Bow": "LocalIncreasedAttackSpeed3",
+        "Crossbow": "LocalIncreasedAttackSpeed3"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceAttribute",
+      "name": "无限精华",
+      "english": "Essence of the Infinite",
+      "grade": "normal",
+      "mods": {
+        "One Hand Sword": "EssenceDisplayAttributes2",
+        "One Hand Axe": "EssenceDisplayAttributes2",
+        "One Hand Mace": "EssenceDisplayAttributes2",
+        "Two Hand Sword": "EssenceDisplayAttributes2",
+        "Two Hand Axe": "EssenceDisplayAttributes2",
+        "Two Hand Mace": "EssenceDisplayAttributes2",
+        "Spear": "EssenceDisplayAttributes2",
+        "Bow": "EssenceDisplayAttributes2",
+        "Warstaff": "EssenceDisplayAttributes2",
+        "Dagger": "EssenceDisplayAttributes2",
+        "Helmet": "EssenceDisplayAttributes2",
+        "Body Armour": "EssenceDisplayAttributes2",
+        "Gloves": "EssenceDisplayAttributes2",
+        "Boots": "EssenceDisplayAttributes2",
+        "Shield": "EssenceDisplayAttributes2",
+        "Staff": "EssenceDisplayAttributes2",
+        "Wand": "EssenceDisplayAttributes2",
+        "Sceptre": "EssenceDisplayAttributes2",
+        "Ring": "EssenceDisplayAttributes2",
+        "Amulet": "EssenceDisplayAttributes2",
+        "Belt": "EssenceDisplayAttributes2",
+        "Quiver": "EssenceDisplayAttributes2",
+        "Crossbow": "EssenceDisplayAttributes2",
+        "Flail": "EssenceDisplayAttributes2",
+        "Talisman": "EssenceDisplayAttributes2",
+        "Focus": "EssenceDisplayAttributes2",
+        "Buckler": "EssenceDisplayAttributes2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceLife",
+      "name": "高阶肉体精华",
+      "english": "Greater Essence of the Body",
+      "grade": "greater",
+      "mods": {
+        "Belt": "IncreasedLife8",
+        "Body Armour": "IncreasedLife8",
+        "Helmet": "IncreasedLife8",
+        "Shield": "IncreasedLife8",
+        "Buckler": "IncreasedLife8",
+        "Amulet": "IncreasedLife7",
+        "Boots": "IncreasedLife7",
+        "Gloves": "IncreasedLife7"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceMana",
+      "name": "高阶心灵精华",
+      "english": "Greater Essence of the Mind",
+      "grade": "greater",
+      "mods": {
+        "Boots": "IncreasedMana7",
+        "Gloves": "IncreasedMana7",
+        "Helmet": "IncreasedMana7",
+        "Belt": "IncreasedMana7",
+        "Ring": "IncreasedMana8",
+        "Amulet": "IncreasedMana8"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceDefences",
+      "name": "高阶强化精华",
+      "english": "Greater Essence of Enhancement",
+      "grade": "greater",
+      "mods": {
+        "Helmet": "EssenceDisplayDefences3",
+        "Body Armour": "EssenceDisplayDefences3",
+        "Gloves": "EssenceDisplayDefences3",
+        "Boots": "EssenceDisplayDefences3",
+        "Shield": "EssenceDisplayDefences3",
+        "Buckler": "EssenceDisplayDefences3",
+        "Focus": "EssenceDisplayDefences3"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssencePhysical",
+      "name": "高阶磨蚀精华",
+      "english": "Greater Essence of Abrasion",
+      "grade": "greater",
+      "mods": {
+        "One Hand Sword": "LocalAddedPhysicalDamage7",
+        "One Hand Axe": "LocalAddedPhysicalDamage7",
+        "One Hand Mace": "LocalAddedPhysicalDamage7",
+        "Spear": "LocalAddedPhysicalDamage7",
+        "Dagger": "LocalAddedPhysicalDamage7",
+        "Bow": "LocalAddedPhysicalDamage7",
+        "Flail": "LocalAddedPhysicalDamage7",
+        "Two Hand Sword": "LocalAddedPhysicalDamageTwoHand7",
+        "Two Hand Axe": "LocalAddedPhysicalDamageTwoHand7",
+        "Two Hand Mace": "LocalAddedPhysicalDamageTwoHand7",
+        "Warstaff": "LocalAddedPhysicalDamageTwoHand7",
+        "Crossbow": "LocalAddedPhysicalDamageTwoHand7",
+        "Talisman": "LocalAddedPhysicalDamageTwoHand7"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceFire",
+      "name": "高阶火焰精华",
+      "english": "Greater Essence of Flames",
+      "grade": "greater",
+      "mods": {
+        "One Hand Sword": "LocalAddedFireDamage7",
+        "One Hand Axe": "LocalAddedFireDamage7",
+        "One Hand Mace": "LocalAddedFireDamage7",
+        "Spear": "LocalAddedFireDamage7",
+        "Dagger": "LocalAddedFireDamage7",
+        "Bow": "LocalAddedFireDamage7",
+        "Flail": "LocalAddedFireDamage7",
+        "Two Hand Sword": "LocalAddedFireDamageTwoHand7",
+        "Two Hand Axe": "LocalAddedFireDamageTwoHand7",
+        "Two Hand Mace": "LocalAddedFireDamageTwoHand7",
+        "Warstaff": "LocalAddedFireDamageTwoHand7",
+        "Crossbow": "LocalAddedFireDamageTwoHand7",
+        "Talisman": "LocalAddedFireDamageTwoHand7"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceCold",
+      "name": "高阶寒冰精华",
+      "english": "Greater Essence of Ice",
+      "grade": "greater",
+      "mods": {
+        "One Hand Sword": "LocalAddedColdDamage7",
+        "One Hand Axe": "LocalAddedColdDamage7",
+        "One Hand Mace": "LocalAddedColdDamage7",
+        "Spear": "LocalAddedColdDamage7",
+        "Dagger": "LocalAddedColdDamage7",
+        "Bow": "LocalAddedColdDamage7",
+        "Flail": "LocalAddedColdDamage7",
+        "Two Hand Sword": "LocalAddedColdDamageTwoHand7",
+        "Two Hand Axe": "LocalAddedColdDamageTwoHand7",
+        "Two Hand Mace": "LocalAddedColdDamageTwoHand7",
+        "Warstaff": "LocalAddedColdDamageTwoHand7",
+        "Crossbow": "LocalAddedColdDamageTwoHand7",
+        "Talisman": "LocalAddedColdDamageTwoHand7"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceLightning",
+      "name": "高阶闪电精华",
+      "english": "Greater Essence of Electricity",
+      "grade": "greater",
+      "mods": {
+        "One Hand Sword": "LocalAddedLightningDamage7",
+        "One Hand Axe": "LocalAddedLightningDamage7",
+        "One Hand Mace": "LocalAddedLightningDamage7",
+        "Spear": "LocalAddedLightningDamage7",
+        "Dagger": "LocalAddedLightningDamage7",
+        "Bow": "LocalAddedLightningDamage7",
+        "Flail": "LocalAddedLightningDamage7",
+        "Two Hand Sword": "LocalAddedLightningDamageTwoHand7",
+        "Two Hand Axe": "LocalAddedLightningDamageTwoHand7",
+        "Two Hand Mace": "LocalAddedLightningDamageTwoHand7",
+        "Warstaff": "LocalAddedLightningDamageTwoHand7",
+        "Crossbow": "LocalAddedLightningDamageTwoHand7",
+        "Talisman": "LocalAddedLightningDamageTwoHand7"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceChaos",
+      "name": "高阶毁灭精华",
+      "english": "Greater Essence of Ruin",
+      "grade": "greater",
+      "mods": {
+        "Helmet": "ChaosResist4",
+        "Body Armour": "ChaosResist4",
+        "Gloves": "ChaosResist4",
+        "Boots": "ChaosResist4",
+        "Shield": "ChaosResist4",
+        "Ring": "ChaosResist4",
+        "Amulet": "ChaosResist4",
+        "Belt": "ChaosResist4",
+        "Buckler": "ChaosResist4",
+        "Focus": "ChaosResist4"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceAttack",
+      "name": "高阶战斗精华",
+      "english": "Greater Essence of Battle",
+      "grade": "greater",
+      "mods": {
+        "Gloves": "IncreasedAccuracy7",
+        "Quiver": "IncreasedAccuracy7",
+        "One Hand Sword": "IncreasedAccuracy7",
+        "One Hand Axe": "IncreasedAccuracy7",
+        "One Hand Mace": "IncreasedAccuracy7",
+        "Two Hand Sword": "IncreasedAccuracy7",
+        "Two Hand Axe": "IncreasedAccuracy7",
+        "Two Hand Mace": "IncreasedAccuracy7",
+        "Spear": "IncreasedAccuracy7",
+        "Bow": "IncreasedAccuracy7",
+        "Warstaff": "IncreasedAccuracy7",
+        "Dagger": "IncreasedAccuracy7",
+        "Crossbow": "IncreasedAccuracy7",
+        "Flail": "IncreasedAccuracy7",
+        "Talisman": "IncreasedAccuracy7"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceCaster",
+      "name": "高阶巫术精华",
+      "english": "Greater Essence of Sorcery",
+      "grade": "greater",
+      "mods": {
+        "Focus": "SpellDamageOnWeapon6",
+        "Wand": "SpellDamageOnWeapon6",
+        "Staff": "SpellDamageOnTwoHandWeapon6"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceSpeed",
+      "name": "高阶急速精华",
+      "english": "Greater Essence of Haste",
+      "grade": "greater",
+      "mods": {
+        "One Hand Sword": "LocalIncreasedAttackSpeed7",
+        "One Hand Axe": "LocalIncreasedAttackSpeed7",
+        "One Hand Mace": "LocalIncreasedAttackSpeed7",
+        "Two Hand Sword": "LocalIncreasedAttackSpeed7",
+        "Two Hand Axe": "LocalIncreasedAttackSpeed7",
+        "Two Hand Mace": "LocalIncreasedAttackSpeed7",
+        "Spear": "LocalIncreasedAttackSpeed7",
+        "Warstaff": "LocalIncreasedAttackSpeed7",
+        "Dagger": "LocalIncreasedAttackSpeed7",
+        "Flail": "LocalIncreasedAttackSpeed7",
+        "Talisman": "LocalIncreasedAttackSpeed7",
+        "Bow": "LocalIncreasedAttackSpeed4",
+        "Crossbow": "LocalIncreasedAttackSpeed4"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceAttribute",
+      "name": "高阶无限精华",
+      "english": "Greater Essence of the Infinite",
+      "grade": "greater",
+      "mods": {
+        "One Hand Sword": "EssenceDisplayAttributes3",
+        "One Hand Axe": "EssenceDisplayAttributes3",
+        "One Hand Mace": "EssenceDisplayAttributes3",
+        "Two Hand Sword": "EssenceDisplayAttributes3",
+        "Two Hand Axe": "EssenceDisplayAttributes3",
+        "Two Hand Mace": "EssenceDisplayAttributes3",
+        "Spear": "EssenceDisplayAttributes3",
+        "Bow": "EssenceDisplayAttributes3",
+        "Warstaff": "EssenceDisplayAttributes3",
+        "Dagger": "EssenceDisplayAttributes3",
+        "Helmet": "EssenceDisplayAttributes3",
+        "Body Armour": "EssenceDisplayAttributes3",
+        "Gloves": "EssenceDisplayAttributes3",
+        "Boots": "EssenceDisplayAttributes3",
+        "Shield": "EssenceDisplayAttributes3",
+        "Staff": "EssenceDisplayAttributes3",
+        "Wand": "EssenceDisplayAttributes3",
+        "Sceptre": "EssenceDisplayAttributes3",
+        "Ring": "EssenceDisplayAttributes3",
+        "Amulet": "EssenceDisplayAttributes3",
+        "Belt": "EssenceDisplayAttributes3",
+        "Quiver": "EssenceDisplayAttributes3",
+        "Crossbow": "EssenceDisplayAttributes3",
+        "Flail": "EssenceDisplayAttributes3",
+        "Talisman": "EssenceDisplayAttributes3",
+        "Focus": "EssenceDisplayAttributes3",
+        "Buckler": "EssenceDisplayAttributes3"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceLife",
+      "name": "完美肉体精华",
+      "english": "Perfect Essence of the Body",
+      "grade": "perfect",
+      "mods": {
+        "Body Armour": "EssenceIncreasedLifePercent1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceMana",
+      "name": "完美心灵精华",
+      "english": "Perfect Essence of the Mind",
+      "grade": "perfect",
+      "mods": {
+        "Ring": "EssenceIncreasedManaPercent1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceDefences",
+      "name": "完美强化精华",
+      "english": "Perfect Essence of Enhancement",
+      "grade": "perfect",
+      "mods": {
+        "Amulet": "EssenceGlobalDefences1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssencePhysical",
+      "name": "完美磨蚀精华",
+      "english": "Perfect Essence of Abrasion",
+      "grade": "perfect",
+      "mods": {
+        "One Hand Sword": "EssenceDamageasExtraPhysical1",
+        "One Hand Axe": "EssenceDamageasExtraPhysical1",
+        "One Hand Mace": "EssenceDamageasExtraPhysical1",
+        "Spear": "EssenceDamageasExtraPhysical1",
+        "Dagger": "EssenceDamageasExtraPhysical1",
+        "Bow": "EssenceDamageasExtraPhysical1",
+        "Flail": "EssenceDamageasExtraPhysical1",
+        "Two Hand Sword": "EssenceDamageasExtraPhysical2H",
+        "Two Hand Axe": "EssenceDamageasExtraPhysical2H",
+        "Two Hand Mace": "EssenceDamageasExtraPhysical2H",
+        "Warstaff": "EssenceDamageasExtraPhysical2H",
+        "Crossbow": "EssenceDamageasExtraPhysical2H",
+        "Talisman": "EssenceDamageasExtraPhysical2H"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceFire",
+      "name": "完美火焰精华",
+      "english": "Perfect Essence of Flames",
+      "grade": "perfect",
+      "mods": {
+        "One Hand Sword": "EssenceDamageasExtraFire1",
+        "One Hand Axe": "EssenceDamageasExtraFire1",
+        "One Hand Mace": "EssenceDamageasExtraFire1",
+        "Spear": "EssenceDamageasExtraFire1",
+        "Dagger": "EssenceDamageasExtraFire1",
+        "Bow": "EssenceDamageasExtraFire1",
+        "Flail": "EssenceDamageasExtraFire1",
+        "Two Hand Sword": "EssenceDamageasExtraFire2H",
+        "Two Hand Axe": "EssenceDamageasExtraFire2H",
+        "Two Hand Mace": "EssenceDamageasExtraFire2H",
+        "Warstaff": "EssenceDamageasExtraFire2H",
+        "Crossbow": "EssenceDamageasExtraFire2H",
+        "Talisman": "EssenceDamageasExtraFire2H"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceCold",
+      "name": "完美寒冰精华",
+      "english": "Perfect Essence of Ice",
+      "grade": "perfect",
+      "mods": {
+        "One Hand Sword": "EssenceDamageasExtraCold1",
+        "One Hand Axe": "EssenceDamageasExtraCold1",
+        "One Hand Mace": "EssenceDamageasExtraCold1",
+        "Spear": "EssenceDamageasExtraCold1",
+        "Dagger": "EssenceDamageasExtraCold1",
+        "Bow": "EssenceDamageasExtraCold1",
+        "Flail": "EssenceDamageasExtraCold1",
+        "Two Hand Sword": "EssenceDamageasExtraCold2H",
+        "Two Hand Axe": "EssenceDamageasExtraCold2H",
+        "Two Hand Mace": "EssenceDamageasExtraCold2H",
+        "Warstaff": "EssenceDamageasExtraCold2H",
+        "Crossbow": "EssenceDamageasExtraCold2H",
+        "Talisman": "EssenceDamageasExtraCold2H"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceLightning",
+      "name": "完美闪电精华",
+      "english": "Perfect Essence of Electricity",
+      "grade": "perfect",
+      "mods": {
+        "One Hand Sword": "EssenceDamageasExtraLightning1",
+        "One Hand Axe": "EssenceDamageasExtraLightning1",
+        "One Hand Mace": "EssenceDamageasExtraLightning1",
+        "Spear": "EssenceDamageasExtraLightning1",
+        "Dagger": "EssenceDamageasExtraLightning1",
+        "Bow": "EssenceDamageasExtraLightning1",
+        "Flail": "EssenceDamageasExtraLightning1",
+        "Two Hand Sword": "EssenceDamageasExtraLightning2H",
+        "Two Hand Axe": "EssenceDamageasExtraLightning2H",
+        "Two Hand Mace": "EssenceDamageasExtraLightning2H",
+        "Warstaff": "EssenceDamageasExtraLightning2H",
+        "Crossbow": "EssenceDamageasExtraLightning2H",
+        "Talisman": "EssenceDamageasExtraLightning2H"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceChaos",
+      "name": "完美毁灭精华",
+      "english": "Perfect Essence of Ruin",
+      "grade": "perfect",
+      "mods": {
+        "Body Armour": "EssencePhysicalDamageTakenAsChaos1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceAttack",
+      "name": "完美战斗精华",
+      "english": "Perfect Essence of Battle",
+      "grade": "perfect",
+      "mods": {
+        "One Hand Sword": "EssenceAttackSkillLevel1H1",
+        "One Hand Axe": "EssenceAttackSkillLevel1H1",
+        "One Hand Mace": "EssenceAttackSkillLevel1H1",
+        "Spear": "EssenceAttackSkillLevel1H1",
+        "Dagger": "EssenceAttackSkillLevel1H1",
+        "Bow": "EssenceAttackSkillLevel1H1",
+        "Flail": "EssenceAttackSkillLevel1H1",
+        "Two Hand Sword": "EssenceAttackSkillLevel2H1",
+        "Two Hand Axe": "EssenceAttackSkillLevel2H1",
+        "Two Hand Mace": "EssenceAttackSkillLevel2H1",
+        "Warstaff": "EssenceAttackSkillLevel2H1",
+        "Crossbow": "EssenceAttackSkillLevel2H1",
+        "Talisman": "EssenceAttackSkillLevel2H1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceCaster",
+      "name": "完美巫术精华",
+      "english": "Perfect Essence of Sorcery",
+      "grade": "perfect",
+      "mods": {
+        "Wand": "EssenceSpellSkillLevel1H1",
+        "Staff": "EssenceSpellSkillLevel2H1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceSpeed",
+      "name": "完美急速精华",
+      "english": "Perfect Essence of Haste",
+      "grade": "perfect",
+      "mods": {
+        "One Hand Sword": "EssenceOnslaughtonKill1",
+        "One Hand Axe": "EssenceOnslaughtonKill1",
+        "One Hand Mace": "EssenceOnslaughtonKill1",
+        "Two Hand Sword": "EssenceOnslaughtonKill1",
+        "Two Hand Axe": "EssenceOnslaughtonKill1",
+        "Two Hand Mace": "EssenceOnslaughtonKill1",
+        "Spear": "EssenceOnslaughtonKill1",
+        "Bow": "EssenceOnslaughtonKill1",
+        "Warstaff": "EssenceOnslaughtonKill1",
+        "Dagger": "EssenceOnslaughtonKill1",
+        "Crossbow": "EssenceOnslaughtonKill1",
+        "Flail": "EssenceOnslaughtonKill1",
+        "Talisman": "EssenceOnslaughtonKill1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceAttribute",
+      "name": "完美无限精华",
+      "english": "Perfect Essence of the Infinite",
+      "grade": "perfect",
+      "mods": {
+        "Amulet": "EssenceDisplayAttributes5"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceCritical",
+      "name": "低阶追寻精华",
+      "english": "Lesser Essence of Seeking",
+      "grade": "lesser",
+      "mods": {
+        "One Hand Sword": "LocalCriticalStrikeChance2",
+        "One Hand Axe": "LocalCriticalStrikeChance2",
+        "One Hand Mace": "LocalCriticalStrikeChance2",
+        "Two Hand Sword": "LocalCriticalStrikeChance2",
+        "Two Hand Axe": "LocalCriticalStrikeChance2",
+        "Two Hand Mace": "LocalCriticalStrikeChance2",
+        "Spear": "LocalCriticalStrikeChance2",
+        "Bow": "LocalCriticalStrikeChance2",
+        "Warstaff": "LocalCriticalStrikeChance2",
+        "Dagger": "LocalCriticalStrikeChance2",
+        "Crossbow": "LocalCriticalStrikeChance2",
+        "Flail": "LocalCriticalStrikeChance2",
+        "Talisman": "LocalCriticalStrikeChance2",
+        "Focus": "SpellCriticalStrikeChance2",
+        "Wand": "SpellCriticalStrikeChance2",
+        "Staff": "SpellCriticalStrikeChanceTwoHand2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceCritical",
+      "name": "追寻精华",
+      "english": "Essence of Seeking",
+      "grade": "normal",
+      "mods": {
+        "One Hand Sword": "LocalCriticalStrikeChance3",
+        "One Hand Axe": "LocalCriticalStrikeChance3",
+        "One Hand Mace": "LocalCriticalStrikeChance3",
+        "Two Hand Sword": "LocalCriticalStrikeChance3",
+        "Two Hand Axe": "LocalCriticalStrikeChance3",
+        "Two Hand Mace": "LocalCriticalStrikeChance3",
+        "Spear": "LocalCriticalStrikeChance3",
+        "Bow": "LocalCriticalStrikeChance3",
+        "Warstaff": "LocalCriticalStrikeChance3",
+        "Dagger": "LocalCriticalStrikeChance3",
+        "Crossbow": "LocalCriticalStrikeChance3",
+        "Flail": "LocalCriticalStrikeChance3",
+        "Talisman": "LocalCriticalStrikeChance3",
+        "Focus": "SpellCriticalStrikeChance3",
+        "Wand": "SpellCriticalStrikeChance3",
+        "Staff": "SpellCriticalStrikeChanceTwoHand3"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceCritical",
+      "name": "高阶追寻精华",
+      "english": "Greater Essence of Seeking",
+      "grade": "greater",
+      "mods": {
+        "One Hand Sword": "LocalCriticalStrikeChance4",
+        "One Hand Axe": "LocalCriticalStrikeChance4",
+        "One Hand Mace": "LocalCriticalStrikeChance4",
+        "Two Hand Sword": "LocalCriticalStrikeChance4",
+        "Two Hand Axe": "LocalCriticalStrikeChance4",
+        "Two Hand Mace": "LocalCriticalStrikeChance4",
+        "Spear": "LocalCriticalStrikeChance4",
+        "Bow": "LocalCriticalStrikeChance4",
+        "Warstaff": "LocalCriticalStrikeChance4",
+        "Dagger": "LocalCriticalStrikeChance4",
+        "Crossbow": "LocalCriticalStrikeChance4",
+        "Flail": "LocalCriticalStrikeChance4",
+        "Talisman": "LocalCriticalStrikeChance4",
+        "Focus": "SpellCriticalStrikeChance4",
+        "Wand": "SpellCriticalStrikeChance4",
+        "Staff": "SpellCriticalStrikeChanceTwoHand4"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceCritical",
+      "name": "完美追寻精华",
+      "english": "Perfect Essence of Seeking",
+      "grade": "perfect",
+      "mods": {
+        "Body Armour": "EssenceReducedCriticalDamageAgainstYou1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceFireResist",
+      "name": "低阶隔热精华",
+      "english": "Lesser Essence of Insulation",
+      "grade": "lesser",
+      "mods": {
+        "Helmet": "FireResist2",
+        "Body Armour": "FireResist2",
+        "Gloves": "FireResist2",
+        "Boots": "FireResist2",
+        "Shield": "FireResist2",
+        "Ring": "FireResist2",
+        "Amulet": "FireResist2",
+        "Belt": "FireResist2",
+        "Buckler": "FireResist2",
+        "Focus": "FireResist2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceFireResist",
+      "name": "隔热精华",
+      "english": "Essence of Insulation",
+      "grade": "normal",
+      "mods": {
+        "Helmet": "FireResist4",
+        "Body Armour": "FireResist4",
+        "Gloves": "FireResist4",
+        "Boots": "FireResist4",
+        "Shield": "FireResist4",
+        "Ring": "FireResist4",
+        "Amulet": "FireResist4",
+        "Belt": "FireResist4",
+        "Buckler": "FireResist4",
+        "Focus": "FireResist4"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceFireResist",
+      "name": "高阶隔热精华",
+      "english": "Greater Essence of Insulation",
+      "grade": "greater",
+      "mods": {
+        "Helmet": "FireResist6",
+        "Body Armour": "FireResist6",
+        "Gloves": "FireResist6",
+        "Boots": "FireResist6",
+        "Shield": "FireResist6",
+        "Ring": "FireResist6",
+        "Amulet": "FireResist6",
+        "Belt": "FireResist6",
+        "Buckler": "FireResist6",
+        "Focus": "FireResist6"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceFireResist",
+      "name": "完美隔热精华",
+      "english": "Perfect Essence of Insulation",
+      "grade": "perfect",
+      "mods": {
+        "Belt": "EssenceFireRecoupLife1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceColdResist",
+      "name": "低阶解冻精华",
+      "english": "Lesser Essence of Thawing",
+      "grade": "lesser",
+      "mods": {
+        "Helmet": "ColdResist2",
+        "Body Armour": "ColdResist2",
+        "Gloves": "ColdResist2",
+        "Boots": "ColdResist2",
+        "Shield": "ColdResist2",
+        "Ring": "ColdResist2",
+        "Amulet": "ColdResist2",
+        "Belt": "ColdResist2",
+        "Buckler": "ColdResist2",
+        "Focus": "ColdResist2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceColdResist",
+      "name": "解冻精华",
+      "english": "Essence of Thawing",
+      "grade": "normal",
+      "mods": {
+        "Helmet": "ColdResist4",
+        "Body Armour": "ColdResist4",
+        "Gloves": "ColdResist4",
+        "Boots": "ColdResist4",
+        "Shield": "ColdResist4",
+        "Ring": "ColdResist4",
+        "Amulet": "ColdResist4",
+        "Belt": "ColdResist4",
+        "Buckler": "ColdResist4",
+        "Focus": "ColdResist4"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceColdResist",
+      "name": "高阶解冻精华",
+      "english": "Greater Essence of Thawing",
+      "grade": "greater",
+      "mods": {
+        "Helmet": "ColdResist6",
+        "Body Armour": "ColdResist6",
+        "Gloves": "ColdResist6",
+        "Boots": "ColdResist6",
+        "Shield": "ColdResist6",
+        "Ring": "ColdResist6",
+        "Amulet": "ColdResist6",
+        "Belt": "ColdResist6",
+        "Buckler": "ColdResist6",
+        "Focus": "ColdResist6"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceColdResist",
+      "name": "完美解冻精华",
+      "english": "Perfect Essence of Thawing",
+      "grade": "perfect",
+      "mods": {
+        "Helmet": "EssenceColdRecoupLife1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceLightningResist",
+      "name": "低阶接地精华",
+      "english": "Lesser Essence of Grounding",
+      "grade": "lesser",
+      "mods": {
+        "Helmet": "LightningResist2",
+        "Body Armour": "LightningResist2",
+        "Gloves": "LightningResist2",
+        "Boots": "LightningResist2",
+        "Shield": "LightningResist2",
+        "Ring": "LightningResist2",
+        "Amulet": "LightningResist2",
+        "Belt": "LightningResist2",
+        "Buckler": "LightningResist2",
+        "Focus": "LightningResist2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceLightningResist",
+      "name": "接地精华",
+      "english": "Essence of Grounding",
+      "grade": "normal",
+      "mods": {
+        "Helmet": "LightningResist4",
+        "Body Armour": "LightningResist4",
+        "Gloves": "LightningResist4",
+        "Boots": "LightningResist4",
+        "Shield": "LightningResist4",
+        "Ring": "LightningResist4",
+        "Amulet": "LightningResist4",
+        "Belt": "LightningResist4",
+        "Buckler": "LightningResist4",
+        "Focus": "LightningResist4"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceLightningResist",
+      "name": "高阶接地精华",
+      "english": "Greater Essence of Grounding",
+      "grade": "greater",
+      "mods": {
+        "Helmet": "LightningResist6",
+        "Body Armour": "LightningResist6",
+        "Gloves": "LightningResist6",
+        "Boots": "LightningResist6",
+        "Shield": "LightningResist6",
+        "Ring": "LightningResist6",
+        "Amulet": "LightningResist6",
+        "Belt": "LightningResist6",
+        "Buckler": "LightningResist6",
+        "Focus": "LightningResist6"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceLightningResist",
+      "name": "完美接地精华",
+      "english": "Perfect Essence of Grounding",
+      "grade": "perfect",
+      "mods": {
+        "Gloves": "EssenceLightningRecoupLife1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceSpeedCaster",
+      "name": "低阶迅捷精华",
+      "english": "Lesser Essence of Alacrity",
+      "grade": "lesser",
+      "mods": {
+        "Focus": "IncreasedCastSpeed2",
+        "Wand": "IncreasedCastSpeed2",
+        "Staff": "IncreasedCastSpeedTwoHand2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceSpeedCaster",
+      "name": "迅捷精华",
+      "english": "Essence of Alacrity",
+      "grade": "normal",
+      "mods": {
+        "Focus": "IncreasedCastSpeed3",
+        "Wand": "IncreasedCastSpeed3",
+        "Staff": "IncreasedCastSpeedTwoHand3"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceSpeedCaster",
+      "name": "高阶迅捷精华",
+      "english": "Greater Essence of Alacrity",
+      "grade": "greater",
+      "mods": {
+        "Focus": "IncreasedCastSpeed5",
+        "Wand": "IncreasedCastSpeed5",
+        "Staff": "IncreasedCastSpeedTwoHand5"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceSpeedCaster",
+      "name": "完美迅捷精华",
+      "english": "Perfect Essence of Alacrity",
+      "grade": "perfect",
+      "mods": {
+        "Focus": "EssenceManaCostReduction",
+        "Wand": "EssenceManaCostReduction",
+        "Staff": "EssenceManaCostReduction2H"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceRarity",
+      "name": "低阶富足精华",
+      "english": "Lesser Essence of Opulence",
+      "grade": "lesser",
+      "mods": {
+        "Helmet": "ItemFoundRarityIncrease1",
+        "Ring": "ItemFoundRarityIncrease1",
+        "Amulet": "ItemFoundRarityIncrease1",
+        "Boots": "ItemFoundRarityIncrease1",
+        "Gloves": "ItemFoundRarityIncrease1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceRarity",
+      "name": "富足精华",
+      "english": "Essence of Opulence",
+      "grade": "normal",
+      "mods": {
+        "Helmet": "ItemFoundRarityIncrease2",
+        "Ring": "ItemFoundRarityIncrease2",
+        "Amulet": "ItemFoundRarityIncrease2",
+        "Boots": "ItemFoundRarityIncrease2",
+        "Gloves": "ItemFoundRarityIncrease2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceRarity",
+      "name": "高阶富足精华",
+      "english": "Greater Essence of Opulence",
+      "grade": "greater",
+      "mods": {
+        "Helmet": "ItemFoundRarityIncrease3",
+        "Ring": "ItemFoundRarityIncrease3",
+        "Amulet": "ItemFoundRarityIncrease3",
+        "Boots": "ItemFoundRarityIncrease3",
+        "Gloves": "ItemFoundRarityIncrease3"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceRarity",
+      "name": "完美富足精华",
+      "english": "Perfect Essence of Opulence",
+      "grade": "perfect",
+      "mods": {
+        "Gloves": "EssenceGoldDropped1"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceAlly",
+      "name": "低阶号令精华",
+      "english": "Lesser Essence of Command",
+      "grade": "lesser",
+      "mods": {
+        "Sceptre": "NearbyAlliesAllDamage2"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceAlly",
+      "name": "号令精华",
+      "english": "Essence of Command",
+      "grade": "normal",
+      "mods": {
+        "Sceptre": "NearbyAlliesAllDamage4"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceAlly",
+      "name": "高阶号令精华",
+      "english": "Greater Essence of Command",
+      "grade": "greater",
+      "mods": {
+        "Sceptre": "NearbyAlliesAllDamage6"
+      }
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceAlly",
+      "name": "完美号令精华",
+      "english": "Perfect Essence of Command",
+      "grade": "perfect",
+      "mods": {
+        "Sceptre": "EssenceAuraEffect1"
+      }
+    }
+  ]
+}

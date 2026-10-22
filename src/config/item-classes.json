@@ -1,0 +1,796 @@
+{
+  "schemaVersion": 1,
+  "game": "Path of Exile 2",
+  "gameVersion": "0.5.5.4.2",
+  "verifiedAt": "2026-10-22",
+  "locale": "en",
+  "source": {
+    "name": "RePoE PoE 2 data export",
+    "repository": "https://github.com/repoe-fork/poe2",
+    "commit": "75885a099f2e9be1619aa3c793fe6ab0754a511f",
+    "exportedAt": "2026-10-19T04:56:41Z",
+    "itemClassesUrl": "https://raw.githubusercontent.com/repoe-fork/poe2/75885a099f2e9be1619aa3c793fe6ab0754a511f/data/item_classes.json",
+    "baseItemsUrl": "https://raw.githubusercontent.com/repoe-fork/poe2/75885a099f2e9be1619aa3c793fe6ab0754a511f/data/base_items.json",
+    "versionUrl": "https://raw.githubusercontent.com/repoe-fork/poe2/75885a099f2e9be1619aa3c793fe6ab0754a511f/exported-version.txt"
+  },
+  "notes": [
+    "完整收录此快照中所有非空名称的 ItemClasses 记录；空名称的内部记录列在 unnamedClassIds 中。",
+    "数据包含系统、历史遗留及可能尚未启用的类别，不代表这些类别当前都能掉落；baseItemCount 仅统计数据表关联底材数，不表示已发布或可掉落。",
+    "value 是导出 Class 条件时使用的英文完整名称；id 是内部标识，不能作为精确匹配值。",
+    "labelZh 为界面解释性译名，非官方简体中文本地化数据；category/categoryId 保留来源字段，不能替代 value。",
+    "多个内部类别可能共用 value（如 Currency、Map Fragments、Incubators），界面按 value 去重；英文名称中的单复数需原样保留。"
+  ],
+  "classes": [
+    {
+      "id": "LifeFlask",
+      "value": "Life Flasks",
+      "labelZh": "生命药剂",
+      "category": "[Flask]",
+      "categoryId": "Flask",
+      "baseItemCount": 9
+    },
+    {
+      "id": "ManaFlask",
+      "value": "Mana Flasks",
+      "labelZh": "魔力药剂",
+      "category": "[Flask]",
+      "categoryId": "Flask",
+      "baseItemCount": 9
+    },
+    {
+      "id": "Currency",
+      "value": "Currency",
+      "labelZh": "通货",
+      "category": "Currency",
+      "categoryId": "Currency",
+      "baseItemCount": 1
+    },
+    {
+      "id": "Amulet",
+      "value": "Amulets",
+      "labelZh": "项链",
+      "category": "Amulet",
+      "categoryId": "Amulet",
+      "baseItemCount": 25
+    },
+    {
+      "id": "Ring",
+      "value": "Rings",
+      "labelZh": "戒指",
+      "category": "Ring",
+      "categoryId": "Ring",
+      "baseItemCount": 29
+    },
+    {
+      "id": "Claw",
+      "value": "Claws",
+      "labelZh": "爪",
+      "category": "[Claw]",
+      "categoryId": "Claw",
+      "baseItemCount": 13
+    },
+    {
+      "id": "Dagger",
+      "value": "Daggers",
+      "labelZh": "匕首",
+      "category": "[Dagger]",
+      "categoryId": "Dagger",
+      "baseItemCount": 22
+    },
+    {
+      "id": "Wand",
+      "value": "Wands",
+      "labelZh": "法杖",
+      "category": "[Wand]",
+      "categoryId": "Wand",
+      "baseItemCount": 18
+    },
+    {
+      "id": "One Hand Sword",
+      "value": "One Hand Swords",
+      "labelZh": "单手剑",
+      "category": "[Sword|One Hand Sword]",
+      "categoryId": "One Hand Sword",
+      "baseItemCount": 24
+    },
+    {
+      "id": "One Hand Axe",
+      "value": "One Hand Axes",
+      "labelZh": "单手斧",
+      "category": "[Axe|One Hand Axe]",
+      "categoryId": "One Hand Axe",
+      "baseItemCount": 21
+    },
+    {
+      "id": "One Hand Mace",
+      "value": "One Hand Maces",
+      "labelZh": "单手锤",
+      "category": "[Mace|One Hand Mace]",
+      "categoryId": "One Hand Mace",
+      "baseItemCount": 44
+    },
+    {
+      "id": "Bow",
+      "value": "Bows",
+      "labelZh": "弓",
+      "category": "[Bow]",
+      "categoryId": "Bow",
+      "baseItemCount": 35
+    },
+    {
+      "id": "Staff",
+      "value": "Staves",
+      "labelZh": "长杖",
+      "category": "[Staff]",
+      "categoryId": "Staff",
+      "baseItemCount": 19
+    },
+    {
+      "id": "Two Hand Sword",
+      "value": "Two Hand Swords",
+      "labelZh": "双手剑",
+      "category": "[Sword|Two Hand Sword]",
+      "categoryId": "Two Hand Sword",
+      "baseItemCount": 23
+    },
+    {
+      "id": "Two Hand Axe",
+      "value": "Two Hand Axes",
+      "labelZh": "双手斧",
+      "category": "[Axe|Two Hand Axe]",
+      "categoryId": "Two Hand Axe",
+      "baseItemCount": 21
+    },
+    {
+      "id": "Two Hand Mace",
+      "value": "Two Hand Maces",
+      "labelZh": "双手锤",
+      "category": "[Mace|Two Hand Mace]",
+      "categoryId": "Two Hand Mace",
+      "baseItemCount": 43
+    },
+    {
+      "id": "Active Skill Gem",
+      "value": "Skill Gems",
+      "labelZh": "技能宝石",
+      "category": "Skill Gem",
+      "categoryId": "Active Skill Gem",
+      "baseItemCount": 505
+    },
+    {
+      "id": "Support Skill Gem",
+      "value": "Support Gems",
+      "labelZh": "辅助宝石",
+      "category": "Support Gem",
+      "categoryId": "Support Skill Gem",
+      "baseItemCount": 642
+    },
+    {
+      "id": "Quiver",
+      "value": "Quivers",
+      "labelZh": "箭袋",
+      "category": "[Quiver]",
+      "categoryId": "Quiver",
+      "baseItemCount": 11
+    },
+    {
+      "id": "Belt",
+      "value": "Belts",
+      "labelZh": "腰带",
+      "category": "Belt",
+      "categoryId": "Belt",
+      "baseItemCount": 20
+    },
+    {
+      "id": "Gloves",
+      "value": "Gloves",
+      "labelZh": "手套",
+      "category": "Gloves",
+      "categoryId": "Gloves",
+      "baseItemCount": 203
+    },
+    {
+      "id": "Boots",
+      "value": "Boots",
+      "labelZh": "鞋子",
+      "category": "Boots",
+      "categoryId": "Boots",
+      "baseItemCount": 192
+    },
+    {
+      "id": "Body Armour",
+      "value": "Body Armours",
+      "labelZh": "胸甲",
+      "category": "Body Armour",
+      "categoryId": "Body Armour",
+      "baseItemCount": 369
+    },
+    {
+      "id": "Helmet",
+      "value": "Helmets",
+      "labelZh": "头盔",
+      "category": "Helmet",
+      "categoryId": "Helmet",
+      "baseItemCount": 262
+    },
+    {
+      "id": "Shield",
+      "value": "Shields",
+      "labelZh": "盾牌",
+      "category": "[Shield]",
+      "categoryId": "Shield",
+      "baseItemCount": 151
+    },
+    {
+      "id": "SmallRelic",
+      "value": "Small Relics",
+      "labelZh": "小型圣物",
+      "category": null,
+      "categoryId": null,
+      "baseItemCount": 0
+    },
+    {
+      "id": "MediumRelic",
+      "value": "Medium Relics",
+      "labelZh": "中型圣物",
+      "category": null,
+      "categoryId": null,
+      "baseItemCount": 0
+    },
+    {
+      "id": "LargeRelic",
+      "value": "Large Relics",
+      "labelZh": "大型圣物",
+      "category": null,
+      "categoryId": null,
+      "baseItemCount": 0
+    },
+    {
+      "id": "StackableCurrency",
+      "value": "Stackable Currency",
+      "labelZh": "可堆叠通货",
+      "category": "Currency",
+      "categoryId": "Currency",
+      "baseItemCount": 868
+    },
+    {
+      "id": "QuestItem",
+      "value": "Quest Items",
+      "labelZh": "任务物品",
+      "category": "[QuestItem|Quest Item]",
+      "categoryId": "QuestItem",
+      "baseItemCount": 375
+    },
+    {
+      "id": "Sceptre",
+      "value": "Sceptres",
+      "labelZh": "权杖",
+      "category": "[Sceptre]",
+      "categoryId": "Sceptre",
+      "baseItemCount": 16
+    },
+    {
+      "id": "UtilityFlask",
+      "value": "Charms",
+      "labelZh": "护符",
+      "category": "Charm",
+      "categoryId": "Charm",
+      "baseItemCount": 13
+    },
+    {
+      "id": "Map",
+      "value": "Waystones",
+      "labelZh": "途石",
+      "category": "Waystone",
+      "categoryId": "Map",
+      "baseItemCount": 16
+    },
+    {
+      "id": "FishingRod",
+      "value": "Fishing Rods",
+      "labelZh": "鱼竿",
+      "category": "Fishing Rod",
+      "categoryId": "FishingRod",
+      "baseItemCount": 1
+    },
+    {
+      "id": "MapFragment",
+      "value": "Map Fragments",
+      "labelZh": "地图碎片",
+      "category": "Map Fragment",
+      "categoryId": "MapFragment",
+      "baseItemCount": 149
+    },
+    {
+      "id": "AtlasCurrency",
+      "value": "Map Fragments",
+      "labelZh": "地图碎片",
+      "category": "Map Fragment",
+      "categoryId": "MapFragment",
+      "baseItemCount": 2
+    },
+    {
+      "id": "HideoutDoodad",
+      "value": "Hideout Doodads",
+      "labelZh": "藏身处装饰",
+      "category": null,
+      "categoryId": null,
+      "baseItemCount": 0
+    },
+    {
+      "id": "Microtransaction",
+      "value": "Microtransactions",
+      "labelZh": "商城物品",
+      "category": null,
+      "categoryId": null,
+      "baseItemCount": 13
+    },
+    {
+      "id": "Jewel",
+      "value": "Jewels",
+      "labelZh": "珠宝",
+      "category": "[Jewel]",
+      "categoryId": "Jewel",
+      "baseItemCount": 9
+    },
+    {
+      "id": "DivinationCard",
+      "value": "Divination Cards",
+      "labelZh": "命运卡",
+      "category": "Divination Card",
+      "categoryId": "DivinationCard",
+      "baseItemCount": 1
+    },
+    {
+      "id": "MiscMapItem",
+      "value": "Misc Map Items",
+      "labelZh": "其他地图物品",
+      "category": "",
+      "categoryId": "MiscMapItem",
+      "baseItemCount": 21
+    },
+    {
+      "id": "Leaguestone",
+      "value": "Leaguestones",
+      "labelZh": "联盟石",
+      "category": "Leaguestone",
+      "categoryId": "Leaguestone",
+      "baseItemCount": 0
+    },
+    {
+      "id": "PantheonSoul",
+      "value": "Pantheon Souls",
+      "labelZh": "万神殿灵魂",
+      "category": "Captured Soul",
+      "categoryId": "PantheonSoul",
+      "baseItemCount": 20
+    },
+    {
+      "id": "UniqueFragment",
+      "value": "Pieces",
+      "labelZh": "传奇物品部件",
+      "category": "Unique Piece",
+      "categoryId": "UniqueFragment",
+      "baseItemCount": 22
+    },
+    {
+      "id": "AbyssJewel",
+      "value": "Abyss Jewels",
+      "labelZh": "深渊珠宝",
+      "category": "Abyss Jewel",
+      "categoryId": "AbyssJewel",
+      "baseItemCount": 0
+    },
+    {
+      "id": "IncursionItem",
+      "value": "Incursion Items",
+      "labelZh": "穿越物品",
+      "category": "Incursion Item",
+      "categoryId": "IncursionItem",
+      "baseItemCount": 2
+    },
+    {
+      "id": "DelveSocketableCurrency",
+      "value": "Delve Socketable Currency",
+      "labelZh": "掘矿镶嵌通货",
+      "category": "Resonator",
+      "categoryId": "DelveSocketableCurrency",
+      "baseItemCount": 8
+    },
+    {
+      "id": "Incubator",
+      "value": "Incubators",
+      "labelZh": "孕育石",
+      "category": "Incubator",
+      "categoryId": "Incubator",
+      "baseItemCount": 30
+    },
+    {
+      "id": "UniqueShard",
+      "value": "Shards",
+      "labelZh": "碎片",
+      "category": null,
+      "categoryId": null,
+      "baseItemCount": 0
+    },
+    {
+      "id": "UniqueShardBase",
+      "value": "Shard Hearts",
+      "labelZh": "碎片之心",
+      "category": null,
+      "categoryId": null,
+      "baseItemCount": 0
+    },
+    {
+      "id": "Warstaff",
+      "value": "Quarterstaves",
+      "labelZh": "战杖",
+      "category": "[Quarterstaff]",
+      "categoryId": "Warstaff",
+      "baseItemCount": 38
+    },
+    {
+      "id": "DelveStackableSocketableCurrency",
+      "value": "Delve Stackable Socketable Currency",
+      "labelZh": "可堆叠掘矿镶嵌通货",
+      "category": "Resonator",
+      "categoryId": "DelveSocketableCurrency",
+      "baseItemCount": 8
+    },
+    {
+      "id": "AtlasUpgradeItem",
+      "value": "Atlas Upgrade Items",
+      "labelZh": "异界升级物品",
+      "category": "Watchstone",
+      "categoryId": "AtlasUpgradeItem",
+      "baseItemCount": 61
+    },
+    {
+      "id": "HiddenItem",
+      "value": "Hidden Items",
+      "labelZh": "隐藏物品",
+      "category": null,
+      "categoryId": null,
+      "baseItemCount": 74
+    },
+    {
+      "id": "HeistContract",
+      "value": "Contracts",
+      "labelZh": "契约",
+      "category": "Contract",
+      "categoryId": "HeistContract",
+      "baseItemCount": 15
+    },
+    {
+      "id": "HeistEquipmentWeapon",
+      "value": "Heist Gear",
+      "labelZh": "劫盗装备",
+      "category": "Heist Gear",
+      "categoryId": "HeistEquipmentWeapon",
+      "baseItemCount": 13
+    },
+    {
+      "id": "HeistEquipmentTool",
+      "value": "Heist Tools",
+      "labelZh": "劫盗工具",
+      "category": "Heist Tool",
+      "categoryId": "HeistEquipmentTool",
+      "baseItemCount": 37
+    },
+    {
+      "id": "HeistEquipmentUtility",
+      "value": "Heist Cloaks",
+      "labelZh": "劫盗披风",
+      "category": "Heist Cloak",
+      "categoryId": "HeistEquipmentUtility",
+      "baseItemCount": 5
+    },
+    {
+      "id": "HeistEquipmentReward",
+      "value": "Heist Brooches",
+      "labelZh": "劫盗胸针",
+      "category": "Heist Brooch",
+      "categoryId": "HeistEquipmentReward",
+      "baseItemCount": 5
+    },
+    {
+      "id": "HeistBlueprint",
+      "value": "Blueprints",
+      "labelZh": "蓝图",
+      "category": "Blueprint",
+      "categoryId": "HeistBlueprint",
+      "baseItemCount": 9
+    },
+    {
+      "id": "Trinket",
+      "value": "Trinkets",
+      "labelZh": "饰品",
+      "category": "Trinket",
+      "categoryId": "Trinket",
+      "baseItemCount": 0
+    },
+    {
+      "id": "HeistObjective",
+      "value": "Heist Targets",
+      "labelZh": "劫盗目标物品",
+      "category": "Heist Target",
+      "categoryId": "HeistObjective",
+      "baseItemCount": 47
+    },
+    {
+      "id": "ExpeditionLogbook",
+      "value": "Expedition Logbooks",
+      "labelZh": "探险日志（复数类别）",
+      "category": "Expedition Logbook",
+      "categoryId": "ExpeditionLogbook",
+      "baseItemCount": 1
+    },
+    {
+      "id": "Expedition2Logbooks",
+      "value": "Expedition Logbook",
+      "labelZh": "探险日志",
+      "category": "Map Fragment",
+      "categoryId": "MapFragment",
+      "baseItemCount": 1
+    },
+    {
+      "id": "IncubatorStackable",
+      "value": "Incubators",
+      "labelZh": "孕育石",
+      "category": "Incubator",
+      "categoryId": "Incubator",
+      "baseItemCount": 31
+    },
+    {
+      "id": "ArchnemesisMod",
+      "value": "Archnemesis Mods",
+      "labelZh": "宿敌词缀",
+      "category": null,
+      "categoryId": null,
+      "baseItemCount": 1
+    },
+    {
+      "id": "Spear",
+      "value": "Spears",
+      "labelZh": "长矛",
+      "category": "[Spear]",
+      "categoryId": "Spear",
+      "baseItemCount": 36
+    },
+    {
+      "id": "Crossbow",
+      "value": "Crossbows",
+      "labelZh": "十字弩",
+      "category": "[Crossbow]",
+      "categoryId": "Crossbow",
+      "baseItemCount": 34
+    },
+    {
+      "id": "Focus",
+      "value": "Foci",
+      "labelZh": "法器",
+      "category": "[Focus]",
+      "categoryId": "Focus",
+      "baseItemCount": 51
+    },
+    {
+      "id": "InstanceLocalItem",
+      "value": "Instance Local Items",
+      "labelZh": "区域内临时物品",
+      "category": "Instance Local Item",
+      "categoryId": "InstanceLocalItem",
+      "baseItemCount": 20
+    },
+    {
+      "id": "SentinelDrone",
+      "value": "Sentinels",
+      "labelZh": "哨兵",
+      "category": "Sentinel Drone",
+      "categoryId": "SentinelDrone",
+      "baseItemCount": 1
+    },
+    {
+      "id": "MemoryLine",
+      "value": "Memories",
+      "labelZh": "记忆",
+      "category": "Memory",
+      "categoryId": "MemoryLine",
+      "baseItemCount": 4
+    },
+    {
+      "id": "Flail",
+      "value": "Flails",
+      "labelZh": "连枷",
+      "category": "[Flail]",
+      "categoryId": "Flail",
+      "baseItemCount": 21
+    },
+    {
+      "id": "Relic",
+      "value": "Relics",
+      "labelZh": "圣物",
+      "category": "Relic",
+      "categoryId": "Relic",
+      "baseItemCount": 7
+    },
+    {
+      "id": "SanctumSpecialRelic",
+      "value": "Sanctified Relics",
+      "labelZh": "圣化圣物",
+      "category": "Relic",
+      "categoryId": "Relic",
+      "baseItemCount": 3
+    },
+    {
+      "id": "Breachstone",
+      "value": "Breachstones",
+      "labelZh": "裂隙石",
+      "category": "Breachstone",
+      "categoryId": "Breachstone",
+      "baseItemCount": 26
+    },
+    {
+      "id": "VaultKey",
+      "value": "Vault Keys",
+      "labelZh": "宝库钥匙",
+      "category": "Vault Key",
+      "categoryId": "VaultKey",
+      "baseItemCount": 26
+    },
+    {
+      "id": "ItemisedSanctum",
+      "value": "Trial Coins",
+      "labelZh": "试炼硬币",
+      "category": "",
+      "categoryId": "MiscMapItem",
+      "baseItemCount": 5
+    },
+    {
+      "id": "Buckler",
+      "value": "Bucklers",
+      "labelZh": "圆盾",
+      "category": "[Buckler]",
+      "categoryId": "Buckler",
+      "baseItemCount": 52
+    },
+    {
+      "id": "TrapTool",
+      "value": "Traps",
+      "labelZh": "陷阱",
+      "category": "[Trap]",
+      "categoryId": "TrapTool",
+      "baseItemCount": 13
+    },
+    {
+      "id": "SkillGemToken",
+      "value": "Currency",
+      "labelZh": "通货",
+      "category": "Currency",
+      "categoryId": "Currency",
+      "baseItemCount": 1
+    },
+    {
+      "id": "UltimatumKey",
+      "value": "Inscribed Ultimatum",
+      "labelZh": "铭刻通牒",
+      "category": "",
+      "categoryId": "MiscMapItem",
+      "baseItemCount": 5
+    },
+    {
+      "id": "SoulCore",
+      "value": "Augment",
+      "labelZh": "增幅物品（符文、灵魂核心等）",
+      "category": "[Augment]",
+      "categoryId": "SoulCore",
+      "baseItemCount": 313
+    },
+    {
+      "id": "TowerAugmentation",
+      "value": "Tablet",
+      "labelZh": "碑牌",
+      "category": "Tablet",
+      "categoryId": "TowerAugment",
+      "baseItemCount": 8
+    },
+    {
+      "id": "Omen",
+      "value": "Omen",
+      "labelZh": "预兆",
+      "category": "Omen",
+      "categoryId": "Omen",
+      "baseItemCount": 50
+    },
+    {
+      "id": "Talisman",
+      "value": "Talismans",
+      "labelZh": "魔符",
+      "category": "[Talisman]",
+      "categoryId": "Talisman",
+      "baseItemCount": 31
+    },
+    {
+      "id": "UncutSkillGemStackable",
+      "value": "Uncut Skill Gems",
+      "labelZh": "未切割技能宝石",
+      "category": "",
+      "categoryId": "UncutSkillGem",
+      "baseItemCount": 21
+    },
+    {
+      "id": "UncutSupportGemStackable",
+      "value": "Uncut Support Gems",
+      "labelZh": "未切割辅助宝石",
+      "category": "",
+      "categoryId": "UncutSkillGem",
+      "baseItemCount": 5
+    },
+    {
+      "id": "UncutReservationGemStackable",
+      "value": "Uncut Spirit Gems",
+      "labelZh": "未切割精神宝石",
+      "category": "",
+      "categoryId": "UncutSkillGem",
+      "baseItemCount": 17
+    },
+    {
+      "id": "IncursionArm",
+      "value": "Transcendent Arm",
+      "labelZh": "超越之臂",
+      "category": "Transcendent Limb",
+      "categoryId": "IncursionLimb",
+      "baseItemCount": 6
+    },
+    {
+      "id": "IncursionLeg",
+      "value": "Transcendent Leg",
+      "labelZh": "超越之腿",
+      "category": "Transcendent Limb",
+      "categoryId": "IncursionLimb",
+      "baseItemCount": 6
+    },
+    {
+      "id": "BrequelFruit",
+      "value": "Wombgifts",
+      "labelZh": "胎赠",
+      "category": "Wombgift",
+      "categoryId": "BrequelFruit",
+      "baseItemCount": 5
+    },
+    {
+      "id": "PinnacleKeyStackable",
+      "value": "Pinnacle Keys",
+      "labelZh": "巅峰钥匙",
+      "category": "Pinnacle Key",
+      "categoryId": "PinnacleKey",
+      "baseItemCount": 10
+    }
+  ],
+  "unnamedClassIds": [
+    "DONOTUSE5",
+    "DONOTUSE6",
+    "DONOTUSE7",
+    "Unarmed",
+    "DONOTUSE8",
+    "DONOTUSE9",
+    "DONOTUSE10",
+    "DONOTUSE11",
+    "DONOTUSE4",
+    "DONOTUSE1",
+    "DONOTUSE2",
+    "DONOTUSE3",
+    "Meta Skill Gem",
+    "GiftBox",
+    "DONOTUSE12",
+    "UncutSkillGem_OLD",
+    "Thrown One Hand Axe",
+    "Thrown Two Hand Axe",
+    "ConventionTreasure",
+    "Crossbow Attachment REMOVE",
+    "Nothing",
+    "UncutSupportGem_OLD",
+    "UncutReservationGem_OLD",
+    "Thrown Shield",
+    "PinnacleKey_OLD"
+  ]
+}

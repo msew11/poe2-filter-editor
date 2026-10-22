@@ -31,6 +31,15 @@ export const rarityLabels: Record<typeof rarities[number], string> = { Normal: '
 
 export function createField(type: FieldType): RuleField { return { id: crypto.randomUUID(), type, params: { ...fieldDefinitions[type].defaults } } }
 export function createRule(): Rule { return { id: crypto.randomUUID(), name: '', action: 'Show', fields: [] } }
+export function copyRule(rule: Rule, existingNames: string[] = []): Rule {
+  let suffix = '（副本）'
+  let number = 2
+  while (existingNames.includes(rule.name.slice(0, 100 - suffix.length) + suffix)) suffix = `（副本 ${number++}）`
+  return {
+    ...structuredClone(rule), id: crypto.randomUUID(), name: rule.name.slice(0, 100 - suffix.length) + suffix,
+    fields: rule.fields.map(field => ({ ...structuredClone(field), id: crypto.randomUUID() })),
+  }
+}
 const inRange = (value: string, min: number, max = Number.MAX_SAFE_INTEGER) => value.trim() !== '' && Number.isSafeInteger(Number(value)) && Number(value) >= min && Number(value) <= max
 export function textValues(value: string) { return value.split(/\r?\n/).map(s => s.trim()).filter(Boolean) }
 
@@ -115,11 +124,16 @@ export function matchesRule(rule: Rule, item: ExampleItem) {
   })
 }
 
+export function ruleFileName(rule: Pick<Rule, 'name'>) {
+  const name = rule.name.replace(/[<>:"/\\|?*\u0000-\u001f]/g, '_').replace(/[. ]+$/g, '').trim() || 'exile-rule'
+  return `${/^(con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\.|$)/i.test(name) ? `_${name}` : name}.filter`
+}
+
 export function downloadRule(rule: Rule) {
   const url = URL.createObjectURL(new Blob([serializeRule(rule)], { type: 'text/plain;charset=utf-8' }))
   const anchor = document.createElement('a')
   anchor.href = url
-  anchor.download = `${rule.name.replace(/[<>:"/\\|?*\u0000-\u001f]/g, '_').replace(/[. ]+$/g, '').trim() || 'exile-rule'}.filter`
+  anchor.download = ruleFileName(rule)
   document.body.append(anchor); anchor.click(); anchor.remove()
   setTimeout(() => URL.revokeObjectURL(url), 1000)
 }

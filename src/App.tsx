@@ -1,22 +1,36 @@
 import { useEffect, useRef, useState } from 'react'
-import { ArrowRight, Check, CodeXml, Gem, ListFilter, Palette, PanelsTopLeft, ScanEye, X } from 'lucide-react'
+import { ArrowRight, Check, Gem, ListFilter, Palette, PanelsTopLeft, ScanEye, ScrollText, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { AppearancePage, PreviewPage, RulesPage, SourcePage } from '@/components/pages'
+import { AppearancePage, PreviewPage, RulesPage } from '@/components/pages'
+import { FiltersPage } from '@/components/filters-page'
+import { SettingsDialog } from '@/components/settings-dialog'
+import { readFilterDirectory, type FilterDirectory } from '@/lib/filter-directory'
 import { STORAGE_KEY, pageIds, pageLabels, readWorkspace, type PageId, type Workspace } from '@/lib/workspace'
 
 const navigation = [
   { id: 'rules', icon: ListFilter, number: '01' },
   { id: 'appearance', icon: Palette, number: '02' },
   { id: 'preview', icon: ScanEye, number: '03' },
-  { id: 'source', icon: CodeXml, number: '04' },
+  { id: 'source', icon: ScrollText, number: '04' },
 ] as const
 
 export default function App() {
   const [workspace, setWorkspace] = useState<Workspace>(readWorkspace)
+  const [directory, setDirectory] = useState<FilterDirectory | null>(null)
+  const [directoryLoading, setDirectoryLoading] = useState(true)
+  const [directoryLoadError, setDirectoryLoadError] = useState('')
   const [saveStatus, setSaveStatus] = useState<'saved' | 'pending' | 'failed'>('pending')
   const tabRefs = useRef<Partial<Record<PageId, HTMLButtonElement | null>>>({})
   const navRefs = useRef<Partial<Record<PageId, HTMLButtonElement | null>>>({})
+
+  useEffect(() => {
+    let active = true
+    readFilterDirectory().then(value => { if (active) setDirectory(value) }).catch(() => {
+      if (active) setDirectoryLoadError('无法读取目录设置，请重新选择目录。当前导出将使用浏览器下载。')
+    }).finally(() => { if (active) setDirectoryLoading(false) })
+    return () => { active = false }
+  }, [])
 
   useEffect(() => {
     setSaveStatus('pending')
@@ -48,12 +62,12 @@ export default function App() {
   return <div className="forge-app">
     <header className="app-header">
       <a className="brand" href="#" aria-label="Exile Forge 首页" onClick={e => { e.preventDefault(); openPage('rules') }}><span className="brand-mark" aria-hidden="true"><span /></span><span className="brand-copy"><strong>EXILE FORGE</strong><span>流放之路 2 · 过滤器工坊</span></span></a>
-      <div className="header-actions"><span className="version-tag">WORKSHOP <span>0.2</span></span><Button onClick={() => openPage('source')}><CodeXml /><span>查看源码</span></Button></div>
+      <div className="header-actions"><span className="version-tag">WORKSHOP <span>0.2</span></span><SettingsDialog directory={directory} loading={directoryLoading} error={directoryLoadError} onChange={value => { setDirectory(value); setDirectoryLoadError('') }} /></div>
     </header>
     <div className="app-body">
       <aside className="sidebar" aria-label="功能导航">
         <p className="navigation-caption">工坊 <span>/ WORKSPACE</span></p>
-        <nav className="navigation">{navigation.map(({ id, icon: Icon, number }) => <button key={id} type="button" ref={el => { navRefs.current[id] = el }} className={`navigation-item ${workspace.activeTab === id ? 'is-active' : ''}`} aria-current={workspace.activeTab === id ? 'page' : undefined} onClick={() => openPage(id)}><Icon aria-hidden="true" /><span>{pageLabels[id]}</span><span className="navigation-number">{number}</span></button>)}</nav>
+        <nav className="navigation">{navigation.map(({ id, icon: Icon, number }) => <button key={id} type="button" ref={el => { navRefs.current[id] = el }} className={`navigation-item ${workspace.activeTab === id ? 'is-active' : ''}`} aria-current={workspace.activeTab === id ? 'page' : undefined} onClick={() => openPage(id)}><Icon aria-hidden="true" /><span className="navigation-label">{pageLabels[id]}{(id === 'appearance' || id === 'preview') && <span className="navigation-pending">待开发</span>}</span><span className="navigation-number">{number}</span></button>)}</nav>
         <div className="sidebar-footer"><Gem aria-hidden="true" /><div><span>{workspace.name.trim() || '未命名过滤器'}</span><span>本地工作区</span></div></div>
       </aside>
       <Tabs className="workspace" value={workspace.activeTab} onValueChange={id => { if (pageIds.includes(id as PageId)) setWorkspace(current => ({ ...current, activeTab: id as PageId })) }}>
@@ -63,7 +77,7 @@ export default function App() {
           <TabsContent value="rules" forceMount hidden={workspace.activeTab !== 'rules'}><RulesPage workspace={workspace} update={setWorkspace} /></TabsContent>
           <TabsContent value="appearance" forceMount hidden={workspace.activeTab !== 'appearance'}><AppearancePage workspace={workspace} update={setWorkspace} /></TabsContent>
           <TabsContent value="preview" forceMount hidden={workspace.activeTab !== 'preview'}><PreviewPage workspace={workspace} /></TabsContent>
-          <TabsContent value="source" forceMount hidden={workspace.activeTab !== 'source'}><SourcePage workspace={workspace} /></TabsContent>
+          <TabsContent value="source" forceMount hidden={workspace.activeTab !== 'source'}><FiltersPage workspace={workspace} update={setWorkspace} directory={directory} directoryLoading={directoryLoading} /></TabsContent>
         </main>
         <footer className="status-bar"><span className="status-dot" /><span>{workspace.activeTab ? pageLabels[workspace.activeTab] : '工作区'}</span><span className="save-status" role="status">{saveStatus === 'saved' && <Check aria-hidden="true" />}{saveStatus === 'saved' ? '已保存至本机' : saveStatus === 'failed' ? '无法自动保存，请导出备份' : '正在保存…'}</span><span className="status-wordmark">PATH OF EXILE 2</span></footer>
       </Tabs>

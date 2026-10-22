@@ -1,7 +1,38 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { createField, createRule, fieldError, fieldTypes, matchesRule, parseRule, serializeField, serializeRule } from './rules'
+import { copyRule, createField, createRule, fieldError, fieldTypes, matchesRule, parseRule, serializeField, serializeRule } from './rules'
 import { readWorkspace, STORAGE_KEY } from './workspace'
+
+test('copied rules retain behavior and field order but have independent identities and parameters', () => {
+  const source = createRule(); source.name = '高等级底材'; source.action = 'Hide'
+  const lower = createField('ItemLevel'); lower.params.value = '70'
+  const upper = createField('ItemLevel'); upper.params = { operator: '<=', value: '82' }
+  source.fields = [lower, upper, createField('SetTextColor')]
+  const copy = copyRule(source)
+  assert.notEqual(copy.id, source.id)
+  assert.equal(copy.name, '高等级底材（副本）')
+  assert.equal(copy.action, 'Hide')
+  assert.deepEqual(copy.fields.map(field => field.type), source.fields.map(field => field.type))
+  for (let index = 0; index < source.fields.length; index++) {
+    assert.notEqual(copy.fields[index].id, source.fields[index].id)
+    assert.deepEqual(copy.fields[index].params, source.fields[index].params)
+  }
+  copy.fields[0].params.value = '80'
+  copy.fields.pop()
+  assert.equal(source.fields[0].params.value, '70')
+  assert.equal(source.fields.length, 3)
+  assert.deepEqual(parseRule(copy), copy)
+})
+
+test('copy names avoid existing names and stay within the stored name limit', () => {
+  const source = createRule(); source.name = 'x'.repeat(100)
+  const first = copyRule(source)
+  const second = copyRule(source, [first.name])
+  assert.ok(second.name.endsWith('（副本 2）'))
+  assert.equal(second.name.length, 100)
+  const third = copyRule(source, [first.name, second.name])
+  assert.ok(third.name.endsWith('（副本 3）'))
+})
 
 test('serializes a compound rule with repeated numeric fields, multiple bases and RGBA in field order', () => {
   const rule = createRule(); rule.name = '高等级底材'; rule.action = 'Hide'
@@ -71,7 +102,7 @@ test('migrates old workspace rules to independent entries and preserves an inten
   let stored = JSON.stringify({ version: 1, name: 'Existing', openTabs: ['rules'], activeTab: 'rules', rules: [{ id: 'quality', enabled: false }, { id: 'normal', enabled: true }], appearance: { text: '#ff0000', background: '#000000', border: '#ffffff', fontSize: 35 } })
   Object.defineProperty(globalThis, 'localStorage', { configurable: true, value: { getItem: (key: string) => key === STORAGE_KEY ? stored : null } })
   const workspace = readWorkspace()
-  assert.equal(workspace.version, 2)
+  assert.equal(workspace.version, 3)
   assert.equal(workspace.name, 'Existing')
   assert.equal(workspace.rules.length, 2)
   assert.ok(workspace.rules.every(rule => !('enabled' in rule)))

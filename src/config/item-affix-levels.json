@@ -1,0 +1,3819 @@
+{
+  "schemaVersion": 2,
+  "gameVersion": "0.5.5.4.2",
+  "source": {
+    "commit": "75885a099f2e9be1619aa3c793fe6ab0754a511f",
+    "repository": "https://github.com/repoe-fork/poe2",
+    "modsUrl": "https://raw.githubusercontent.com/repoe-fork/poe2/75885a099f2e9be1619aa3c793fe6ab0754a511f/data/mods.json",
+    "baseItemsUrl": "https://raw.githubusercontent.com/repoe-fork/poe2/75885a099f2e9be1619aa3c793fe6ab0754a511f/data/base_items.json",
+    "modsByBaseUrl": "https://raw.githubusercontent.com/repoe-fork/poe2/75885a099f2e9be1619aa3c793fe6ab0754a511f/data/mods_by_base.json"
+  },
+  "notes": [
+    "T1 is inferred within each applicable source/type/stat series by highest required_level; IDs are not tier numbers.",
+    "Tn uses the nth rank in descending required_level order per series, clamped to the lowest rank when fewer than n exist (Tn or better).",
+    "Ordinary prefixes/suffixes use mods_by_base, the base domain and exclude essence-only mods. Desecrated mods use ordered spawn/generation weights.",
+    "Class levels are maxima across all source base/tag pools, including historical and unreleased bases; not a claim of current drop availability.",
+    "Levels indicate access to each top tier, not simultaneous affix compatibility. Special crafting rules and conditional_mods are not folded into ordinary thresholds."
+  ],
+  "maxTier": 13,
+  "classes": {
+    "Life Flasks": {
+      "ordinaryT1Level": 83,
+      "desecratedT1Level": null,
+      "allT1Level": 83,
+      "poolCount": 1,
+      "byTier": [
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 67,
+          "desecratedLevel": null,
+          "allLevel": 67
+        },
+        {
+          "ordinaryLevel": 56,
+          "desecratedLevel": null,
+          "allLevel": 56
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": null,
+          "allLevel": 46
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        }
+      ]
+    },
+    "Mana Flasks": {
+      "ordinaryT1Level": 83,
+      "desecratedT1Level": null,
+      "allT1Level": 83,
+      "poolCount": 1,
+      "byTier": [
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 67,
+          "desecratedLevel": null,
+          "allLevel": 67
+        },
+        {
+          "ordinaryLevel": 56,
+          "desecratedLevel": null,
+          "allLevel": 56
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": null,
+          "allLevel": 46
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        },
+        {
+          "ordinaryLevel": 42,
+          "desecratedLevel": null,
+          "allLevel": 42
+        }
+      ]
+    },
+    "Currency": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Amulets": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 2,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 70,
+          "desecratedLevel": 65,
+          "allLevel": 70
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 38,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Rings": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 2,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 71,
+          "desecratedLevel": 65,
+          "allLevel": 71
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 38,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 25,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 21,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 21,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 21,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 21,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Claws": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 4,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Daggers": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 5,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Wands": {
+      "ordinaryT1Level": 81,
+      "desecratedT1Level": 65,
+      "allT1Level": 81,
+      "poolCount": 7,
+      "byTier": [
+        {
+          "ordinaryLevel": 81,
+          "desecratedLevel": 65,
+          "allLevel": 81
+        },
+        {
+          "ordinaryLevel": 70,
+          "desecratedLevel": 65,
+          "allLevel": 70
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 38,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 25,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "One Hand Swords": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 6,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "One Hand Axes": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 4,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "One Hand Maces": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 8,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Bows": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 8,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 76,
+          "desecratedLevel": 65,
+          "allLevel": 76
+        },
+        {
+          "ordinaryLevel": 67,
+          "desecratedLevel": 65,
+          "allLevel": 67
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Staves": {
+      "ordinaryT1Level": 81,
+      "desecratedT1Level": 65,
+      "allT1Level": 81,
+      "poolCount": 6,
+      "byTier": [
+        {
+          "ordinaryLevel": 81,
+          "desecratedLevel": 65,
+          "allLevel": 81
+        },
+        {
+          "ordinaryLevel": 70,
+          "desecratedLevel": 65,
+          "allLevel": 70
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 38,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 25,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Two Hand Swords": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 5,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Two Hand Axes": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 4,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Two Hand Maces": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 10,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Skill Gems": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Support Gems": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Quivers": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 1,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 67,
+          "desecratedLevel": 65,
+          "allLevel": 67
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Belts": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 3,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 74,
+          "desecratedLevel": 65,
+          "allLevel": 74
+        },
+        {
+          "ordinaryLevel": 66,
+          "desecratedLevel": 65,
+          "allLevel": 66
+        },
+        {
+          "ordinaryLevel": 55,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 25,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 16,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 16,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 16,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 16,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 16,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 16,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Gloves": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 66,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 74,
+          "desecratedLevel": 65,
+          "allLevel": 74
+        },
+        {
+          "ordinaryLevel": 66,
+          "desecratedLevel": 65,
+          "allLevel": 66
+        },
+        {
+          "ordinaryLevel": 55,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Boots": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 64,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 72,
+          "desecratedLevel": 65,
+          "allLevel": 72
+        },
+        {
+          "ordinaryLevel": 63,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Body Armours": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 64,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        }
+      ]
+    },
+    "Helmets": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 65,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 74,
+          "desecratedLevel": 65,
+          "allLevel": 74
+        },
+        {
+          "ordinaryLevel": 66,
+          "desecratedLevel": 65,
+          "allLevel": 66
+        },
+        {
+          "ordinaryLevel": 55,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Shields": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 32,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        }
+      ]
+    },
+    "Small Relics": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Medium Relics": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Large Relics": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Stackable Currency": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Quest Items": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Sceptres": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": null,
+      "allT1Level": 82,
+      "poolCount": 5,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": null,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": null,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": null,
+          "allLevel": 60
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": null,
+          "allLevel": 54
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": null,
+          "allLevel": 46
+        },
+        {
+          "ordinaryLevel": 38,
+          "desecratedLevel": null,
+          "allLevel": 38
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": null,
+          "allLevel": 33
+        },
+        {
+          "ordinaryLevel": 25,
+          "desecratedLevel": null,
+          "allLevel": 25
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": null,
+          "allLevel": 24
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": null,
+          "allLevel": 24
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": null,
+          "allLevel": 24
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": null,
+          "allLevel": 24
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": null,
+          "allLevel": 24
+        }
+      ]
+    },
+    "Charms": {
+      "ordinaryT1Level": 83,
+      "desecratedT1Level": null,
+      "allT1Level": 83,
+      "poolCount": 1,
+      "byTier": [
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 67,
+          "desecratedLevel": null,
+          "allLevel": 67
+        },
+        {
+          "ordinaryLevel": 58,
+          "desecratedLevel": null,
+          "allLevel": 58
+        },
+        {
+          "ordinaryLevel": 47,
+          "desecratedLevel": null,
+          "allLevel": 47
+        },
+        {
+          "ordinaryLevel": 36,
+          "desecratedLevel": null,
+          "allLevel": 36
+        },
+        {
+          "ordinaryLevel": 26,
+          "desecratedLevel": null,
+          "allLevel": 26
+        },
+        {
+          "ordinaryLevel": 14,
+          "desecratedLevel": null,
+          "allLevel": 14
+        },
+        {
+          "ordinaryLevel": 10,
+          "desecratedLevel": null,
+          "allLevel": 10
+        },
+        {
+          "ordinaryLevel": 10,
+          "desecratedLevel": null,
+          "allLevel": 10
+        },
+        {
+          "ordinaryLevel": 10,
+          "desecratedLevel": null,
+          "allLevel": 10
+        },
+        {
+          "ordinaryLevel": 10,
+          "desecratedLevel": null,
+          "allLevel": 10
+        },
+        {
+          "ordinaryLevel": 10,
+          "desecratedLevel": null,
+          "allLevel": 10
+        },
+        {
+          "ordinaryLevel": 10,
+          "desecratedLevel": null,
+          "allLevel": 10
+        }
+      ]
+    },
+    "Waystones": {
+      "ordinaryT1Level": 1,
+      "desecratedT1Level": 78,
+      "allT1Level": 78,
+      "poolCount": 5,
+      "byTier": [
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 78,
+          "allLevel": 78
+        }
+      ]
+    },
+    "Fishing Rods": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 1,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 38,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 26,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Map Fragments": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Hideout Doodads": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Microtransactions": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Jewels": {
+      "ordinaryT1Level": 1,
+      "desecratedT1Level": 1,
+      "allT1Level": 1,
+      "poolCount": 9,
+      "byTier": [
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": 1,
+          "allLevel": 1
+        }
+      ]
+    },
+    "Divination Cards": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Misc Map Items": {
+      "ordinaryT1Level": 1,
+      "desecratedT1Level": null,
+      "allT1Level": 1,
+      "poolCount": 4,
+      "byTier": [
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        }
+      ]
+    },
+    "Leaguestones": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Pantheon Souls": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Pieces": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Abyss Jewels": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Incursion Items": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Delve Socketable Currency": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Incubators": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Shards": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Shard Hearts": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Quarterstaves": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 8,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Delve Stackable Socketable Currency": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Atlas Upgrade Items": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Hidden Items": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 51,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        }
+      ]
+    },
+    "Contracts": {
+      "ordinaryT1Level": 78,
+      "desecratedT1Level": null,
+      "allT1Level": 78,
+      "poolCount": 1,
+      "byTier": [
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        }
+      ]
+    },
+    "Heist Gear": {
+      "ordinaryT1Level": 83,
+      "desecratedT1Level": null,
+      "allT1Level": 83,
+      "poolCount": 4,
+      "byTier": [
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": null,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 45,
+          "desecratedLevel": null,
+          "allLevel": 45
+        },
+        {
+          "ordinaryLevel": 45,
+          "desecratedLevel": null,
+          "allLevel": 45
+        },
+        {
+          "ordinaryLevel": 45,
+          "desecratedLevel": null,
+          "allLevel": 45
+        },
+        {
+          "ordinaryLevel": 45,
+          "desecratedLevel": null,
+          "allLevel": 45
+        },
+        {
+          "ordinaryLevel": 45,
+          "desecratedLevel": null,
+          "allLevel": 45
+        },
+        {
+          "ordinaryLevel": 45,
+          "desecratedLevel": null,
+          "allLevel": 45
+        },
+        {
+          "ordinaryLevel": 45,
+          "desecratedLevel": null,
+          "allLevel": 45
+        },
+        {
+          "ordinaryLevel": 45,
+          "desecratedLevel": null,
+          "allLevel": 45
+        },
+        {
+          "ordinaryLevel": 45,
+          "desecratedLevel": null,
+          "allLevel": 45
+        },
+        {
+          "ordinaryLevel": 45,
+          "desecratedLevel": null,
+          "allLevel": 45
+        },
+        {
+          "ordinaryLevel": 45,
+          "desecratedLevel": null,
+          "allLevel": 45
+        }
+      ]
+    },
+    "Heist Tools": {
+      "ordinaryT1Level": 83,
+      "desecratedT1Level": null,
+      "allT1Level": 83,
+      "poolCount": 10,
+      "byTier": [
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        }
+      ]
+    },
+    "Heist Cloaks": {
+      "ordinaryT1Level": 83,
+      "desecratedT1Level": null,
+      "allT1Level": 83,
+      "poolCount": 2,
+      "byTier": [
+        {
+          "ordinaryLevel": 83,
+          "desecratedLevel": null,
+          "allLevel": 83
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": null,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 68,
+          "desecratedLevel": null,
+          "allLevel": 68
+        },
+        {
+          "ordinaryLevel": 68,
+          "desecratedLevel": null,
+          "allLevel": 68
+        },
+        {
+          "ordinaryLevel": 68,
+          "desecratedLevel": null,
+          "allLevel": 68
+        },
+        {
+          "ordinaryLevel": 68,
+          "desecratedLevel": null,
+          "allLevel": 68
+        },
+        {
+          "ordinaryLevel": 68,
+          "desecratedLevel": null,
+          "allLevel": 68
+        },
+        {
+          "ordinaryLevel": 68,
+          "desecratedLevel": null,
+          "allLevel": 68
+        },
+        {
+          "ordinaryLevel": 68,
+          "desecratedLevel": null,
+          "allLevel": 68
+        },
+        {
+          "ordinaryLevel": 68,
+          "desecratedLevel": null,
+          "allLevel": 68
+        },
+        {
+          "ordinaryLevel": 68,
+          "desecratedLevel": null,
+          "allLevel": 68
+        },
+        {
+          "ordinaryLevel": 68,
+          "desecratedLevel": null,
+          "allLevel": 68
+        },
+        {
+          "ordinaryLevel": 68,
+          "desecratedLevel": null,
+          "allLevel": 68
+        }
+      ]
+    },
+    "Heist Brooches": {
+      "ordinaryT1Level": 84,
+      "desecratedT1Level": null,
+      "allT1Level": 84,
+      "poolCount": 2,
+      "byTier": [
+        {
+          "ordinaryLevel": 84,
+          "desecratedLevel": null,
+          "allLevel": 84
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": null,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 45,
+          "desecratedLevel": null,
+          "allLevel": 45
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        }
+      ]
+    },
+    "Blueprints": {
+      "ordinaryT1Level": 78,
+      "desecratedT1Level": null,
+      "allT1Level": 78,
+      "poolCount": 1,
+      "byTier": [
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        },
+        {
+          "ordinaryLevel": 78,
+          "desecratedLevel": null,
+          "allLevel": 78
+        }
+      ]
+    },
+    "Trinkets": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Heist Targets": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Expedition Logbooks": {
+      "ordinaryT1Level": 1,
+      "desecratedT1Level": null,
+      "allT1Level": 1,
+      "poolCount": 1,
+      "byTier": [
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        }
+      ]
+    },
+    "Expedition Logbook": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Archnemesis Mods": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Spears": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 8,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Crossbows": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 9,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 76,
+          "desecratedLevel": 65,
+          "allLevel": 76
+        },
+        {
+          "ordinaryLevel": 72,
+          "desecratedLevel": 65,
+          "allLevel": 72
+        },
+        {
+          "ordinaryLevel": 72,
+          "desecratedLevel": 65,
+          "allLevel": 72
+        },
+        {
+          "ordinaryLevel": 72,
+          "desecratedLevel": 65,
+          "allLevel": 72
+        },
+        {
+          "ordinaryLevel": 72,
+          "desecratedLevel": 65,
+          "allLevel": 72
+        },
+        {
+          "ordinaryLevel": 72,
+          "desecratedLevel": 65,
+          "allLevel": 72
+        },
+        {
+          "ordinaryLevel": 72,
+          "desecratedLevel": 65,
+          "allLevel": 72
+        },
+        {
+          "ordinaryLevel": 72,
+          "desecratedLevel": 65,
+          "allLevel": 72
+        },
+        {
+          "ordinaryLevel": 72,
+          "desecratedLevel": 65,
+          "allLevel": 72
+        },
+        {
+          "ordinaryLevel": 72,
+          "desecratedLevel": 65,
+          "allLevel": 72
+        },
+        {
+          "ordinaryLevel": 72,
+          "desecratedLevel": 65,
+          "allLevel": 72
+        },
+        {
+          "ordinaryLevel": 72,
+          "desecratedLevel": 65,
+          "allLevel": 72
+        }
+      ]
+    },
+    "Foci": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 10,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 71,
+          "desecratedLevel": 65,
+          "allLevel": 71
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 48,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Instance Local Items": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Sentinels": {
+      "ordinaryT1Level": 1,
+      "desecratedT1Level": null,
+      "allT1Level": 1,
+      "poolCount": 1,
+      "byTier": [
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        }
+      ]
+    },
+    "Memories": {
+      "ordinaryT1Level": 1,
+      "desecratedT1Level": null,
+      "allT1Level": 1,
+      "poolCount": 4,
+      "byTier": [
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        }
+      ]
+    },
+    "Flails": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 4,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Relics": {
+      "ordinaryT1Level": 80,
+      "desecratedT1Level": null,
+      "allT1Level": 80,
+      "poolCount": 3,
+      "byTier": [
+        {
+          "ordinaryLevel": 80,
+          "desecratedLevel": null,
+          "allLevel": 80
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": null,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 70,
+          "desecratedLevel": null,
+          "allLevel": 70
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": null,
+          "allLevel": 60
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": null,
+          "allLevel": 60
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": null,
+          "allLevel": 60
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": null,
+          "allLevel": 60
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": null,
+          "allLevel": 60
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": null,
+          "allLevel": 60
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": null,
+          "allLevel": 60
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": null,
+          "allLevel": 60
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": null,
+          "allLevel": 60
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": null,
+          "allLevel": 60
+        }
+      ]
+    },
+    "Sanctified Relics": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Breachstones": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Vault Keys": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Trial Coins": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Bucklers": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 11,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        }
+      ]
+    },
+    "Traps": {
+      "ordinaryT1Level": 81,
+      "desecratedT1Level": null,
+      "allT1Level": 81,
+      "poolCount": 1,
+      "byTier": [
+        {
+          "ordinaryLevel": 81,
+          "desecratedLevel": null,
+          "allLevel": 81
+        },
+        {
+          "ordinaryLevel": 70,
+          "desecratedLevel": null,
+          "allLevel": 70
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": null,
+          "allLevel": 60
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": null,
+          "allLevel": 54
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": null,
+          "allLevel": 46
+        },
+        {
+          "ordinaryLevel": 38,
+          "desecratedLevel": null,
+          "allLevel": 38
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": null,
+          "allLevel": 33
+        },
+        {
+          "ordinaryLevel": 25,
+          "desecratedLevel": null,
+          "allLevel": 25
+        },
+        {
+          "ordinaryLevel": 16,
+          "desecratedLevel": null,
+          "allLevel": 16
+        },
+        {
+          "ordinaryLevel": 15,
+          "desecratedLevel": null,
+          "allLevel": 15
+        },
+        {
+          "ordinaryLevel": 15,
+          "desecratedLevel": null,
+          "allLevel": 15
+        },
+        {
+          "ordinaryLevel": 15,
+          "desecratedLevel": null,
+          "allLevel": 15
+        },
+        {
+          "ordinaryLevel": 15,
+          "desecratedLevel": null,
+          "allLevel": 15
+        }
+      ]
+    },
+    "Inscribed Ultimatum": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Augment": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Tablet": {
+      "ordinaryT1Level": 1,
+      "desecratedT1Level": null,
+      "allT1Level": 1,
+      "poolCount": 8,
+      "byTier": [
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        },
+        {
+          "ordinaryLevel": 1,
+          "desecratedLevel": null,
+          "allLevel": 1
+        }
+      ]
+    },
+    "Omen": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Talismans": {
+      "ordinaryT1Level": 82,
+      "desecratedT1Level": 65,
+      "allT1Level": 82,
+      "poolCount": 8,
+      "byTier": [
+        {
+          "ordinaryLevel": 82,
+          "desecratedLevel": 65,
+          "allLevel": 82
+        },
+        {
+          "ordinaryLevel": 75,
+          "desecratedLevel": 65,
+          "allLevel": 75
+        },
+        {
+          "ordinaryLevel": 65,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 60,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 54,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 46,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 33,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        },
+        {
+          "ordinaryLevel": 24,
+          "desecratedLevel": 65,
+          "allLevel": 65
+        }
+      ]
+    },
+    "Uncut Skill Gems": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Uncut Support Gems": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Uncut Spirit Gems": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Transcendent Arm": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Transcendent Leg": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Wombgifts": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    },
+    "Pinnacle Keys": {
+      "ordinaryT1Level": null,
+      "desecratedT1Level": null,
+      "allT1Level": null,
+      "poolCount": 0,
+      "byTier": []
+    }
+  }
+}

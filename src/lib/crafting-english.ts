@@ -64,6 +64,15 @@ export function englishItemPreview(item: CraftItem, data: CraftData) {
     if (!rendered.complete) { complete = false; warnings.push(`词缀「${mod.name || mod.id}」的英文数值需要核对。`) }
     lines.push(`{ ${mod.kind === 'prefix' ? 'Prefix' : 'Suffix'} Modifier "${mod.name}" (Tier: ${affix.tier ?? modTier(base, mod, data)})${affix.fractured ? ' — Fractured' : ''} }`, rendered.text || 'Unresolved modifier')
   }
+  if (item.pendingDesecration) lines.push('--------', `Unrevealed Desecrated ${item.pendingDesecration.kind === 'prefix' ? 'Prefix' : 'Suffix'}`)
+  if (item.corruptionImplicit) {
+    const mod = data.mods[item.corruptionImplicit.modId!]
+    const rendered = mod && englishModText(mod, item.corruptionImplicit.values)
+    if (!rendered?.complete) { complete = false; warnings.push('腐化附魔的英文数值需要核对。') }
+    lines.push('--------', '{ Corrupted Implicit Modifier }', rendered?.text || 'Unresolved modifier')
+  }
+  if (item.extraSocket) lines.push('--------', 'Additional Rune Sockets: 1')
+  if (item.corrupted) lines.push('--------', 'Corrupted')
   if (item.protected) { complete = false; warnings.push('物品含特殊状态，英文预览未覆盖全部特殊属性。') }
   if (item.rarity === 'rare' || item.rarity === 'unique') warnings.push('物品名称使用英文底材名；未翻译随机名称或传奇名称。')
   return { text: lines.join('\n'), warnings, complete }

@@ -1,0 +1,832 @@
+{
+  "game": "Path of Exile 2",
+  "copyright": "Item art © Grinding Gear Games",
+  "icons": {
+    "transmute": {
+      "itemId": "Metadata/Items/Currency/CurrencyUpgradeToMagic",
+      "name": "Orb of Transmutation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToMagic.webp",
+      "src": "/currency/poe2/CurrencyUpgradeToMagic.webp",
+      "sha256": "7831effa019d1f3948d0760046801d57f38a9f0e1c500b15a622f94fba437cef"
+    },
+    "transmute:greater": {
+      "itemId": "Metadata/Items/Currency/CurrencyUpgradeToMagic2",
+      "name": "Greater Orb of Transmutation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToMagic.webp",
+      "src": "/currency/poe2/CurrencyUpgradeToMagic.webp",
+      "sha256": "7831effa019d1f3948d0760046801d57f38a9f0e1c500b15a622f94fba437cef"
+    },
+    "transmute:perfect": {
+      "itemId": "Metadata/Items/Currency/CurrencyUpgradeToMagic3",
+      "name": "Perfect Orb of Transmutation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToMagic.webp",
+      "src": "/currency/poe2/CurrencyUpgradeToMagic.webp",
+      "sha256": "7831effa019d1f3948d0760046801d57f38a9f0e1c500b15a622f94fba437cef"
+    },
+    "augment": {
+      "itemId": "Metadata/Items/Currency/CurrencyAddModToMagic",
+      "name": "Orb of Augmentation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToMagic.webp",
+      "src": "/currency/poe2/CurrencyAddModToMagic.webp",
+      "sha256": "b83b03f455f31f26038b9738e0ea9e74471d33aa4f2788738bf6e1174e630703"
+    },
+    "augment:greater": {
+      "itemId": "Metadata/Items/Currency/CurrencyAddModToMagic2",
+      "name": "Greater Orb of Augmentation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToMagic.webp",
+      "src": "/currency/poe2/CurrencyAddModToMagic.webp",
+      "sha256": "b83b03f455f31f26038b9738e0ea9e74471d33aa4f2788738bf6e1174e630703"
+    },
+    "augment:perfect": {
+      "itemId": "Metadata/Items/Currency/CurrencyAddModToMagic3",
+      "name": "Perfect Orb of Augmentation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToMagic.webp",
+      "src": "/currency/poe2/CurrencyAddModToMagic.webp",
+      "sha256": "b83b03f455f31f26038b9738e0ea9e74471d33aa4f2788738bf6e1174e630703"
+    },
+    "regal": {
+      "itemId": "Metadata/Items/Currency/CurrencyUpgradeMagicToRare",
+      "name": "Regal Orb",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.webp",
+      "src": "/currency/poe2/CurrencyUpgradeMagicToRare.webp",
+      "sha256": "2134f6d9eb4116f7308cd5bb9231e033ee110cd74a44dd9fabf095d3a702a319"
+    },
+    "regal:greater": {
+      "itemId": "Metadata/Items/Currency/CurrencyUpgradeMagicToRare2",
+      "name": "Greater Regal Orb",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.webp",
+      "src": "/currency/poe2/CurrencyUpgradeMagicToRare.webp",
+      "sha256": "2134f6d9eb4116f7308cd5bb9231e033ee110cd74a44dd9fabf095d3a702a319"
+    },
+    "regal:perfect": {
+      "itemId": "Metadata/Items/Currency/CurrencyUpgradeMagicToRare3",
+      "name": "Perfect Regal Orb",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.webp",
+      "src": "/currency/poe2/CurrencyUpgradeMagicToRare.webp",
+      "sha256": "2134f6d9eb4116f7308cd5bb9231e033ee110cd74a44dd9fabf095d3a702a319"
+    },
+    "alchemy": {
+      "itemId": "Metadata/Items/Currency/CurrencyUpgradeToRare",
+      "name": "Orb of Alchemy",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToRare.webp",
+      "src": "/currency/poe2/CurrencyUpgradeToRare.webp",
+      "sha256": "c45cfe686e96d831634051fca8f29cfe9e804db5df92753df394ab35f3a39578"
+    },
+    "exalt": {
+      "itemId": "Metadata/Items/Currency/CurrencyAddModToRare",
+      "name": "Exalted Orb",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToRare.webp",
+      "src": "/currency/poe2/CurrencyAddModToRare.webp",
+      "sha256": "4d7620df0cf04dcf0068669d6c2ec3864441bdc33cdca8dfc45bef4711d2cf7b"
+    },
+    "exalt:greater": {
+      "itemId": "Metadata/Items/Currency/CurrencyAddModToRare2",
+      "name": "Greater Exalted Orb",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToRare.webp",
+      "src": "/currency/poe2/CurrencyAddModToRare.webp",
+      "sha256": "4d7620df0cf04dcf0068669d6c2ec3864441bdc33cdca8dfc45bef4711d2cf7b"
+    },
+    "exalt:perfect": {
+      "itemId": "Metadata/Items/Currency/CurrencyAddModToRare3",
+      "name": "Perfect Exalted Orb",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToRare.webp",
+      "src": "/currency/poe2/CurrencyAddModToRare.webp",
+      "sha256": "4d7620df0cf04dcf0068669d6c2ec3864441bdc33cdca8dfc45bef4711d2cf7b"
+    },
+    "chaos": {
+      "itemId": "Metadata/Items/Currency/CurrencyRerollRare",
+      "name": "Chaos Orb",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyRerollRare.webp",
+      "src": "/currency/poe2/CurrencyRerollRare.webp",
+      "sha256": "410b1785d02b13a71fcdd8309ead23c40e70f0dee7a16c4b475c397459c2879b"
+    },
+    "chaos:greater": {
+      "itemId": "Metadata/Items/Currency/CurrencyRerollRare2",
+      "name": "Greater Chaos Orb",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyRerollRare.webp",
+      "src": "/currency/poe2/CurrencyRerollRare.webp",
+      "sha256": "410b1785d02b13a71fcdd8309ead23c40e70f0dee7a16c4b475c397459c2879b"
+    },
+    "chaos:perfect": {
+      "itemId": "Metadata/Items/Currency/CurrencyRerollRare3",
+      "name": "Perfect Chaos Orb",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyRerollRare.webp",
+      "src": "/currency/poe2/CurrencyRerollRare.webp",
+      "sha256": "410b1785d02b13a71fcdd8309ead23c40e70f0dee7a16c4b475c397459c2879b"
+    },
+    "annul": {
+      "itemId": "Metadata/Items/Currency/CurrencyRemoveMod",
+      "name": "Orb of Annulment",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/AnnullOrb.webp",
+      "src": "/currency/poe2/AnnullOrb.webp",
+      "sha256": "f1d346c37e81ebe5344611bc8e6d72e89c8b12c239e3640312e691a5726ba579"
+    },
+    "divine": {
+      "itemId": "Metadata/Items/Currency/CurrencyModValues",
+      "name": "Divine Orb",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyModValues.webp",
+      "src": "/currency/poe2/CurrencyModValues.webp",
+      "sha256": "c1131ed6363049c70acf72ca9d8c675bde90fd44b49344538afe615d3a49cdd9"
+    },
+    "fracture": {
+      "itemId": "Metadata/Items/Currency/CurrencyFractureRare",
+      "name": "Fracturing Orb",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/FracturingOrb.webp",
+      "src": "/currency/poe2/FracturingOrb.webp",
+      "sha256": "93d1cea46fba412aefe835be43d2410dbfcad044229e55b3e35e219ad59be180"
+    },
+    "vaal": {
+      "itemId": "Metadata/Items/Currency/CurrencyCorrupt",
+      "name": "Vaal Orb",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyVaal.webp",
+      "src": "/currency/poe2/CurrencyVaal.webp",
+      "sha256": "2af419badfa4311fda3912f38dbf313f4cd00627cb20acdc115d0791aaad2ec6"
+    },
+    "omen:exalt-prefix": {
+      "itemId": "Metadata/Items/Currency/OmenOnExaltAddPrefixes",
+      "name": "Omen of Sinistral Exaltation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens2Yellow.webp",
+      "src": "/currency/poe2/VoodooOmens2Yellow.webp",
+      "sha256": "b1772e4c875f1753a38bbd886a3f5c9a9228e1061390de58d181ae9b7878fd2e"
+    },
+    "omen:exalt-suffix": {
+      "itemId": "Metadata/Items/Currency/OmenOnExaltAddSuffixes",
+      "name": "Omen of Dextral Exaltation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens3Yellow.webp",
+      "src": "/currency/poe2/VoodooOmens3Yellow.webp",
+      "sha256": "4b156627fb00eeafa4a213e107435e11ef1b5bcd0022e9b0b35a139a942f96d1"
+    },
+    "omen:exalt-double": {
+      "itemId": "Metadata/Items/Currency/OmenOnExaltAddTwoMods",
+      "name": "Omen of Greater Exaltation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens1Yellow.webp",
+      "src": "/currency/poe2/VoodooOmens1Yellow.webp",
+      "sha256": "0b8625c88602fce18a8668d434def40b2e60b54e1c3d5609a75dfa86f0470aa2"
+    },
+    "omen:regal-prefix": {
+      "itemId": "Metadata/Items/Currency/OmenOnRegalPrefix",
+      "name": "Omen of Sinistral Coronation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens1Red.webp",
+      "src": "/currency/poe2/VoodooOmens1Red.webp",
+      "sha256": "429a7251c438aa3e606ba3e0d680d70195deccc22c518ac549e52aae6bf2240f"
+    },
+    "omen:regal-suffix": {
+      "itemId": "Metadata/Items/Currency/OmenOnRegalSuffix",
+      "name": "Omen of Dextral Coronation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens2Red.webp",
+      "src": "/currency/poe2/VoodooOmens2Red.webp",
+      "sha256": "b1ccd519ba3cf4fe36a0b8052dd710bdd295a661a30962cf29f3f97a2f785cf8"
+    },
+    "omen:annul-prefix": {
+      "itemId": "Metadata/Items/Currency/OmenOnAnnulRemovePrefixes",
+      "name": "Omen of Sinistral Annulment",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens2Purple.webp",
+      "src": "/currency/poe2/VoodooOmens2Purple.webp",
+      "sha256": "b0f068d469bc6a41f68da8e764e32491ae0e38e8f03f952def1f3a77bd49a8af"
+    },
+    "omen:annul-suffix": {
+      "itemId": "Metadata/Items/Currency/OmenOnAnnulRemoveSuffixes",
+      "name": "Omen of Dextral Annulment",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens3Purple.webp",
+      "src": "/currency/poe2/VoodooOmens3Purple.webp",
+      "sha256": "f2c88f97894ed03f56c67053a976aa2a48ccc6c00374d55a6ca1537883e930b7"
+    },
+    "omen:annul-double": {
+      "itemId": "Metadata/Items/Currency/OmenOnAnnulRemoveTwoMods",
+      "name": "Omen of Greater Annulment",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens1Purple.webp",
+      "src": "/currency/poe2/VoodooOmens1Purple.webp",
+      "sha256": "664496c0d8c27411ca5bb4098b25862e5a117f5da3d2629847fae0ee0de46479"
+    },
+    "omen:chaos-prefix": {
+      "itemId": "Metadata/Items/Currency/OmenOnChaosPrefix",
+      "name": "Omen of Sinistral Erasure",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens2Dark.webp",
+      "src": "/currency/poe2/VoodooOmens2Dark.webp",
+      "sha256": "cf46e87c1a5e7e5cf5df3279d58833397a7adc74389caec6fe682710cb655ee0"
+    },
+    "omen:chaos-suffix": {
+      "itemId": "Metadata/Items/Currency/OmenOnChaosSuffix",
+      "name": "Omen of Dextral Erasure",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens3Dark.webp",
+      "src": "/currency/poe2/VoodooOmens3Dark.webp",
+      "sha256": "e9990aef71611565a82e56392547193884f28f748202526a8cbe88d99f801f5b"
+    },
+    "omen:chaos-lowest": {
+      "itemId": "Metadata/Items/Currency/OmenOnChaosLowestLevelMod",
+      "name": "Omen of Whittling",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens1Dark.webp",
+      "src": "/currency/poe2/VoodooOmens1Dark.webp",
+      "sha256": "14771b877f39e0e5af9473b47135a98804a50e167928088f66d38c4c9d9f00d5"
+    },
+    "omen:essence-prefix": {
+      "itemId": "Metadata/Items/Currency/OmenOnPerfectEssencePrefix",
+      "name": "Omen of Sinistral Crystallisation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/OmenOnPerfectEssencePrefix.webp",
+      "src": "/currency/poe2/OmenOnPerfectEssencePrefix.webp",
+      "sha256": "43b94fe02633bcd90a4392c4d77e68423e82701ff1ae1a9d33c63b958dd2a5f0"
+    },
+    "omen:essence-suffix": {
+      "itemId": "Metadata/Items/Currency/OmenOnPerfectEssenceSuffix",
+      "name": "Omen of Dextral Crystallisation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/OmenOnPerfectEssenceSuffix.webp",
+      "src": "/currency/poe2/OmenOnPerfectEssenceSuffix.webp",
+      "sha256": "e081cb695795a4296398f476bf76942d19626de9b54937b1d3ca330b0f81ef21"
+    },
+    "omen:desecrate-prefix": {
+      "itemId": "Metadata/Items/Currency/OmenOnAbyssAddPrefixes",
+      "name": "Omen of Sinistral Necromancy",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/OmenOnAbyssAddPrefixes.webp",
+      "src": "/currency/poe2/OmenOnAbyssAddPrefixes.webp",
+      "sha256": "1e90a104893b7cd4718b82b07c13ca82980e4d5f63965d3024659d9bd880f7cd"
+    },
+    "omen:desecrate-suffix": {
+      "itemId": "Metadata/Items/Currency/OmenOnAbyssAddSuffixes",
+      "name": "Omen of Dextral Necromancy",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/OmenOnAbyssAddSuffixes.webp",
+      "src": "/currency/poe2/OmenOnAbyssAddSuffixes.webp",
+      "sha256": "a80a4974f9aef088bf00ee40d9e078e78298aba0045fbc25e115148de69380da"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceLife": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceLife",
+      "name": "Lesser Essence of the Body",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LifeEssenceLesser.webp",
+      "src": "/currency/poe2/LifeEssenceLesser.webp",
+      "sha256": "d9219b3240cdde7a5ac032a8543f10402dc078d575ef21f575281e8ceeb2feff"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceMana": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceMana",
+      "name": "Lesser Essence of the Mind",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ManaEssenceLesser.webp",
+      "src": "/currency/poe2/ManaEssenceLesser.webp",
+      "sha256": "3f460afb5b443162dc3aa0dff0112196a770094e6b1a58bdf70ccd8e96d1d367"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceDefences": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceDefences",
+      "name": "Lesser Essence of Enhancement",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssenceLesser.webp",
+      "src": "/currency/poe2/DefencesEssenceLesser.webp",
+      "sha256": "3e877c4aa577e3e07be97820bee6466890deaa08e7e622857c9801eb5f2967d9"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssencePhysical": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssencePhysical",
+      "name": "Lesser Essence of Abrasion",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/PhysicalEssenceLesser.webp",
+      "src": "/currency/poe2/PhysicalEssenceLesser.webp",
+      "sha256": "95e9b5845b8343b40462453c52bd72d1adf98c9329e4e7e5c97301bce59c16bc"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceFire": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceFire",
+      "name": "Lesser Essence of Flames",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/FireEssenceLesser.webp",
+      "src": "/currency/poe2/FireEssenceLesser.webp",
+      "sha256": "d5bddee747c8b2d3f69183502c6b8c99d184028fa73877d2b79cec3499125874"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceCold": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceCold",
+      "name": "Lesser Essence of Ice",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ColdEssenceLesser.webp",
+      "src": "/currency/poe2/ColdEssenceLesser.webp",
+      "sha256": "6344c723dc2ce33fb5b70ce8592248eff4c6716926f43cebb9ac90b8cc13e03b"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceLightning": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceLightning",
+      "name": "Lesser Essence of Electricity",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LightningEssenceLesser.webp",
+      "src": "/currency/poe2/LightningEssenceLesser.webp",
+      "sha256": "2f9c74284dd66fa4b832eab0947fd788384bff600174a8bc14ac956e6f97af38"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceChaos": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceChaos",
+      "name": "Lesser Essence of Ruin",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ChaosEssenceLesser.webp",
+      "src": "/currency/poe2/ChaosEssenceLesser.webp",
+      "sha256": "a97221fdcb1e54f76752772ecf32fc9a07db487f4062f2d15fa893aac6262969"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceAttack": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceAttack",
+      "name": "Lesser Essence of Battle",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttackEssenceLesser.webp",
+      "src": "/currency/poe2/AttackEssenceLesser.webp",
+      "sha256": "7130a8eabaf53a53a337b83c8f4e09f67da81f96043a17e396f4e3d2d95b785e"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceCaster": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceCaster",
+      "name": "Lesser Essence of Sorcery",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/CasterEssenceLesser.webp",
+      "src": "/currency/poe2/CasterEssenceLesser.webp",
+      "sha256": "3463280933cc70ec668a3c7d5ec37f6194f3965903ef4ecfd61ea6ca6c0dd364"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceSpeed": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceSpeed",
+      "name": "Lesser Essence of Haste",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/SpeedEssenceLesser.webp",
+      "src": "/currency/poe2/SpeedEssenceLesser.webp",
+      "sha256": "5393bfdc54d6be0178ee885b932a39aee00d57e609b44ed2bbe31e64658e9e30"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceAttribute": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceAttribute",
+      "name": "Lesser Essence of the Infinite",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssenceLesser.webp",
+      "src": "/currency/poe2/AttributeEssenceLesser.webp",
+      "sha256": "8ca9ad2f5772c6b0545c798b57651eea57222c780119387ce84d6d3da4677ec5"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceLife": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceLife",
+      "name": "Essence of the Body",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LifeEssence.webp",
+      "src": "/currency/poe2/LifeEssence.webp",
+      "sha256": "82b99169aa7303ad23a846cd5f599064ee6255d66813a61c263d4adff05594e5"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceMana": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceMana",
+      "name": "Essence of the Mind",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ManaEssence.webp",
+      "src": "/currency/poe2/ManaEssence.webp",
+      "sha256": "f6d0be390956a2f75f231d1aefe5fc8766393aa3a450832faef9d86db1a3860c"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceDefences": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceDefences",
+      "name": "Essence of Enhancement",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssence.webp",
+      "src": "/currency/poe2/DefencesEssence.webp",
+      "sha256": "f1f6817023485d09afb8df44fa5661453f9424c90054947e213d719bb329a4cc"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssencePhysical": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssencePhysical",
+      "name": "Essence of Abrasion",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/PhysicalEssence.webp",
+      "src": "/currency/poe2/PhysicalEssence.webp",
+      "sha256": "b3ffed9cf60b93683a4d4ef28d6eb109b2a471a653076f2af9ab41b954d7de52"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceFire": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceFire",
+      "name": "Essence of Flames",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/FireEssence.webp",
+      "src": "/currency/poe2/FireEssence.webp",
+      "sha256": "40b70c02b1750aab32c065d034ab69426c2ba33f9d1990050ccb544511f6a576"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceCold": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceCold",
+      "name": "Essence of Ice",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ColdEssence.webp",
+      "src": "/currency/poe2/ColdEssence.webp",
+      "sha256": "f8b655b387f7017960f52fd9b7ed28df503beeb600ed2a45e81cde8fd1e57291"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceLightning": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceLightning",
+      "name": "Essence of Electricity",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LightningEssence.webp",
+      "src": "/currency/poe2/LightningEssence.webp",
+      "sha256": "b6d0c99675f4a4bcd4594f339293e8b15a850f92ac0f3bd8080e71c3a7cc2124"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceChaos": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceChaos",
+      "name": "Essence of Ruin",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ChaosEssence.webp",
+      "src": "/currency/poe2/ChaosEssence.webp",
+      "sha256": "77b42f8861e2f7353c4bc32785e804c53fe444ed4af22fab5251a56c7a8d9621"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceAttack": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceAttack",
+      "name": "Essence of Battle",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttackEssence.webp",
+      "src": "/currency/poe2/AttackEssence.webp",
+      "sha256": "f6d8b73ef1e0bfec0264dfa1d1192556c3f74b71dc6291900b057bdff2f7183d"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceCaster": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceCaster",
+      "name": "Essence of Sorcery",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/CasterEssence.webp",
+      "src": "/currency/poe2/CasterEssence.webp",
+      "sha256": "10fdc2a6a44344b8afeedd45b98564463786f79cd6d7259e64da2858a99a2a68"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceSpeed": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceSpeed",
+      "name": "Essence of Haste",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/SpeedEssence.webp",
+      "src": "/currency/poe2/SpeedEssence.webp",
+      "sha256": "16161f89d214be298cb4b688c294b365e1a08e32a014f465ab8a1bd8817b5175"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceAttribute": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceAttribute",
+      "name": "Essence of the Infinite",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssence.webp",
+      "src": "/currency/poe2/AttributeEssence.webp",
+      "sha256": "e2ed3204d13d5c6900374e46ab9cc73ac2778530bc0c6b045b9418599db06c15"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceLife": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceLife",
+      "name": "Greater Essence of the Body",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterLifeEssence.webp",
+      "src": "/currency/poe2/GreaterLifeEssence.webp",
+      "sha256": "76c95932c626cc1001f4d2f3934962fbbae08a2820ac65eee25b85b3062a010d"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceMana": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceMana",
+      "name": "Greater Essence of the Mind",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterManaEssence.webp",
+      "src": "/currency/poe2/GreaterManaEssence.webp",
+      "sha256": "cb86635ef329122184d19415da55ae149e2cc1d5fa895192139ffeb0eb3d255e"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceDefences": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceDefences",
+      "name": "Greater Essence of Enhancement",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterDefencesEssence.webp",
+      "src": "/currency/poe2/GreaterDefencesEssence.webp",
+      "sha256": "5abf22bb0ca70fdff018414998b67a2af57c039ca35f4c6975ca206711c389ef"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssencePhysical": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssencePhysical",
+      "name": "Greater Essence of Abrasion",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterPhysicalEssence.webp",
+      "src": "/currency/poe2/GreaterPhysicalEssence.webp",
+      "sha256": "d10e9669c9d2b3515af882c7d0bb238bc497a28709c79b6c1ec868cf961eb115"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceFire": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceFire",
+      "name": "Greater Essence of Flames",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterFireEssence.webp",
+      "src": "/currency/poe2/GreaterFireEssence.webp",
+      "sha256": "5e3cddf8b61f7a24e1794feb10e7bc97db309284431601289d63215a3d45ccff"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceCold": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceCold",
+      "name": "Greater Essence of Ice",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterColdEssence.webp",
+      "src": "/currency/poe2/GreaterColdEssence.webp",
+      "sha256": "55dc5618378b6072e7873e4e8efcb5e611042612e5f613e57447343a52de01df"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceLightning": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceLightning",
+      "name": "Greater Essence of Electricity",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterLightningEssence.webp",
+      "src": "/currency/poe2/GreaterLightningEssence.webp",
+      "sha256": "c04f02624a126491d979e6e4703c60424458e1ff7f3cdb3597aa550301e4c2d7"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceChaos": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceChaos",
+      "name": "Greater Essence of Ruin",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterChaosEssence.webp",
+      "src": "/currency/poe2/GreaterChaosEssence.webp",
+      "sha256": "44adcf23cfb9825f5a785c302f2bdb38913ac9809aa7c6a014bc9a61493a0121"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceAttack": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceAttack",
+      "name": "Greater Essence of Battle",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterAttackEssence.webp",
+      "src": "/currency/poe2/GreaterAttackEssence.webp",
+      "sha256": "327586370562eb26398bc13a224349b2ab7bac7f438af6c6368f3aab38ebc6e4"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceCaster": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceCaster",
+      "name": "Greater Essence of Sorcery",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterCasterEssence.webp",
+      "src": "/currency/poe2/GreaterCasterEssence.webp",
+      "sha256": "e2adf4aa529844c2cb28745ef6e504fbd68cb3b6d0e02a167da04cb351e9ed2e"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceSpeed": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceSpeed",
+      "name": "Greater Essence of Haste",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterSpeedEssence.webp",
+      "src": "/currency/poe2/GreaterSpeedEssence.webp",
+      "sha256": "60736924e7898f5962c80344499b26e2898868ea65f0b5e50da0f8919af8360d"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceAttribute": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceAttribute",
+      "name": "Greater Essence of the Infinite",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterAttributeEssence.webp",
+      "src": "/currency/poe2/GreaterAttributeEssence.webp",
+      "sha256": "d054c22e8bfa4b2bcf94590950818ae5d4fb7a3f93d2baaaf5c24306e791c72b"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceLife": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceLife",
+      "name": "Perfect Essence of the Body",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LifeEssencePerfect.webp",
+      "src": "/currency/poe2/LifeEssencePerfect.webp",
+      "sha256": "3b4d9518ad91d00d36447d06e155ecf6599000c493d3e793d6dacb02dcf9c951"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceMana": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceMana",
+      "name": "Perfect Essence of the Mind",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ManaEssencePerfect.webp",
+      "src": "/currency/poe2/ManaEssencePerfect.webp",
+      "sha256": "0f7f33951fb9436ad90ab782900156970f4d8e57e4d0af57d0f9a8fc2863e6cd"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceDefences": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceDefences",
+      "name": "Perfect Essence of Enhancement",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/DefencesEssencePerfect.webp",
+      "src": "/currency/poe2/DefencesEssencePerfect.webp",
+      "sha256": "0394ee29cda87a0c54e8247ef5ad166ccd64f25d74fa83ab72c3bc82b4ef53b3"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssencePhysical": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssencePhysical",
+      "name": "Perfect Essence of Abrasion",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/PhysicalEssencePerfect.webp",
+      "src": "/currency/poe2/PhysicalEssencePerfect.webp",
+      "sha256": "812bc81c4cd42c57d4aeb4927814b511d5ed17c9497b0f283d5dc15f68985879"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceFire": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceFire",
+      "name": "Perfect Essence of Flames",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/FireEssencePerfect.webp",
+      "src": "/currency/poe2/FireEssencePerfect.webp",
+      "sha256": "d5250698ce43568fded630be5477a42f03fcf46e739a7200feeb835ff941907a"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceCold": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceCold",
+      "name": "Perfect Essence of Ice",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ColdEssencePerfect.webp",
+      "src": "/currency/poe2/ColdEssencePerfect.webp",
+      "sha256": "a7fea0e4accce557cf1b754111319870c927472bf1120e75cab5a9f0b79f8ad1"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceLightning": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceLightning",
+      "name": "Perfect Essence of Electricity",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LightningEssencePerfect.webp",
+      "src": "/currency/poe2/LightningEssencePerfect.webp",
+      "sha256": "20b8b2dacc1512d2cab313b426c988dde5a55591fa593c22a6ece8c97181d9eb"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceChaos": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceChaos",
+      "name": "Perfect Essence of Ruin",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ChaosEssencePerfect.webp",
+      "src": "/currency/poe2/ChaosEssencePerfect.webp",
+      "sha256": "d05c91f19373e4750d8a1490f079dd965dd135e7bc026cbee7d00729f6261ed2"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceAttack": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceAttack",
+      "name": "Perfect Essence of Battle",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttackEssencePerfect.webp",
+      "src": "/currency/poe2/AttackEssencePerfect.webp",
+      "sha256": "7476b911530d62d27545ea8797cd9fedb1f356384f57a0183579361a7c655ad5"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceCaster": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceCaster",
+      "name": "Perfect Essence of Sorcery",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/CasterEssencePerfect.webp",
+      "src": "/currency/poe2/CasterEssencePerfect.webp",
+      "sha256": "04c9d41326e1f3e323c7639464c7f7a45e609f83ab7727ff185eae07f6fbe9a3"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceSpeed": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceSpeed",
+      "name": "Perfect Essence of Haste",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/SpeedEssencePerfect.webp",
+      "src": "/currency/poe2/SpeedEssencePerfect.webp",
+      "sha256": "23fca5c7c687ef833848f5b53736a7c2f5ac32f46b1d76aa68f71b7afa6da556"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceAttribute": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceAttribute",
+      "name": "Perfect Essence of the Infinite",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AttributeEssencePerfect.webp",
+      "src": "/currency/poe2/AttributeEssencePerfect.webp",
+      "sha256": "ab90de37724ec4cc0aa539644acbaeed136a9d71587796bb88d81bd0c06e9a07"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceCritical": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceCritical",
+      "name": "Lesser Essence of Seeking",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/CriticalEssenceLesser.webp",
+      "src": "/currency/poe2/CriticalEssenceLesser.webp",
+      "sha256": "0398bfced7a805486866376b0a604fccec9170df5f1a03c4467749111b93b769"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceCritical": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceCritical",
+      "name": "Essence of Seeking",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/CriticalEssence.webp",
+      "src": "/currency/poe2/CriticalEssence.webp",
+      "sha256": "04aa14c25f53fcaf96566efbdc4f258fa1fa41cb965b279abc0a7661fb38e05e"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceCritical": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceCritical",
+      "name": "Greater Essence of Seeking",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterCriticalEssence.webp",
+      "src": "/currency/poe2/GreaterCriticalEssence.webp",
+      "sha256": "3c7cc173189b64a0b2ce28e212e24ef3a8dba52fc5b3492388fb9ac79476ae1e"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceCritical": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceCritical",
+      "name": "Perfect Essence of Seeking",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/CriticalEssencePerfect.webp",
+      "src": "/currency/poe2/CriticalEssencePerfect.webp",
+      "sha256": "1502d8ac2b82eef55354a06bc89a64c591f9e61826144df1eb1cf078113dd576"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceFireResist": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceFireResist",
+      "name": "Lesser Essence of Insulation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/FireResistanceEssenceLesser.webp",
+      "src": "/currency/poe2/FireResistanceEssenceLesser.webp",
+      "sha256": "b8b6838818bc7d17f44e2bd169407b5bb5cb343de87df91e04128bc10816968e"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceFireResist": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceFireResist",
+      "name": "Essence of Insulation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/FireResistanceEssence.webp",
+      "src": "/currency/poe2/FireResistanceEssence.webp",
+      "sha256": "68e682e071b0f42aef6e6887ac4db988479f9262e65f5a888fce198812fe67cc"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceFireResist": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceFireResist",
+      "name": "Greater Essence of Insulation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterFireResistanceEssence.webp",
+      "src": "/currency/poe2/GreaterFireResistanceEssence.webp",
+      "sha256": "0dfb61e56559d3731066225ab9f1fd9e1f7d59f22cc5c8122bf671754d8a4f86"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceFireResist": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceFireResist",
+      "name": "Perfect Essence of Insulation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/FireResistanceEssencePerfect.webp",
+      "src": "/currency/poe2/FireResistanceEssencePerfect.webp",
+      "sha256": "34f718549b2f3f040a9300e1b967af5f54303281f2a8df7c6a2f5814768772a1"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceColdResist": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceColdResist",
+      "name": "Lesser Essence of Thawing",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ColdResistanceEssenceLesser.webp",
+      "src": "/currency/poe2/ColdResistanceEssenceLesser.webp",
+      "sha256": "8ebea5e95a385c44e7759d198d4889e2b43683c561b44150d0ebb3b9d3a013a4"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceColdResist": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceColdResist",
+      "name": "Essence of Thawing",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ColdResistanceEssence.webp",
+      "src": "/currency/poe2/ColdResistanceEssence.webp",
+      "sha256": "4f420d5c85b2a6fb9d46c842375cc463900627de9b04d90d89aaa099aa341a11"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceColdResist": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceColdResist",
+      "name": "Greater Essence of Thawing",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterColdResistanceEssence.webp",
+      "src": "/currency/poe2/GreaterColdResistanceEssence.webp",
+      "sha256": "9d0f7e4f45cd032d3b2e99edd4d72cc7fc6341559811fd5c816e7f1b669c4c4a"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceColdResist": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceColdResist",
+      "name": "Perfect Essence of Thawing",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/ColdResistanceEssencePerfect.webp",
+      "src": "/currency/poe2/ColdResistanceEssencePerfect.webp",
+      "sha256": "9a38035d254f3a0e9de67c8c778aaf12751183bb8043d1355e1aaa617e01f566"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceLightningResist": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceLightningResist",
+      "name": "Lesser Essence of Grounding",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LightningResistanceEssenceLesser.webp",
+      "src": "/currency/poe2/LightningResistanceEssenceLesser.webp",
+      "sha256": "e3598fbaa525e924d69a7f9477c11455bb15bc8655bbb696f9bdc0b1c19f0ae8"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceLightningResist": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceLightningResist",
+      "name": "Essence of Grounding",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LightningResistanceEssence.webp",
+      "src": "/currency/poe2/LightningResistanceEssence.webp",
+      "sha256": "a24a2847176ebfd502922baeb2c202d6d7c2b914a7d8040c69e505f06b7e7656"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceLightningResist": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceLightningResist",
+      "name": "Greater Essence of Grounding",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterLightningResistanceEssence.webp",
+      "src": "/currency/poe2/GreaterLightningResistanceEssence.webp",
+      "sha256": "9364241c01c8002c428f03286c3d58ccc6c5af7ec12f7b75160d7b782204c3cb"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceLightningResist": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceLightningResist",
+      "name": "Perfect Essence of Grounding",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LightningResistanceEssencePerfect.webp",
+      "src": "/currency/poe2/LightningResistanceEssencePerfect.webp",
+      "sha256": "c55eb3d74e8c122bcf33987d4d96950105ba302c25e5d87b46eb543f726cc6b5"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceSpeedCaster": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceSpeedCaster",
+      "name": "Lesser Essence of Alacrity",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/SpeedCasterEssenceLesser.webp",
+      "src": "/currency/poe2/SpeedCasterEssenceLesser.webp",
+      "sha256": "34c2c56e22df8fc44d2d8d731bf82e0069821c306cf421493d94549163db3298"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceSpeedCaster": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceSpeedCaster",
+      "name": "Essence of Alacrity",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/SpeedCasterEssence.webp",
+      "src": "/currency/poe2/SpeedCasterEssence.webp",
+      "sha256": "af6475cce5827ca6b4e8b091efb8c04edc837b3e8aeb13557ecb04244b5e730f"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceSpeedCaster": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceSpeedCaster",
+      "name": "Greater Essence of Alacrity",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterSpeedCasterEssence.webp",
+      "src": "/currency/poe2/GreaterSpeedCasterEssence.webp",
+      "sha256": "df5e8f692f3a4ae990840e1f201391efec97aad41f7ce4d6033c3053438c6368"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceSpeedCaster": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceSpeedCaster",
+      "name": "Perfect Essence of Alacrity",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/SpeedCasterEssencePerfect.webp",
+      "src": "/currency/poe2/SpeedCasterEssencePerfect.webp",
+      "sha256": "2db7f3cdcdf13f03765a461b4351aa597a6a03b4ef29ba65dff9303351e7a1d0"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceRarity": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceRarity",
+      "name": "Lesser Essence of Opulence",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/RarityResistanceEssenceLesser.webp",
+      "src": "/currency/poe2/RarityResistanceEssenceLesser.webp",
+      "sha256": "03b242069684dfe953a0780b058786a13beb91747aac2fc13d830e70746ebc0d"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceRarity": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceRarity",
+      "name": "Essence of Opulence",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/RarityResistanceEssence.webp",
+      "src": "/currency/poe2/RarityResistanceEssence.webp",
+      "sha256": "1bb3246352f0f8ecf9b47463d355647014ee3474d158a4bbead5be67d02f08a1"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceRarity": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceRarity",
+      "name": "Greater Essence of Opulence",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterRarityResistanceEssence.webp",
+      "src": "/currency/poe2/GreaterRarityResistanceEssence.webp",
+      "sha256": "46bb076744f38272063e4d8a141504797f231b60189e64396ef7ee8d4f3d7e80"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceRarity": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceRarity",
+      "name": "Perfect Essence of Opulence",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/RarityResistanceEssencePerfect.webp",
+      "src": "/currency/poe2/RarityResistanceEssencePerfect.webp",
+      "sha256": "0578796117a70a0cf35ae13d9422b79e30c238ea5a2ab5e518cf9aefbc4b038a"
+    },
+    "essence:Metadata/Items/Currency/CurrencyLesserEssenceAlly": {
+      "itemId": "Metadata/Items/Currency/CurrencyLesserEssenceAlly",
+      "name": "Lesser Essence of Command",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AllyEssenceLesser.webp",
+      "src": "/currency/poe2/AllyEssenceLesser.webp",
+      "sha256": "2382acf7da27966e02dfe837e6e7ed82e1fb896bcf210f3e2dde1d7253f987ea"
+    },
+    "essence:Metadata/Items/Currency/CurrencyEssenceAlly": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceAlly",
+      "name": "Essence of Command",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AllyEssence.webp",
+      "src": "/currency/poe2/AllyEssence.webp",
+      "sha256": "2c7a4e0456bd740c248b3056806ff52024f73814efc36054824bb976b0ef9919"
+    },
+    "essence:Metadata/Items/Currency/CurrencyGreaterEssenceAlly": {
+      "itemId": "Metadata/Items/Currency/CurrencyGreaterEssenceAlly",
+      "name": "Greater Essence of Command",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/GreaterAllyEssence.webp",
+      "src": "/currency/poe2/GreaterAllyEssence.webp",
+      "sha256": "aee57dcb1ee9cdf6851050a4efd17688060c1e3da6af85043fbf4eea7ed359fe"
+    },
+    "essence:Metadata/Items/Currency/CurrencyPerfectEssenceAlly": {
+      "itemId": "Metadata/Items/Currency/CurrencyPerfectEssenceAlly",
+      "name": "Perfect Essence of Command",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/AllyEssencePerfect.webp",
+      "src": "/currency/poe2/AllyEssencePerfect.webp",
+      "sha256": "0b1dc751a514fdc5b6666cade2b0f0466b213b0e89bc5b4ed94b310466a93a52"
+    },
+    "essence": {
+      "itemId": "Metadata/Items/Currency/CurrencyEssenceLife",
+      "name": "Essence of the Body",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Essence/LifeEssence.webp",
+      "src": "/currency/poe2/LifeEssence.webp",
+      "sha256": "82b99169aa7303ad23a846cd5f599064ee6255d66813a61c263d4adff05594e5"
+    },
+    "omens": {
+      "itemId": "Metadata/Items/Currency/OmenOnExaltAddPrefixes",
+      "name": "Omen of Sinistral Exaltation",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens2Yellow.webp",
+      "src": "/currency/poe2/VoodooOmens2Yellow.webp",
+      "sha256": "b1772e4c875f1753a38bbd886a3f5c9a9228e1061390de58d181ae9b7878fd2e"
+    },
+    "desecrate": {
+      "itemId": "Metadata/Items/Currency/AbyssalBenchTicketArmour",
+      "name": "Preserved Rib",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/PreservedRibs.webp",
+      "src": "/currency/poe2/PreservedRibs.webp",
+      "sha256": "110f68ef1412fdfd3668bc13bf78926cef0d7c14a9a81469fca9e825d34ecc51"
+    },
+    "desecrate:weapon": {
+      "itemId": "Metadata/Items/Currency/AbyssalBenchTicketWeapon",
+      "name": "Preserved Jawbone",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/PreservedJawbone.webp",
+      "src": "/currency/poe2/PreservedJawbone.webp",
+      "sha256": "a0f7bad11615136b968b6e30bc42225d5cc1eb1b236f9c99e899662e5b58870c"
+    },
+    "desecrate:jewellery": {
+      "itemId": "Metadata/Items/Currency/AbyssalBenchTicketJewellery",
+      "name": "Preserved Collarbone",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/PreservedCalvicle.webp",
+      "src": "/currency/poe2/PreservedCalvicle.webp",
+      "sha256": "fa521b5125d1414a36d5a7331b2e1ff6ec6c81d2345c964926d72a955a8af79e"
+    },
+    "desecrate:jewel": {
+      "itemId": "Metadata/Items/Currency/AbyssalBenchTicketJewel",
+      "name": "Preserved Cranium",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/PreservedCranium.webp",
+      "src": "/currency/poe2/PreservedCranium.webp",
+      "sha256": "078d4d8d98a7c838fafc66cb4b1bfb94eefb0142c09e506e94363fee9a01ce17"
+    },
+    "desecrate:waystone": {
+      "itemId": "Metadata/Items/Currency/AbyssalBenchTicketWaystone",
+      "name": "Preserved Vertebrae",
+      "source": "https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/PreservedSpine.webp",
+      "src": "/currency/poe2/PreservedSpine.webp",
+      "sha256": "ff59db67d797700d35b2b33c87b997517b8c916c20470f1312e3e4eacd2615f4"
+    }
+  }
+}

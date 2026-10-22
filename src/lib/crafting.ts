@@ -1,4 +1,5 @@
 import { localizedModLines, modDisplayName, statStoredValue } from './crafting-localization'
+import localizedNames from '../config/crafting-names.json'
 
 export type Rarity = 'normal' | 'magic' | 'rare' | 'unique'
 export interface CraftMod {
@@ -146,7 +147,8 @@ export function parseItem(source: string, data: CraftData): CraftItem {
   const nameLines = lines.slice(rarityIndex + 1, nameEnd).filter(Boolean)
   if (!nameLines.length) throw new Error('物品文本缺少名称或分隔线。')
   const name = nameLines.join(' · ')
-  const matches = data.bases.filter(base => [base.name, ...(baseAliases[base.name] ?? [])].some(alias => name.toLowerCase().includes(alias.toLowerCase())))
+  const translatedBases: Record<string, { cn: string; tw: string }> = localizedNames.bases
+  const matches = data.bases.filter(base => [base.name, ...(baseAliases[base.name] ?? []), ...Object.values(translatedBases[base.name] ?? {})].some(alias => name.toLowerCase().includes(alias.toLowerCase())))
     .sort((a, b) => b.name.length - a.name.length)
   const base = matches[0]
   const affixes: ItemAffix[] = []

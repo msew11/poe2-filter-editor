@@ -170,9 +170,13 @@
 .craft-example-link svg { width: 12px; height: 12px; }
 .craft-welcome-features { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; width: 100%; border-top: 1px solid #3a3c2c; padding-top: 20px; margin-top: 25px; color: #7f8970; font-size: 10px; }
 .craft-import-dialog { max-width: 720px; width: calc(100vw - 32px); max-height: calc(100dvh - 40px); overflow-y: auto; }
+.dialog-overlay.craft-import-overlay { backdrop-filter: none; }
+.craft-import-dialog [data-slot="button"] { transition: none; }
 .craft-import-mode { display: flex; margin: 0 20px; border-bottom: 1px solid var(--border); }
 .craft-import-mode > button { display: flex; align-items: center; gap: 6px; padding: 12px 18px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: #999d87; font-size: 12px; }
 .craft-import-mode svg { width: 14px; height: 14px; }
+.craft-import-mode > button:hover { background: var(--accent); color: var(--foreground); }
+.craft-import-mode > button:focus-visible { outline: 2px solid var(--ring); outline-offset: -2px; }
 .craft-import-mode > button[aria-pressed="true"] { color: var(--primary); border-bottom-color: var(--primary); }
 .craft-import-body { padding: 4px 20px 20px; }
 .craft-import-body > label, .craft-confirm > label { display: block; font-size: 12px; color: var(--muted-foreground); margin: 14px 0 7px; }
@@ -642,17 +646,53 @@
 .craft-corruption-result { padding: 12px 16px; color: #db8585; font-size: 13px; border-bottom: 1px solid #503333; }
 .craft-method-tabs { overflow-x: auto; }
 
-.dialog-content.craft-import-dialog-bilingual { width: min(1120px, calc(100vw - 32px)); max-width: 1120px; }
-.craft-import-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
-.craft-import-columns > .craft-import-body { min-width: 0; }
-.craft-english-preview { min-width: 0; margin: 18px 20px 20px 0; padding: 14px; border: 1px solid var(--border); background: #111410; }
-.craft-english-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; }
-.craft-english-heading label { font-size: 13px; color: var(--primary); }
-.craft-english-text { min-height: 340px; max-height: 530px; resize: vertical; font: 12px/1.7 Consolas, monospace; }
-.craft-english-preview .field-description, .craft-english-preview .craft-warning { margin-top: 12px; }
-.craft-english-copy-status { min-height: 18px; margin-top: 8px; font-size: 12px; color: var(--primary); }
-@media (max-width: 760px) {
-  .craft-import-columns { grid-template-columns: minmax(0, 1fr); }
-  .craft-english-preview { margin: 0 20px 20px; }
-  .craft-english-text { min-height: 260px; }
-}
+/* Two-row currency picker and held currency */
+.craft-stable-panels { display: grid; grid-template-columns: minmax(0, 1fr); background: #10110f; border-bottom: 1px solid #514832; }
+.craft-stable-panels > div { grid-area: 1 / 1; align-self: start; min-width: 0; }
+.craft-stable-panels > .is-inactive { visibility: hidden; pointer-events: none; }
+.craft-stable-panels .craft-currency-variants, .craft-stable-panels .craft-variant-help, .craft-stable-panels .craft-advanced-settings { border-bottom: 0; }
+.craft-currency-types { display: flex; gap: 2px; overflow-x: auto; padding: 12px 12px 0; background: #10110f; }
+.craft-currency-types > button { display: flex; flex: 0 0 72px; flex-direction: column; align-items: center; gap: 5px; padding: 8px 4px; border: 1px solid #414039; background: linear-gradient(#2d2d29, #191a17); color: #c6c2b4; font-size: 11px; }
+.craft-currency-types > button:hover { border-color: #bca16a; }
+.craft-currency-types > button[aria-pressed="true"] { background: linear-gradient(#f8edc1, #cfb877); border-color: #e3ca8b; color: #292316; }
+.craft-currency-icon { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex-shrink: 0; color: #c4b1d8; }
+.craft-currency-icon img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 2px 3px #0009); }
+.craft-currency-icon > small { position: absolute; right: -1px; bottom: -1px; border: 1px solid #a88b55; padding: 0 3px; background: #242116; color: #ffe5a4; font: bold 10px Georgia, serif; }
+.craft-currency-variants { display: flex; align-items: stretch; flex-wrap: wrap; gap: 3px; padding: 8px 12px 12px; background: #10110f; border-bottom: 1px solid #514832; }
+.craft-currency-variants > strong { display: flex; align-items: center; padding: 6px 10px 6px 0; color: #d0c6af; font-size: 12px; }
+.craft-currency-variants > button { display: flex; align-items: center; gap: 7px; padding: 5px 10px; border: 1px solid #424139; background: linear-gradient(#2e2f29, #1c1d19); color: #d5d1c5; font-size: 12px; }
+.craft-currency-variants .craft-currency-icon { width: 28px; height: 28px; }
+.craft-currency-variants > button > svg { width: 17px; height: 17px; color: #b6a0d1; }
+.craft-currency-variants > button:hover, .craft-currency-variants > button[aria-pressed="true"] { border-color: #cfb578; background: linear-gradient(#eee1b3, #baa067); color: #292316; }
+.craft-enabled-items { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; padding: 10px 14px; min-height: 49px; border-bottom: 1px solid #463c50; background: #201c27; font-size: 11px; }
+.craft-enabled-items > strong, .craft-enabled-items > button { display: inline-flex; align-items: center; gap: 6px; }
+.craft-enabled-items > strong { color: #d1bddf; margin-right: 4px; }
+.craft-enabled-items svg { width: 13px; height: 13px; }
+.craft-enabled-items > button { border: 1px solid #62506f; padding: 5px 7px; color: #cab8d4; background: #302637; }
+.craft-enabled-items > button.is-active { border-color: #b49ac7; background: #473252; color: #eee0f6; }
+.craft-enabled-items > span, .craft-enabled-items > small { color: #a396ac; }
+.craft-enabled-items > small { margin-left: auto; }
+.craft-variant-help { padding: 8px 14px; color: #a99e87; font-size: 11px; border-bottom: 1px solid #37352d; }
+.craft-item-card[role="button"]:focus-visible { outline: 2px solid #ddc18b; outline-offset: 3px; }
+.craft-item-card.is-currency-target { border-color: #d2b36d; box-shadow: 0 0 18px #d2b36d15; cursor: crosshair; }
+.craft-item-card.is-currency-target:hover { box-shadow: 0 0 20px #d2b36d38; background: #25271d; }
+.craft-apply-hint { margin: 12px 0 6px; color: #dcc590; font-size: 12px; line-height: 1.7; }
+.craft-held-currency { position: fixed; z-index: 9999; pointer-events: none; display: flex; align-items: center; gap: 6px; filter: drop-shadow(0 3px 5px #000); }
+.craft-held-currency > .craft-currency-icon { width: 38px; height: 38px; }
+.craft-held-currency > span:last-child { max-width: 150px; color: #f0dfb6; font-size: 11px; padding: 3px 6px; background: #15130fd9; border: 1px solid #77633b; }
+@media (max-width: 700px) { .craft-currency-types > button { flex-basis: 64px; } .craft-enabled-items > small { flex-basis: 100%; margin-left: 0; } .craft-held-currency > span:last-child { display: none; } }
+
+.craft-enabled-items .craft-currency-icon, .craft-active-omens .craft-currency-icon { width: 24px; height: 24px; }
+.craft-active-omens > span { display: inline-flex; align-items: center; gap: 4px; }
+
+.craft-station-heading .craft-language-switch { display: flex; gap: 2px; margin-right: 8px; padding: 3px; border: 1px solid #5a4b31; background: #181813; }
+.craft-language-switch button { padding: 5px 9px; font-size: 11px; color: #aa9e85; }
+.craft-language-switch button[aria-pressed="true"] { color: #f3dfac; background: #4a3c25; }
+.craft-consumable-tooltip { position: fixed; z-index: 10000; pointer-events: none; width: min(360px, calc(100vw - 16px)); overflow: hidden; border: 1px solid #8b7547; background: #151510f5; box-shadow: 0 8px 25px #000a; color: #d2c6ac; font-size: 12px; line-height: 1.7; }
+.craft-consumable-tooltip header { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid #665331; background: #30291c; color: #e6cb8e; }
+.craft-consumable-tooltip header img { width: 40px; height: 40px; object-fit: contain; }
+.craft-consumable-tooltip p { padding: 12px 14px; color: #abb5df; white-space: pre-line; }
+.craft-consumable-tooltip footer { border-top: 1px solid #51452f; padding: 10px 14px; white-space: pre-line; color: #b6a78a; font-size: 11px; }
+.craft-corruption-select { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; color: #cfc2a8; font-size: 12px; }
+.craft-corruption-select select { border: 1px solid #61533a; background: #25251d; padding: 6px; max-width: 100%; }
+.craft-project-column > .craft-item-actions { margin-top: 12px; }

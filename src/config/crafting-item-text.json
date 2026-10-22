@@ -1,0 +1,710 @@
+{
+  "transmute": {
+    "description": "将一件普通物品升级为具有 1 个词缀的魔法物品",
+    "directions": "右键点击该物品，再左键点击一件普通物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Normal] item to a [ItemRarity|Magic] item with 1 modifier",
+    "source": "https://poe2db.tw/cn/Orb_of_Transmutation"
+  },
+  "transmute:greater": {
+    "description": "将一件普通物品升级为具有 1 个词缀的魔法物品",
+    "directions": "右键点击该物品，再左键点击一件普通物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Normal] item to a [ItemRarity|Magic] item with 1 modifier",
+    "source": "https://poe2db.tw/cn/Greater_Orb_of_Transmutation"
+  },
+  "transmute:perfect": {
+    "description": "将一件普通物品升级为具有 1 个词缀的魔法物品",
+    "directions": "右键点击该物品，再左键点击一件普通物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Normal] item to a [ItemRarity|Magic] item with 1 modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Orb_of_Transmutation"
+  },
+  "augment": {
+    "description": "用一个新随机词缀强化一件魔法物品",
+    "directions": "右键点击该物品，再左键点击一件魔法物品以使用。魔法物品最多可以有两个随机词缀。\n按住 Shift 点击以分开堆叠",
+    "english": "Augments a [ItemRarity|Magic] item with a new random modifier",
+    "source": "https://poe2db.tw/cn/Orb_of_Augmentation"
+  },
+  "augment:greater": {
+    "description": "用一个新随机词缀强化一件魔法物品",
+    "directions": "右键点击该物品，再左键点击一件魔法物品以使用。魔法物品最多可以有两个随机词缀。\n按住 Shift 点击以分开堆叠",
+    "english": "Augments a [ItemRarity|Magic] item with a new random modifier",
+    "source": "https://poe2db.tw/cn/Greater_Orb_of_Augmentation"
+  },
+  "augment:perfect": {
+    "description": "用一个新随机词缀强化一件魔法物品",
+    "directions": "右键点击该物品，再左键点击一件魔法物品以使用。魔法物品最多可以有两个随机词缀。\n按住 Shift 点击以分开堆叠",
+    "english": "Augments a [ItemRarity|Magic] item with a new random modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Orb_of_Augmentation"
+  },
+  "regal": {
+    "description": "将一件魔法物品升级为稀有物品，并增加 1 个词缀",
+    "directions": "右键点击此物品，再左键点击一件魔法物品来使用。添加新词缀的同时会保留原有词缀。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding 1 modifier",
+    "source": "https://poe2db.tw/cn/Regal_Orb"
+  },
+  "regal:greater": {
+    "description": "将一件魔法物品升级为稀有物品，并增加 1 个词缀",
+    "directions": "右键点击此物品，再左键点击一件魔法物品来使用。添加新词缀的同时会保留原有词缀。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding 1 modifier",
+    "source": "https://poe2db.tw/cn/Greater_Regal_Orb"
+  },
+  "regal:perfect": {
+    "description": "将一件魔法物品升级为稀有物品，并增加 1 个词缀",
+    "directions": "右键点击此物品，再左键点击一件魔法物品来使用。添加新词缀的同时会保留原有词缀。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding 1 modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Regal_Orb"
+  },
+  "alchemy": {
+    "description": "将一件普通或魔法物品升级为拥有 4 个词缀的稀有物品",
+    "directions": "右键点击此物品，再左键点击一件普通或魔法物品来使用。 当前词缀不会保留。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Normal] or [ItemRarity|Magic] item to a [ItemRarity|Rare] item with 4 random modifiers",
+    "source": "https://poe2db.tw/cn/Orb_of_Alchemy"
+  },
+  "exalt": {
+    "description": "用一个新随机词缀强化一件稀有物品",
+    "directions": "右键点击此物品，再左键点击一件稀有物品来使用。稀有物品最多可以有六个随机词缀。\n按住 Shift 点击以分开堆叠",
+    "english": "Augments a [ItemRarity|Rare] item with a new random modifier",
+    "source": "https://poe2db.tw/cn/Exalted_Orb"
+  },
+  "exalt:greater": {
+    "description": "用一个新随机词缀强化一件稀有物品",
+    "directions": "右键点击此物品，再左键点击一件稀有物品来使用。稀有物品最多可以有六个随机词缀。\n按住 Shift 点击以分开堆叠",
+    "english": "Augments a [ItemRarity|Rare] item with a new random modifier",
+    "source": "https://poe2db.tw/cn/Greater_Exalted_Orb"
+  },
+  "exalt:perfect": {
+    "description": "用一个新随机词缀强化一件稀有物品",
+    "directions": "右键点击此物品，再左键点击一件稀有物品来使用。稀有物品最多可以有六个随机词缀。\n按住 Shift 点击以分开堆叠",
+    "english": "Augments a [ItemRarity|Rare] item with a new random modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Exalted_Orb"
+  },
+  "chaos": {
+    "description": "移除一个随机词缀，并强化一件稀有物品，使其随机获得一个新词缀",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new random modifier",
+    "source": "https://poe2db.tw/cn/Chaos_Orb"
+  },
+  "chaos:greater": {
+    "description": "移除一个随机词缀，并强化一件稀有物品，使其随机获得一个新词缀",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new random modifier",
+    "source": "https://poe2db.tw/cn/Greater_Chaos_Orb"
+  },
+  "chaos:perfect": {
+    "description": "移除一个随机词缀，并强化一件稀有物品，使其随机获得一个新词缀",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new random modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Chaos_Orb"
+  },
+  "annul": {
+    "description": "随机移除物品上的一条属性",
+    "directions": "右键点击该物品，再左键点击一件魔法或稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier from an item",
+    "source": "https://poe2db.tw/cn/Orb_of_Annulment"
+  },
+  "divine": {
+    "description": "重置一件物品上的属性的数值",
+    "directions": "右键点击此物品，然后左键点击一件物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Randomises the numeric values of modifiers on an item",
+    "source": "https://poe2db.tw/cn/Divine_Orb"
+  },
+  "fracture": {
+    "description": "分裂一件具有至少 4 个词缀的稀有物品的一个随机词缀，使其锁定。",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。不能对分裂的物品使用。\n按住 Shift 点击以分开堆叠",
+    "english": "[Fracture|Fracture] a random modifier on a rare item with at least 4 modifiers, locking it in place.",
+    "source": "https://poe2db.tw/cn/Fracturing_Orb"
+  },
+  "vaal": {
+    "description": "随机修改一件物品，并腐化它",
+    "directions": "右键点击此物品，再左键点击一件物品(包括地图和保险箱等)来使其腐化。 请注意，腐化过的物品无法再使用通货改变其属性。 \n按住 Shift 点击以分开堆叠",
+    "english": "Modifies an item unpredictably and [Corrupted|Corrupts] it",
+    "source": "https://poe2db.tw/cn/Vaal_Orb"
+  },
+  "omen:exalt-prefix": {
+    "description": "此物品在你的背包中激活时，\n\n你的下一个崇高石只会添加前缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nExalted Orb will add only prefix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Sinistral_Exaltation"
+  },
+  "omen:exalt-suffix": {
+    "description": "此物品在你的背包中激活时，\n\n你的下一个崇高石只会添加后缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nExalted Orb will add only suffix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Dextral_Exaltation"
+  },
+  "omen:exalt-double": {
+    "description": "此物品在你的背包中激活时，\n\n你的下一个崇高石会添加两个随机词缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nExalted Orb will add two random modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Greater_Exaltation"
+  },
+  "omen:regal-prefix": {
+    "description": "此物品在你的背包中激活时，\n\n你的下一个富豪石只会添加前缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nRegal Orb will add only prefix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Sinistral_Coronation"
+  },
+  "omen:regal-suffix": {
+    "description": "此物品在你的背包中激活时，\n\n你的下一个富豪石只会添加后缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nRegal Orb will add only suffix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Dextral_Coronation"
+  },
+  "omen:annul-prefix": {
+    "description": "此物品在你的背包中激活时，\n\n你的下一个剥离石只会移除前缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nOrb of Annulment will remove only prefix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Sinistral_Annulment"
+  },
+  "omen:annul-suffix": {
+    "description": "此物品在你的背包中激活时，\n\n你的下一个剥离石只会移除后缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nOrb of Annulment will remove only suffix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Dextral_Annulment"
+  },
+  "omen:annul-double": {
+    "description": "此物品在你的背包中激活时，\n\n你的下一个剥离石会移除两个词缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nOrb of Annulment will remove two modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Greater_Annulment"
+  },
+  "omen:chaos-prefix": {
+    "description": "此物品在你的背包中激活时，\n\n你的下一个混沌石只会移除前缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nChaos Orb will remove only prefix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Sinistral_Erasure"
+  },
+  "omen:chaos-suffix": {
+    "description": "此物品在你的背包中激活时，\n\n你的下一个混沌石只会移除后缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nChaos Orb will remove only suffix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Dextral_Erasure"
+  },
+  "omen:chaos-lowest": {
+    "description": "此物品在你的背包中激活时，\n\n你的下一个混沌石会移除最低等级的词缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nChaos Orb will remove the lowest level modifier",
+    "source": "https://poe2db.tw/cn/Omen_of_Whittling"
+  },
+  "omen:essence-prefix": {
+    "description": "此物品在你的背包中激活时\n\n你的下一个完美或腐化精华只会移除前缀词缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nPerfect or Corrupted Essence will remove only Prefix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Sinistral_Crystallisation"
+  },
+  "omen:essence-suffix": {
+    "description": "此物品在你的背包中激活时\n\n你的下一个完美或腐化精华只会移除后缀词缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nPerfect or Corrupted Essence will remove only Suffix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Dextral_Crystallisation"
+  },
+  "omen:desecrate-prefix": {
+    "description": "此物品在你的背包中激活时\n\n你的下一次渎灵尝试只会添加前缀词缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\n[Abyssalify|Desecration] attempt will add only prefix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Sinistral_Necromancy"
+  },
+  "omen:desecrate-suffix": {
+    "description": "此物品在你的背包中激活时\n\n你的下一次渎灵尝试只会添加后缀词缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\n[Abyssalify|Desecration] attempt will add only suffix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Dextral_Necromancy"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceLife": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲或腰带: +(30—39) 生命上限\n饰品: +(20—29) 生命上限",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_the_Body"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceMana": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n腰带、鞋子、手套、头盔或饰品: +(25—34) 魔力上限",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_the_Mind"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceDefences": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲: 护甲，闪避与能量护盾提高 (27—42)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Enhancement"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssencePhysical": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n单手近战武器或弓类: 附加 (4—6) - (7—11) 物理伤害\n双手近战武器或战弩: 附加 (5—8) - (10—15) 物理伤害",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Abrasion"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceFire": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n单手近战武器或弓类: 附加 (4—6) - (7—10) 火焰伤害\n双手近战武器或战弩: 附加 (6—9) - (10—16) 火焰伤害",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Flames"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceCold": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n单手近战武器或弓类: 附加 (3—5) - (6—9) 冰霜伤害\n双手近战武器或战弩: 附加 (5—8) - (9—14) 冰霜伤害",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Ice"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceLightning": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n单手近战武器或弓类: 附加 1 - (13—19) 闪电伤害\n双手近战武器或战弩: 附加 (1—2) - (19—27) 闪电伤害",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Electricity"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceChaos": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲、腰带或饰品: 混沌抗性 +(4—7)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Ruin"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceAttack": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n战斗武器: +(61—84) 命中值",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Battle"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceCaster": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n法器或法杖: 法术伤害提高 (35—44)%\n长杖: 法术伤害提高 (69—88)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Sorcery"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceSpeed": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n近战武器: 攻击速度提高 (11—13)%\n弓类或战弩: 攻击速度提高 (8—10)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Haste"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceAttribute": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n装备: 力量、敏捷或智慧 +(9—12)",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_the_Infinite"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceLife": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n腰带、护甲、头盔或盾牌: +(85—99) 生命上限\n项链、鞋子、手套或戒指: +(70—84) 生命上限",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_the_Body"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceMana": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n腰带、鞋子、手套或头盔: +(65—79) 魔力上限\n饰品: +(80—89) 魔力上限",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_the_Mind"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceDefences": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲: 护甲，闪避与能量护盾提高 (56—67)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Enhancement"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssencePhysical": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n单手近战武器或弓类: 附加 (10—15) - (18—26) 物理伤害\n双手近战武器或战弩: 附加 (14—21) - (25—37) 物理伤害",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Abrasion"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceFire": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n单手近战武器或弓类: 附加 (20—24) - (32—37) 火焰伤害\n双手近战武器或战弩: 附加 (30—37) - (45—56) 火焰伤害",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Flames"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceCold": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n单手近战武器或弓类: 附加 (17—20) - (26—32) 冰霜伤害\n双手近战武器或战弩: 附加 (25—30) - (38—46) 冰霜伤害",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Ice"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceLightning": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n单手近战武器或弓类: 附加 (1—3) - (55—60) 闪电伤害\n双手近战武器或战弩: 附加 (1—4) - (80—88) 闪电伤害",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Electricity"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceChaos": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲、腰带或饰品: 混沌抗性 +(8—11)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Ruin"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceAttack": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n战斗武器: +(124—167) 命中值",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Battle"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceCaster": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n法器或法杖: 法术伤害提高 (55—64)%\n长杖: 法术伤害提高 (109—128)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Sorcery"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceSpeed": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n近战武器: 攻击速度提高 (17—19)%\n弓类或战弩: 攻击速度提高 (11—13)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Haste"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceAttribute": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n装备: 力量、敏捷或智慧 +(17—20)",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_the_Infinite"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceLife": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n腰带、护甲、头盔或盾牌: +(100—119) 生命上限\n项链、鞋子或手套: +(85—99) 生命上限",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_the_Body"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceMana": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n腰带、鞋子、手套或头盔: +(80—89) 魔力上限\n饰品: +(90—104) 魔力上限",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_the_Mind"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceDefences": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲: 护甲，闪避与能量护盾提高 (68—79)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Enhancement"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssencePhysical": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n单手近战武器或弓类: 附加 (16—24) - (28—42) 物理伤害\n双手近战武器或战弩: 附加 (23—35) - (39—59) 物理伤害",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Abrasion"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceFire": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n单手近战武器或弓类: 附加 (35—44) - (56—71) 火焰伤害\n双手近战武器或战弩: 附加 (56—70) - (84—107) 火焰伤害",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Flames"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceCold": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n单手近战武器或弓类: 附加 (31—38) - (47—59) 冰霜伤害\n双手近战武器或战弩: 附加 (46—57) - (70—88) 冰霜伤害",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Ice"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceLightning": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n单手近战武器或弓类: 附加 (1—6) - (85—107) 闪电伤害\n双手近战武器或战弩: 附加 (1—8) - (128—162) 闪电伤害",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Electricity"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceChaos": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲、腰带或饰品: 混沌抗性 +(16—19)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Ruin"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceAttack": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n战斗、手套或箭袋: +(237—346) 命中值",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Battle"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceCaster": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n法器或法杖: 法术伤害提高 (75—89)%\n长杖: 法术伤害提高 (149—188)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Sorcery"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceSpeed": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n近战武器: 攻击速度提高 (23—25)%\n弓类或战弩: 攻击速度提高 (14—16)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Haste"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceAttribute": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n装备: 力量、敏捷或智慧 +(25—27)",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_the_Infinite"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceLife": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n护甲: 生命上限提高 (8—10)%",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_the_Body"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceMana": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n戒指: 魔力上限提高 (4—6)%",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_the_Mind"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceDefences": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n项链: 全局护甲，闪避与能量护盾提高 (20—30)%",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Enhancement"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssencePhysical": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n单手近战武器或弓类: 获得相当于伤害 (15—20)% 的额外物理伤害\n双手近战武器或战弩: 获得相当于伤害 (25—33)% 的额外物理伤害",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Abrasion"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceFire": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n单手近战武器或弓类: 获得相当于伤害 (15—20)% 的额外火焰伤害\n双手近战武器或战弩: 获得相当于伤害 (25—33)% 的额外火焰伤害",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Flames"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceCold": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n单手近战武器或弓类: 获得相当于伤害 (15—20)% 的额外冰霜伤害\n双手近战武器或战弩: 获得相当于伤害 (25—33)% 的额外冰霜伤害",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Ice"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceLightning": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n单手近战武器或弓类: 获得相当于伤害 (15—20)% 的额外闪电伤害\n双手近战武器或战弩: 获得相当于伤害 (25—33)% 的额外闪电伤害",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Electricity"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceChaos": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n护甲: 受到击中物理伤害的 (10—15)% 转化为混沌伤害",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Ruin"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceAttack": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n单手近战武器或弓类: 所有攻击技能等级 +2\n双手近战武器或战弩: 所有攻击技能等级 +3",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Battle"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceCaster": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n法杖: 所有法术技能等级 +3\n长杖: 所有法术技能等级 +5",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Sorcery"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceSpeed": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n战斗武器: 此武器进行造成最后一击时有 (20—25)% 的几率获得猛攻",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Haste"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceAttribute": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n项链: 力量、敏捷或智慧提高 (7—10)%",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_the_Infinite"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceCritical": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n战斗武器: 暴击几率 +(1.51—2.1)%\n法器或法杖: 法术暴击率提高 (34—39)%\n长杖: 法术暴击率提高 (50—59)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Seeking"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceCritical": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n战斗武器: 暴击几率 +(2.11—2.7)%\n法器或法杖: 法术暴击率提高 (40—46)%\n长杖: 法术暴击率提高 (60—69)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Seeking"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceCritical": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n战斗武器: 暴击几率 +(3.11—3.8)%\n法器或法杖: 法术暴击率提高 (47—53)%\n长杖: 法术暴击率提高 (70—79)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Seeking"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceCritical": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n护甲: 对你的击中的暴击伤害加成降低 (40—50)%",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Seeking"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceFireResist": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲、腰带或饰品: 火焰抗性 +(11—15)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Insulation"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceFireResist": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲、腰带或饰品: 火焰抗性 +(21—25)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Insulation"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceFireResist": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲、腰带或饰品: 火焰抗性 +(31—35)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Insulation"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceFireResist": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n腰带: 将承受的火焰伤害的 (26—30)% 吸纳为生命",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Insulation"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceColdResist": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲、腰带或饰品: 冰霜抗性 +(11—15)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Thawing"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceColdResist": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲、腰带或饰品: 冰霜抗性 +(21—25)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Thawing"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceColdResist": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲、腰带或饰品: 冰霜抗性 +(31—35)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Thawing"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceColdResist": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n头盔: 将承受的冰霜伤害的 (26—30)% 吸纳为生命",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Thawing"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceLightningResist": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲、腰带或饰品: 闪电抗性 +(11—15)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Grounding"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceLightningResist": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲、腰带或饰品: 闪电抗性 +(21—25)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Grounding"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceLightningResist": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n护甲、腰带或饰品: 闪电抗性 +(31—35)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Grounding"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceLightningResist": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n手套: 将承受的闪电伤害的 (26—30)% 吸纳为生命",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Grounding"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceSpeedCaster": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n法器或法杖: 施法速度提高 (13—16)%\n长杖: 施法速度提高 (20—25)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Alacrity"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceSpeedCaster": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n法器或法杖: 施法速度提高 (17—20)%\n长杖: 施法速度提高 (26—31)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Alacrity"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceSpeedCaster": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n法器或法杖: 施法速度提高 (25—28)%\n长杖: 施法速度提高 (38—43)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Alacrity"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceSpeedCaster": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n法器或法杖: 魔力消耗效能提高 (18—20)%\n长杖: 魔力消耗效能提高 (28—32)%",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Alacrity"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceRarity": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n鞋子、手套、头盔或饰品: 物品稀有度提高 (6—10)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Opulence"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceRarity": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n鞋子、手套、头盔或饰品: 物品稀有度提高 (11—14)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Opulence"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceRarity": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n鞋子、手套、头盔或饰品: 物品稀有度提高 (15—18)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Opulence"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceRarity": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n手套: 被击败的敌人掉落的金币数量提高 (10—15)%",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Opulence"
+  },
+  "essence:Metadata/Items/Currency/CurrencyLesserEssenceAlly": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n权杖: 在场的友军造成的伤害提高 (35—44)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Lesser_Essence_of_Command"
+  },
+  "essence:Metadata/Items/Currency/CurrencyEssenceAlly": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n权杖: 在场的友军造成的伤害提高 (55—64)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_Command"
+  },
+  "essence:Metadata/Items/Currency/CurrencyGreaterEssenceAlly": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n权杖: 在场的友军造成的伤害提高 (75—89)%",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Greater_Essence_of_Command"
+  },
+  "essence:Metadata/Items/Currency/CurrencyPerfectEssenceAlly": {
+    "description": "移除一条随机词缀，并为一件稀有物品添加一条新的必定出现的词缀。\n权杖: 光环技能的强度提高 (15—20)%",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Removes a random modifier and augments a [ItemRarity|Rare] item with a new guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Perfect_Essence_of_Command"
+  },
+  "essence": {
+    "description": "将一件魔法物品升级为稀有物品，必定增加一项词缀\n腰带、护甲、头盔或盾牌: +(85—99) 生命上限\n项链、鞋子、手套或戒指: +(70—84) 生命上限",
+    "directions": "右键点击此物品，再左键点击一件魔法物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "Upgrades a [ItemRarity|Magic] item to a [ItemRarity|Rare] item, adding a guaranteed modifier",
+    "source": "https://poe2db.tw/cn/Essence_of_the_Body"
+  },
+  "omens": {
+    "description": "此物品在你的背包中激活时，\n\n你的下一个崇高石只会添加前缀",
+    "directions": "右键点击此物品以将其激活。此物品触发效果时会被消耗。\n按住 Shift 点击以分开堆叠",
+    "english": "While this item is active in your inventory your next\nExalted Orb will add only prefix modifiers",
+    "source": "https://poe2db.tw/cn/Omen_of_Sinistral_Exaltation"
+  },
+  "desecrate": {
+    "description": "渎灵一个稀有护甲",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "[Abyssalify|Desecrates] a [ItemRarity|Rare] [EquipArmour|Armour]",
+    "source": "https://poe2db.tw/cn/Preserved_Rib"
+  },
+  "desecrate:weapon": {
+    "description": "渎灵一个稀有武器或箭袋",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "[Abyssalify|Desecrates] a [ItemRarity|Rare] Weapon or [Quiver]",
+    "source": "https://poe2db.tw/cn/Preserved_Jawbone"
+  },
+  "desecrate:jewellery": {
+    "description": "渎灵一个稀有项链、戒指或腰带",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "[Abyssalify|Desecrates] a [ItemRarity|Rare] Amulet, Ring or Belt",
+    "source": "https://poe2db.tw/cn/Preserved_Collarbone"
+  },
+  "desecrate:jewel": {
+    "description": "渎灵一个稀有珠宝",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "[Abyssalify|Desecrates] a [ItemRarity|Rare] [Jewel]",
+    "source": "https://poe2db.tw/cn/Preserved_Cranium"
+  },
+  "desecrate:waystone": {
+    "description": "渎灵一个稀有引路石",
+    "directions": "右键点击该物品，再左键点击一件稀有物品以使用。\n按住 Shift 点击以分开堆叠",
+    "english": "[Abyssalify|Desecrates] a [ItemRarity|Rare] [Waystone]",
+    "source": "https://poe2db.tw/cn/Preserved_Vertebrae"
+  }
+}

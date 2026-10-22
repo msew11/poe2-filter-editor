@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Select } from '@/components/ui/select'
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog'
 import { PageTitle } from '@/components/pages'
-import { CraftingWorkbench } from '@/components/crafting-workbench'
+import { CraftingWorkbench, CraftingWorkbenchHeading } from '@/components/crafting-workbench'
 import { currentItem, modLines, parseItem, rarityLabels, resolveAffix, restoreSession, unpackCraftData, validateItem, type CraftData, type CraftItem, type CraftSession } from '@/lib/crafting'
 import { baseDisplayName, modDisplayName, statStoredValue } from '@/lib/crafting-localization'
 import { englishItemPreview } from '@/lib/crafting-english'
@@ -78,9 +78,10 @@ export function CraftingPage() {
     {loading && <p role="status">正在加载底材与词缀数据…</p>}
     {error && !importOpen && <div className="inline-alert" role="alert">{error}{!data && !loading && <Button variant="ghost" size="sm" onClick={() => { setError(''); setAttempt(value => value + 1) }}>重试</Button>}</div>}
     <div className="craft-notice" role="status">{saveError || notice}</div>
+    {!session && <div className="craft-station"><CraftingWorkbenchHeading onImport={openImport} disabled={!data || loading} />{data && <div className="craft-welcome"><span className="craft-welcome-gem"><FlaskConical aria-hidden="true" /></span><p className="page-kicker">YOUR NEXT CRAFT STARTS HERE</p><h2>从一件装备开始</h2><p>导入游戏中的现有物品，或选择一件普通底材。<br />搭配通货和征兆，一步步尝试你的做装思路。</p><div className="craft-toolbar"><Button onClick={openImport}><Import />导入现有物品</Button><Button variant="outline" onClick={() => { openImport(); setImportMode('base') }}><Plus />选择底材</Button></div><div className="craft-welcome-features"><span>9 种通货</span><span>11 种征兆</span><span>词缀目标追踪</span><span>历史与消耗</span></div></div>}</div>}
     {data && <>
-      {session ? <CraftingWorkbench key={session.original.source} data={data} session={session} onChange={setSession} onImport={openImport} onNotice={setNotice} onError={setError} /> : <div className="craft-welcome"><span className="craft-welcome-gem"><FlaskConical aria-hidden="true" /></span><p className="page-kicker">YOUR NEXT CRAFT STARTS HERE</p><h2>从一件装备开始</h2><p>导入游戏中的现有物品，或选择一件普通底材。<br />搭配通货和征兆，一步步尝试你的做装思路。</p><div className="craft-toolbar"><Button onClick={openImport}><Import />导入现有物品</Button><Button variant="outline" onClick={() => { openImport(); setImportMode('base') }}><Plus />选择底材</Button></div><div className="craft-welcome-features"><span>9 种通货</span><span>11 种征兆</span><span>词缀目标追踪</span><span>历史与消耗</span></div></div>}
-      <Dialog open={importOpen} onOpenChange={setImportOpen}><DialogContent className="craft-import-dialog" overlayClassName="craft-import-overlay"><header className="rule-dialog-header"><p className="page-kicker">CRAFTING / PROJECT</p><DialogTitle>开始做装项目</DialogTitle><DialogDescription>粘贴游戏物品文本，或选择普通底材。现有项目会在确认后替换。</DialogDescription></header><div className="craft-import-mode" role="group" aria-label="项目来源"><button type="button" aria-pressed={importMode === 'paste'} onClick={() => setImportMode('paste')}><Import />导入物品</button><button type="button" aria-pressed={importMode === 'base'} onClick={() => setImportMode('base')}><Plus />选择底材</button></div>{error && <p className="inline-alert" role="alert">{error}</p>}
+      {session && <CraftingWorkbench key={session.original.source} data={data} session={session} onChange={setSession} onImport={openImport} onNotice={setNotice} onError={setError} />}
+      <Dialog open={importOpen} onOpenChange={setImportOpen}><DialogContent className="craft-import-dialog"><header className="rule-dialog-header"><p className="page-kicker">CRAFTING / PROJECT</p><DialogTitle>开始做装项目</DialogTitle><DialogDescription>粘贴游戏物品文本，或选择普通底材。现有项目会在确认后替换。</DialogDescription></header><div className="craft-import-mode" role="group" aria-label="项目来源"><button type="button" aria-pressed={importMode === 'paste'} onClick={() => setImportMode('paste')}><Import />导入物品</button><button type="button" aria-pressed={importMode === 'base'} onClick={() => setImportMode('base')}><Plus />选择底材</button></div>{error && <p className="inline-alert" role="alert">{error}</p>}
       {importMode === 'paste' ? <>
         <div className="craft-import-body">
           <label htmlFor="craft-item-text">游戏物品文本</label>

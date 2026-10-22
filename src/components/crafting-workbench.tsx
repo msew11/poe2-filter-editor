@@ -33,6 +33,10 @@ interface Props {
   onError: (message: string) => void
 }
 
+export function CraftingWorkbenchHeading({ onImport, children, disabled = false }: { onImport: () => void; children?: ReactNode; disabled?: boolean }) {
+  return <div className="craft-station-heading"><div><FlaskConical aria-hidden="true" /><span>装备工作台</span><small>CRAFTING BENCH</small></div><div>{children}<Button variant="ghost" size="sm" disabled={disabled} onClick={onImport}><Import />导入 / 更换底材</Button></div></div>
+}
+
 export function CraftingWorkbench({ data, session, onChange, onImport, onNotice, onError }: Props) {
   const [currency, setCurrency] = useState<Currency>('regal')
   const [language, setLanguage] = useState<AffixLanguage>('zh-CN')
@@ -139,7 +143,7 @@ export function CraftingWorkbench({ data, session, onChange, onImport, onNotice,
   }
 
   return <div className="craft-station">
-    <div className="craft-station-heading"><div><FlaskConical aria-hidden="true" /><span>装备工作台</span><small>CRAFTING BENCH</small></div><div><div className="craft-language-switch" role="group" aria-label="物品语言">{([{ id: 'zh-CN', label: '简中' }, { id: 'zh-TW', label: '繁中' }, { id: 'en', label: 'English' }] as const).map(entry => <button key={entry.id} type="button" aria-pressed={language === entry.id} onClick={() => setLanguage(entry.id)}>{entry.label}</button>)}</div><Button variant="ghost" size="sm" onClick={() => { setArmed(false); onImport() }}><Import />导入 / 更换底材</Button></div></div>
+    <CraftingWorkbenchHeading onImport={() => { setArmed(false); onImport() }}><div className="craft-language-switch" role="group" aria-label="物品语言">{([{ id: 'zh-CN', label: '简中' }, { id: 'zh-TW', label: '繁中' }, { id: 'en', label: 'English' }] as const).map(entry => <button key={entry.id} type="button" aria-pressed={language === entry.id} onClick={() => setLanguage(entry.id)}>{entry.label}</button>)}</div></CraftingWorkbenchHeading>
     <div className="craft-currency-types" role="group" aria-label="通货类型">
       {currencies.filter(entry => !['reveal', 'select-reveal'].includes(entry.id)).map(entry => <CraftingConsumableButton iconKey={craftingIconKey(entry.id, {}, base.itemClass)} tooltipName={currencyTypeName(entry.id, language)} type="button" key={entry.id} aria-pressed={!showOmens && currency === entry.id} onClick={event => { setShowOmens(false); setCurrency(entry.id); setTier(''); setArmed(false); setPointer(null); if (!tieredCurrencies.includes(entry.id) && entry.id !== 'essence') armCurrency(event, entry.id, '') }}><CurrencyIcon id={entry.id} itemClass={base.itemClass} /><span>{currencyTypeName(entry.id, language)}</span></CraftingConsumableButton>)}
       <button type="button" aria-pressed={showOmens} onClick={() => { setShowOmens(true); setArmed(false); setPointer(null) }}><CurrencyIcon id="omens" /><span>{currencyTypeName('omens', language)}</span></button>

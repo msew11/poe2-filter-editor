@@ -1,4 +1,5 @@
 import { parseRule, ruleFileName, serializeRule, type Rule } from './rules'
+import { isDesktop, saveDesktopFilter } from './desktop'
 
 export type FilterRule = { id: string; mode: 'reference'; ruleId: string } | { id: string; mode: 'copy'; rule: Rule }
 export interface Filter { id: string; name: string; rules: FilterRule[] }
@@ -32,9 +33,10 @@ export function serializeFilter(filter: Filter, rules: Rule[]): string {
 
 export const filterFileName = (filter: Filter) => ruleFileName(filter)
 
-export function downloadFilter(filter: Filter, rules: Rule[]) {
+export async function downloadFilter(filter: Filter, rules: Rule[]) {
   const error = filterError(filter, rules)
   if (error) throw new Error(error)
+  if (isDesktop()) return saveDesktopFilter(filterFileName(filter), serializeFilter(filter, rules))
   const url = URL.createObjectURL(new Blob([serializeFilter(filter, rules)], { type: 'text/plain;charset=utf-8' }))
   const anchor = document.createElement('a')
   anchor.href = url; anchor.download = filterFileName(filter)

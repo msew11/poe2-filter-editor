@@ -30,6 +30,37 @@ npm start
 
 浏览器访问 http://127.0.0.1:5173 。也可以在编辑器的 NPM Scripts 面板选择 `start` 运行。当前电脑保留 `./start.ps1` 兼容入口，该脚本最终调用同一个 start 脚本。
 
+## Windows 单文件桌面版
+
+桌面版使用 Tauri 2，将网页、图片和做装数据库内嵌到一个 `exile-forge.exe` 中。运行时无需 Node.js、开发服务器或旁边的 `dist` 文件夹，但需要 WebView2 Runtime（Windows 11 通常已预装）。应用设置和规则保存在当前 Windows 用户的数据目录，浏览器版已有数据不会自动迁移。
+
+首次构建需要：
+
+- 本文前面的 Node.js 与 pnpm 环境。
+- [Rust](https://rustup.rs/) 的 stable MSVC 工具链，安装默认配置即可。
+- [Visual Studio 2022 Build Tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)，选择“使用 C++ 的桌面开发”，包含 MSVC 和 Windows SDK。
+
+安装完成后重新打开终端，在项目根目录执行：
+
+```powershell
+pnpm install --frozen-lockfile
+pnpm desktop:build
+```
+
+单文件产物位于 `src-tauri/target/release/exile-forge.exe`。只需复制这个 EXE 即可分发；用户数据仍写入 Windows 用户目录，不随 EXE 搬迁。构建命令会先运行前端构建，再编译桌面版，不生成安装包。
+
+开发桌面版使用 `pnpm desktop:dev`，它会自动启动 Vite 服务并打开桌面窗口；普通网页开发仍使用 `pnpm dev`。
+
+桌面版在“设置”中通过系统对话框选择过滤器目录，显示完整路径并保存设置。选定目录后，导出直接写入该目录，同名文件会替换；未选定目录时，每次导出弹出“另存为”窗口。取消操作不会显示错误。前端代码无法指定任意导出目录，原生命令只向用户在系统对话框中选择的位置写入 `.filter` 文件。
+
+桌面命令会自动查找默认位置的 Rust，并提前检查 MSVC 是否安装，缺少组件时直接提示。检查完整环境可运行 `pnpm exec tauri info`。如果直接运行 `cargo` 时提示找不到命令，可在当前 PowerShell 临时加入默认安装位置：
+
+```powershell
+$env:Path = "$env:USERPROFILE\.cargo\bin;$env:Path"
+```
+
+原生文件名校验测试可运行 `cargo test --manifest-path src-tauri/Cargo.toml`；前端及桌面调用适配测试使用 `pnpm test`。
+
 ## 规则库
 
 - 规则页使用紧凑单行布局，支持创建、编辑、删除独立规则。

@@ -26,7 +26,7 @@ function FilterRow({ filter, rules, directory, directoryLoading, onEdit, onDelet
       if (directory) {
         const filename = await exportFilterToDirectory(filter, rules, directory)
         setFeedback({ error: false, text: `已保存至 ${directory.name} / ${filename}` })
-      } else downloadFilter(filter, rules)
+      } else await downloadFilter(filter, rules)
     } catch (error) {
       if (!(error instanceof Error && error.name === 'AbortError')) setFeedback({ error: true, text: directoryError(error) })
     } finally { setExporting(false) }

@@ -1,24 +1,35 @@
 import { ruleFileName, serializeRule, type Rule } from './rules'
 import { filterError, filterFileName, serializeFilter, type Filter } from './filters'
+import { desktopCommand, isDesktop, type DesktopDirectory } from './desktop'
 
 // File System Access permission methods are not yet included in TypeScript's DOM types.
-export interface FilterDirectory extends FileSystemDirectoryHandle {
+export interface BrowserFilterDirectory extends FileSystemDirectoryHandle {
   queryPermission(options: { mode: 'readwrite' }): Promise<PermissionState>
   requestPermission(options: { mode: 'readwrite' }): Promise<PermissionState>
 }
+export type FilterDirectory = BrowserFilterDirectory | DesktopDirectory
+
+function isDesktopDirectory(directory: FilterDirectory): directory is DesktopDirectory {
+  return 'kind' in directory && directory.kind === 'desktop'
+}
 
 type DirectoryPickerWindow = Window & {
-  showDirectoryPicker?: (options: { id: string; mode: 'readwrite'; startIn?: FileSystemDirectoryHandle }) => Promise<FilterDirectory>
+  showDirectoryPicker?: (options: { id: string; mode: 'readwrite'; startIn?: FileSystemDirectoryHandle }) => Promise<BrowserFilterDirectory>
 }
 
 export function supportsDirectoryPicker() {
-  return window.isSecureContext && typeof (window as DirectoryPickerWindow).showDirectoryPicker === 'function'
+  return isDesktop() || window.isSecureContext && typeof (window as DirectoryPickerWindow).showDirectoryPicker === 'function'
 }
 
 export async function pickFilterDirectory(current: FilterDirectory | null) {
+  if (isDesktop()) {
+    const directory = await desktopCommand<DesktopDirectory | null>('pick_filter_directory')
+    if (!directory) throw new DOMException('已取消选择。', 'AbortError')
+    return directory
+  }
   const pickerWindow = window as DirectoryPickerWindow
   if (!supportsDirectoryPicker() || !pickerWindow.showDirectoryPicker) throw new Error('请使用 Chrome 或 Edge 打开本地页面，以选择存放目录。')
-  return pickerWindow.showDirectoryPicker({ id: 'exile-forge-filters', mode: 'readwrite', ...(current ? { startIn: current } : {}) })
+  return pickerWindow.showDirectoryPicker({ id: 'exile-forge-filters', mode: 'readwrite', ...(current && !isDesktopDirectory(current) ? { startIn: current } : {}) })
 }
 
 // Directory handles must be structured-cloned into IndexedDB, not serialized to localStorage.
@@ -47,10 +58,17 @@ async function directoryStore(mode: IDBTransactionMode, write?: FilterDirectory 
   } finally { database.close() }
 }
 
-export const readFilterDirectory = () => directoryStore('readonly')
-export const saveFilterDirectory = (directory: FilterDirectory | null) => directoryStore('readwrite', directory)
+export const readFilterDirectory = () => isDesktop()
+  ? desktopCommand<DesktopDirectory | null>('read_filter_directory') : directoryStore('readonly')
+export async function saveFilterDirectory(directory: FilterDirectory | null) {
+  if (!isDesktop()) return directoryStore('readwrite', directory)
+  // The native picker persists the selected path; clearing is a separate action.
+  if (!directory) await desktopCommand('clear_filter_directory')
+  return directory
+}
 
 export function directoryError(error: unknown) {
+  if (isDesktop() && error instanceof Error) return error.message
   const name = error instanceof Error ? error.name : ''
   if (name === 'NotAllowedError' || name === 'SecurityError') return '没有目录写入权限，请重新选择目录并允许访问。'
   if (name === 'NotFoundError') return '所选目录已移动或删除，请在设置中重新选择。'
@@ -69,6 +87,10 @@ export async function exportFilterToDirectory(filter: Filter, rules: Rule[], dir
 }
 
 async function exportTextToDirectory(filename: string, source: string, directory: FilterDirectory) {
+  if (isDesktopDirectory(directory)) {
+    await desktopCommand('export_filter', { filename, source })
+    return filename
+  }
   const options = { mode: 'readwrite' } as const
   if (await directory.queryPermission(options) !== 'granted' && await directory.requestPermission(options) !== 'granted') {
     throw new DOMException('Directory permission denied', 'NotAllowedError')

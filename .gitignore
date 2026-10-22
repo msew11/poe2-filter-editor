@@ -9,3 +9,5 @@ dist/
 artifacts/
 .idea/
 .run/
+src-tauri/target/
+src-tauri/gen/

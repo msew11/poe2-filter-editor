@@ -6,6 +6,7 @@ import { AppearancePage, PreviewPage, RulesPage } from '@/components/pages'
 import { FiltersPage } from '@/components/filters-page'
 import { SettingsDialog } from '@/components/settings-dialog'
 import { readFilterDirectory, type FilterDirectory } from '@/lib/filter-directory'
+import { isDesktop } from '@/lib/desktop'
 import { STORAGE_KEY, pageIds, pageLabels, readWorkspace, type PageId, type Workspace } from '@/lib/workspace'
 
 const CraftingPage = lazy(() => import('@/components/crafting-page').then(module => ({ default: module.CraftingPage })))
@@ -30,7 +31,7 @@ export default function App() {
   useEffect(() => {
     let active = true
     readFilterDirectory().then(value => { if (active) setDirectory(value) }).catch(() => {
-      if (active) setDirectoryLoadError('无法读取目录设置，请重新选择目录。当前导出将使用浏览器下载。')
+      if (active) setDirectoryLoadError(isDesktop() ? '无法读取目录设置，请重新选择目录。当前导出将提示选择保存位置。' : '无法读取目录设置，请重新选择目录。当前导出将使用浏览器下载。')
     }).finally(() => { if (active) setDirectoryLoading(false) })
     return () => { active = false }
   }, [])

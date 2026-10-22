@@ -170,8 +170,6 @@
 .craft-example-link svg { width: 12px; height: 12px; }
 .craft-welcome-features { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; width: 100%; border-top: 1px solid #3a3c2c; padding-top: 20px; margin-top: 25px; color: #7f8970; font-size: 10px; }
 .craft-import-dialog { max-width: 720px; width: calc(100vw - 32px); max-height: calc(100dvh - 40px); overflow-y: auto; }
-.dialog-overlay.craft-import-overlay { backdrop-filter: none; }
-.craft-import-dialog [data-slot="button"] { transition: none; }
 .craft-import-mode { display: flex; margin: 0 20px; border-bottom: 1px solid var(--border); }
 .craft-import-mode > button { display: flex; align-items: center; gap: 6px; padding: 12px 18px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: #999d87; font-size: 12px; }
 .craft-import-mode svg { width: 14px; height: 14px; }
@@ -421,8 +419,9 @@
 .rule-library-empty > p { color: var(--muted-foreground); font-size: 12px; }
 .single-rule-picker { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 22px; color: var(--muted-foreground); font-size: 12px; }
 .single-rule-picker > select { width: min(100%, 380px); }
-.dialog-overlay { position: fixed; inset: 0; z-index: 50; background: #000b; backdrop-filter: blur(4px); }
+.dialog-overlay { position: fixed; inset: 0; z-index: 50; background: #000b; }
 .dialog-content { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 51; width: min(870px, calc(100% - 40px)); background: var(--background); color: var(--foreground); border: 1px solid #6e5b38; box-shadow: 0 28px 100px #0009; outline: none; }
+.dialog-content [data-slot="button"] { transition: none; }
 .dialog-close { position: absolute; right: 20px; top: 21px; display: grid; place-items: center; width: 32px; height: 32px; border: 0; background: transparent; color: var(--muted-foreground); }
 .dialog-close:hover { background: var(--accent); color: var(--foreground); }
 .dialog-close > svg { width: 17px; height: 17px; }

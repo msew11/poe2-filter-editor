@@ -54,7 +54,7 @@ export function CraftingBasePicker({ data, onCreate }: { data: CraftData; onCrea
     </nav>
     {!group && <div className="craft-base-options" role="group" aria-label="Base group">{craftBaseGroups.map(group => {
       const available = basesInGroup(data.bases, group).length > 0
-      return <button type="button" key={group.id} disabled={!available} onClick={() => { setGroupId(group.id); setTypeId(''); setItemId(''); setSearch('') }} title={available ? group.english ?? group.label : '当前做装数据暂不支持此分类'}><strong>{group.label}</strong>{group.english && <small>{group.english}</small>}{!available && <small>暂不支持</small>}</button>
+      return <button type="button" key={group.id} disabled={!available} onClick={() => { setGroupId(group.id); setTypeId(''); setItemId(''); setSearch('') }} title={available ? group.english : '当前做装数据暂不支持此分类'}><strong>{group.label}</strong><small>{group.english}</small>{!available && <small>暂不支持</small>}</button>
     })}</div>}
     {group && !type && <div className="craft-base-options" role="group" aria-label={`${group.label} Base 类型`}>{types.map(type => <button type="button" key={type.id} onClick={() => { setTypeId(type.id); setItemId(''); setSearch('') }}><strong>{type.label}</strong><small>{type.bases.length} 件基底</small></button>)}</div>}
     {type && !item && <>

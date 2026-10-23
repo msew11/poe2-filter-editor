@@ -1,19 +1,19 @@
 import type { CraftBase } from './crafting'
 
 export const craftBaseGroups = [
-  { id: 'body', label: '胸甲', classes: ['Body Armours'] },
-  { id: 'boots', label: '鞋子', classes: ['Boots'] },
-  { id: 'charms', label: '护符', classes: ['Charms'] },
-  { id: 'flasks', label: '药剂', classes: ['Life Flasks', 'Mana Flasks', 'Flasks'] },
-  { id: 'gloves', label: '手套', classes: ['Gloves'] },
-  { id: 'helmets', label: '头部', classes: ['Helmets'] },
+  { id: 'body', label: '胸甲', english: 'Body Armours', classes: ['Body Armours'] },
+  { id: 'boots', label: '鞋子', english: 'Boots', classes: ['Boots'] },
+  { id: 'charms', label: '护符', english: 'Charms', classes: ['Charms'] },
+  { id: 'flasks', label: '药剂', english: 'Flasks', classes: ['Life Flasks', 'Mana Flasks', 'Flasks'] },
+  { id: 'gloves', label: '手套', english: 'Gloves', classes: ['Gloves'] },
+  { id: 'helmets', label: '头部', english: 'Helmets', classes: ['Helmets'] },
   { id: 'jewellery', label: '首饰', english: 'Jewellery', classes: ['Rings', 'Amulets', 'Belts'] },
-  { id: 'jewels', label: '珠宝', classes: ['Jewels', 'Abyss Jewels'] },
+  { id: 'jewels', label: '珠宝', english: 'Jewels', classes: ['Jewels', 'Abyss Jewels'] },
   { id: 'offhands', label: '副手', english: 'Offhands', classes: ['Shields', 'Bucklers', 'Foci', 'Quivers'] },
   { id: 'one-hand', label: '单手武器', english: 'One-Handed Weapons', classes: ['One Hand Swords', 'One Hand Axes', 'One Hand Maces', 'Spears', 'Claws', 'Daggers', 'Flails', 'Sceptres', 'Wands'] },
-  { id: 'tablets', label: '石板', classes: ['Tablets'] },
+  { id: 'tablets', label: '石板', english: 'Tablets', classes: ['Tablets'] },
   { id: 'two-hand', label: '双手武器', english: 'Two-Handed Weapons', classes: ['Two Hand Swords', 'Two Hand Axes', 'Two Hand Maces', 'Quarterstaves', 'Staves', 'Bows', 'Crossbows', 'Talismans'] },
-  { id: 'waystones', label: '换界石', classes: ['Waystones'] },
+  { id: 'waystones', label: '换界石', english: 'Waystones', classes: ['Waystones'] },
 ]
 export type CraftBaseGroup = typeof craftBaseGroups[number]
 export interface CraftBaseType { id: string; label: string; bases: CraftBase[] }

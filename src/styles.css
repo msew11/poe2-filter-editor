@@ -160,12 +160,18 @@
 .craft-scope { margin-top: 16px; color: var(--muted-foreground); font-size: 11px; }
 .craft-scope summary { cursor: pointer; padding-block: 5px; }
 .craft-scope p { line-height: 1.9; padding: 8px 0; }
-.craft-welcome { display: flex; flex-direction: column; align-items: center; text-align: center; border: 1px solid #514832; background: radial-gradient(ellipse at 50% 20%, #343224, #151912 70%); padding: 55px 22px 25px; }
+.craft-welcome { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 520px; text-align: center; background: radial-gradient(ellipse at 50% 20%, #343224, #151912 70%); padding: 55px 22px 25px; }
 .craft-welcome-gem { display: grid; place-items: center; width: 66px; height: 66px; border: 1px solid #706144; transform: rotate(45deg); margin-bottom: 35px; background: #c0a3730a; }
 .craft-welcome-gem svg { transform: rotate(-45deg); width: 28px; height: 28px; color: #c0a373; stroke-width: 1.3; }
 .craft-welcome h2 { font-size: 25px; color: #e2d2ac; font-weight: 400; margin: 8px 0 15px; letter-spacing: 1px; }
 .craft-welcome > p:not(.page-kicker) { font-size: 12px; color: #a5a78f; line-height: 2; }
-.craft-welcome > .craft-toolbar { margin-top: 24px; justify-content: center; }
+.craft-start-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; width: min(100%, 560px); margin-top: 28px; }
+.craft-start-options > button { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 24px 16px; border: 1px solid #62563d; background: #24251cb3; color: #dfc99c; transition: background .15s, border-color .15s; }
+.craft-start-options > button:hover { border-color: #c0a373; background: #393526; }
+.craft-start-options > button:focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; }
+.craft-start-options svg { width: 24px; height: 24px; stroke-width: 1.5; }
+.craft-start-options strong { font-size: 15px; font-weight: 500; }
+.craft-start-options span { color: #a5a78f; font-size: 11px; line-height: 1.7; }
 .craft-example-link { display: flex; gap: 7px; align-items: center; border: 0; background: transparent; color: #b2a17a; font-size: 11px; padding: 16px 0; }
 .craft-example-link svg { width: 12px; height: 12px; }
 .craft-welcome-features { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; width: 100%; border-top: 1px solid #3a3c2c; padding-top: 20px; margin-top: 25px; color: #7f8970; font-size: 10px; }
@@ -200,6 +206,7 @@
   .craft-mods-column { border-right: 0; }
 }
 @container craftbench (max-width: 640px) {
+  .craft-start-options { grid-template-columns: minmax(0, 1fr); max-width: 340px; }
   .craft-station-grid { grid-template-columns: minmax(0, 1fr); }
   .craft-mods-column { border-left: 0; border-top: 1px solid var(--border); min-height: 0; }
   .craft-mod-families { max-height: 470px; }

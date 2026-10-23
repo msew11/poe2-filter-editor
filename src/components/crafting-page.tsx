@@ -5,14 +5,15 @@ import { Select } from '@/components/ui/select'
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog'
 import { PageTitle } from '@/components/pages'
 import { CraftingWorkbench, CraftingWorkbenchHeading } from '@/components/crafting-workbench'
-import { currentItem, modLines, parseItem, rarityLabels, resolveAffix, restoreSession, unpackCraftData, validateItem, type CraftData, type CraftItem, type CraftSession } from '@/lib/crafting'
+import { modLines, parseItem, rarityLabels, resolveAffix, restoreSession, unpackCraftData, validateItem, type CraftData, type CraftItem, type CraftSession } from '@/lib/crafting'
 import { baseDisplayName, modDisplayName, statStoredValue } from '@/lib/crafting-localization'
-import { englishItemPreview } from '@/lib/crafting-english'
 import { itemClassOptions } from '@/config'
 import craftingDataUrl from '@/config/crafting-data.json?url'
 
 const classDisplayName = (value: string) => itemClassOptions.find(option => option.value === value)?.labelZh ?? value
 const SESSION_KEY = 'exile-forge.crafting.v1'
+const DEFAULT_BASE_ID = 'Metadata/Items/Armours/BodyArmours/FourBodyInt3Endgame'
+const DEFAULT_ITEM_LEVEL = '79'
 let pendingData: Promise<CraftData> | undefined
 function loadData() {
   return pendingData ??= fetch(craftingDataUrl).then(response => { if (!response.ok) throw new Error('无法加载做装数据，请重试。'); return response.json() }).then(unpackCraftData).catch(error => { pendingData = undefined; throw error })
@@ -30,9 +31,9 @@ export function CraftingPage() {
   const [loading, setLoading] = useState(true)
   const [attempt, setAttempt] = useState(0)
   const [importOpen, setImportOpen] = useState(false)
-  const [importMode, setImportMode] = useState('paste')
-  const [newBaseId, setNewBaseId] = useState('Metadata/Items/Armours/BodyArmours/FourBodyInt3Endgame')
-  const [newLevel, setNewLevel] = useState('79')
+  const [importMode, setImportMode] = useState<'paste' | 'base'>('paste')
+  const [newBaseId, setNewBaseId] = useState(DEFAULT_BASE_ID)
+  const [newLevel, setNewLevel] = useState(DEFAULT_ITEM_LEVEL)
   const base = data?.bases.find(base => base.id === draft?.baseId)
 
   useEffect(() => {
@@ -47,22 +48,27 @@ export function CraftingPage() {
   }, [attempt])
 
   useEffect(() => {
-    if (!data || !session) return
-    try { localStorage.setItem(SESSION_KEY, JSON.stringify(session)); setSaveError('') } catch { setSaveError('模拟进度无法保存，请保留导入文本。') }
+    if (!data) return
+    try {
+      if (session) localStorage.setItem(SESSION_KEY, JSON.stringify(session))
+      else localStorage.removeItem(SESSION_KEY)
+      setSaveError('')
+    } catch { setSaveError(session ? '模拟进度无法保存，请保留导入文本。' : '无法清除本机记录，刷新后可能恢复上次进度。') }
   }, [data, session])
 
   function importText(value = text) {
     if (!data) return
     try { setDraft(parseItem(value, data)); setBaseSearch(''); setError(''); setNotice('已解析文本，请核对底材与词缀后开始模拟。') } catch (error) { setDraft(null); setError((error as Error).message); setNotice('') }
   }
-  function openImport() {
-    setImportOpen(true); setImportMode('paste'); setBaseSearch(''); setError('')
-    if (session) {
-      const current = currentItem(session)
-      const currentText = session.steps.length && data ? englishItemPreview(current, data).text : current.source
-      setText(currentText); setDraft({ ...current, source: currentText })
-    }
-    else { setDraft(null); if (text) importText(text) }
+  function openImport(mode: 'paste' | 'base') {
+    setImportOpen(true); setImportMode(mode); setBaseSearch(''); setError(''); setNotice('')
+    setDraft(null); if (mode === 'paste' && text) importText(text)
+  }
+  function resetWorkbench() {
+    setSession(null); setImportOpen(false); setImportMode('paste')
+    setText(''); setDraft(null); setBaseSearch('')
+    setNewBaseId(DEFAULT_BASE_ID); setNewLevel(DEFAULT_ITEM_LEVEL)
+    setError(''); setNotice('')
   }
   function createBase() {
     const base = data?.bases.find(base => base.id === newBaseId)
@@ -78,10 +84,10 @@ export function CraftingPage() {
     {loading && <p role="status">正在加载底材与词缀数据…</p>}
     {error && !importOpen && <div className="inline-alert" role="alert">{error}{!data && !loading && <Button variant="ghost" size="sm" onClick={() => { setError(''); setAttempt(value => value + 1) }}>重试</Button>}</div>}
     <div className="craft-notice" role="status">{saveError || notice}</div>
-    {!session && <div className="craft-station"><CraftingWorkbenchHeading onImport={openImport} disabled={!data || loading} />{data && <div className="craft-welcome"><span className="craft-welcome-gem"><FlaskConical aria-hidden="true" /></span><p className="page-kicker">YOUR NEXT CRAFT STARTS HERE</p><h2>从一件装备开始</h2><p>导入游戏中的现有物品，或选择一件普通底材。<br />搭配通货和征兆，一步步尝试你的做装思路。</p><div className="craft-toolbar"><Button onClick={openImport}><Import />导入现有物品</Button><Button variant="outline" onClick={() => { openImport(); setImportMode('base') }}><Plus />选择底材</Button></div><div className="craft-welcome-features"><span>9 种通货</span><span>11 种征兆</span><span>词缀目标追踪</span><span>历史与消耗</span></div></div>}</div>}
+    {!session && <div className="craft-station"><CraftingWorkbenchHeading onReset={resetWorkbench} disabled={!data || loading} />{data && <div className="craft-welcome"><span className="craft-welcome-gem"><FlaskConical aria-hidden="true" /></span><p className="page-kicker">YOUR NEXT CRAFT STARTS HERE</p><h2>从一件装备开始</h2><p>输入现有装备，或选择一件普通基底。<br />搭配通货和征兆，一步步尝试你的做装思路。</p><div className="craft-start-options" role="group" aria-label="开始方式"><button type="button" onClick={() => openImport('paste')}><Import aria-hidden="true" /><strong>输入装备</strong><span>输入或粘贴游戏中的物品文本</span></button><button type="button" onClick={() => openImport('base')}><Plus aria-hidden="true" /><strong>选择基底</strong><span>选择基底与物品等级，从零开始</span></button></div><div className="craft-welcome-features"><span>词缀目标追踪</span><span>历史与消耗</span></div></div>}</div>}
     {data && <>
-      {session && <CraftingWorkbench key={session.original.source} data={data} session={session} onChange={setSession} onImport={openImport} onNotice={setNotice} onError={setError} />}
-      <Dialog open={importOpen} onOpenChange={setImportOpen}><DialogContent className="craft-import-dialog"><header className="rule-dialog-header"><p className="page-kicker">CRAFTING / PROJECT</p><DialogTitle>开始做装项目</DialogTitle><DialogDescription>粘贴游戏物品文本，或选择普通底材。现有项目会在确认后替换。</DialogDescription></header><div className="craft-import-mode" role="group" aria-label="项目来源"><button type="button" aria-pressed={importMode === 'paste'} onClick={() => setImportMode('paste')}><Import />导入物品</button><button type="button" aria-pressed={importMode === 'base'} onClick={() => setImportMode('base')}><Plus />选择底材</button></div>{error && <p className="inline-alert" role="alert">{error}</p>}
+      {session && <CraftingWorkbench key={session.original.source} data={data} session={session} onChange={setSession} onReset={resetWorkbench} onNotice={setNotice} onError={setError} />}
+      <Dialog open={importOpen} onOpenChange={setImportOpen}><DialogContent className="craft-import-dialog"><header className="rule-dialog-header"><p className="page-kicker">CRAFTING / PROJECT</p><DialogTitle>开始做装项目</DialogTitle><DialogDescription>输入或粘贴游戏物品文本，或选择普通基底开始。</DialogDescription></header><div className="craft-import-mode" role="group" aria-label="项目来源"><button type="button" aria-pressed={importMode === 'paste'} onClick={() => { setImportMode('paste'); setError('') }}><Import />输入装备</button><button type="button" aria-pressed={importMode === 'base'} onClick={() => { setImportMode('base'); setError('') }}><Plus />选择基底</button></div>{error && <p className="inline-alert" role="alert">{error}</p>}
       {importMode === 'paste' ? <>
         <div className="craft-import-body">
           <label htmlFor="craft-item-text">游戏物品文本</label>

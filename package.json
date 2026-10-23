@@ -14,6 +14,7 @@
     "data:build-affixes": "tsx scripts/import-affixes.ts --offline",
     "data:build-crafting": "tsx scripts/build-crafting-data.ts",
     "data:sync-crafting-icons": "tsx scripts/sync-crafting-icons.ts",
+    "data:sync-crafting-bases": "tsx scripts/sync-crafting-bases.ts",
     "data:sync-crafting-item-text": "python scripts/sync-crafting-item-text.py",
     "data:sync-crafting-names": "python scripts/sync-crafting-names.py",
     "data:build-crafting-traditional": "tsx scripts/build-crafting-traditional.ts",

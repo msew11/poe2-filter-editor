@@ -195,7 +195,58 @@
 .craft-import-affixes { display: grid; gap: 8px; margin-top: 14px; }
 .craft-import-affix { border-left: 2px solid #727aa4; padding: 8px 12px; background: #10120f; font-size: 12px; }
 .craft-import-affix > p { white-space: pre-wrap; margin-bottom: 5px; }
-.craft-base-form > button { margin-top: 20px; }
+.craft-import-dialog.craft-base-dialog { width: min(1120px, calc(100vw - 32px)); max-width: 1120px; }
+.craft-base-picker { padding: 18px 20px 22px; }
+.craft-base-step-heading { display: flex; align-items: center; gap: 14px; padding: 10px 12px; background: #2a2b23; border: 1px solid #4b4534; }
+.craft-base-step-heading h2 { flex: 1; color: #e4d3ad; font-size: 15px; font-weight: 500; outline: none; }
+.craft-base-step-heading h2 small { display: block; margin-top: 3px; font: 10px Georgia, serif; color: #a59b82; }
+.craft-base-step-heading > span { color: #a59b82; font: 11px Consolas, monospace; }
+.craft-base-breadcrumbs { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; padding: 14px 0; font-size: 11px; color: #d5c29a; }
+.craft-base-breadcrumbs button { border: 0; background: #25261e; color: inherit; padding: 5px 8px; }
+.craft-base-breadcrumbs button:hover { background: #393323; }
+.craft-base-breadcrumbs [aria-current="step"] { color: #f2d38e; }
+.craft-base-breadcrumbs svg { width: 12px; height: 12px; color: #7d735d; }
+.craft-base-options { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 20px 10px 28px; }
+.craft-base-options > button { min-width: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; padding: 12px 16px; border: 1px solid #62563b; border-radius: 3px; color: #e0d6bd; background: linear-gradient(#34362d, #20221b); box-shadow: 0 2px 3px #0006; }
+.craft-base-options strong { font-size: 13px; font-weight: 500; }
+.craft-base-options small { font-size: 10px; color: #a8a18c; }
+.craft-base-options > button:hover:not(:disabled) { border-color: #c0a06a; background: #3b3423; }
+.craft-base-options > button:disabled { opacity: .38; cursor: not-allowed; }
+.craft-base-picker button:focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; }
+.craft-base-search { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; font-size: 11px; color: #aba48e; }
+.craft-base-search input { flex: 1; min-width: 0; width: auto; font-size: 12px; }
+.craft-base-search > span { white-space: nowrap; }
+.craft-base-items { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; max-height: min(500px, 48dvh); overflow-y: auto; padding: 3px 6px 5px 3px; }
+.craft-base-item { display: flex; gap: 10px; align-items: center; min-height: 155px; padding: 12px; border: 1px solid #62522f; background: #0e100d; color: #d7c496; text-align: left; }
+.craft-base-item:hover { border-color: #c6a866; background: #242319; box-shadow: inset 0 0 0 1px #c6a86644; }
+.craft-base-art { display: grid; place-items: center; flex: 0 0 72px; height: 120px; }
+.craft-base-art img { max-width: 72px; max-height: 120px; object-fit: contain; }
+.craft-base-art svg { width: 32px; height: 32px; color: #7c7153; }
+.craft-base-item-info { display: flex; flex: 1; flex-direction: column; min-width: 0; gap: 5px; }
+.craft-base-item-info > strong { color: #e5d6ad; font-size: 12px; font-weight: 500; overflow-wrap: anywhere; }
+.craft-base-item-info > small { color: #8e8c7a; font: 9px/1.5 Georgia, serif; overflow-wrap: anywhere; }
+.craft-base-properties { display: flex; flex-direction: column; gap: 3px; margin: 4px 0; padding-top: 7px; border-top: 1px solid #413a27; font-size: 10px; color: #a89b79; }
+.craft-base-properties > span { display: flex; justify-content: space-between; gap: 6px; }
+.craft-base-properties b { color: #a8b9ef; font-weight: 400; }
+.craft-base-required { padding-top: 5px; border-top: 1px solid #413a27; font-size: 10px; color: #b1a485; }
+.craft-base-selection { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 12px; border: 1px solid #595038; background: #24261d; color: #e0c99a; font-size: 13px; }
+.craft-base-selection svg { width: 15px; height: 15px; }
+.craft-base-selection > span { margin-left: auto; color: #a8a18c; font-size: 11px; }
+.craft-base-settings { border: 0; margin-top: 18px; min-width: 0; }
+.craft-base-settings legend { display: flex; align-items: center; gap: 10px; width: 100%; margin-bottom: 9px; padding: 8px 10px; background: #2a2b23; font-size: 12px; color: #dfceb0; }
+.craft-base-settings legend small { font: 10px Georgia, serif; color: #a59b82; }
+.craft-base-settings legend strong { margin-left: auto; color: #f0d399; }
+.craft-base-settings > p { margin-top: 8px; color: #989581; font-size: 11px; }
+.craft-base-levels { display: flex; flex-wrap: wrap; gap: 4px; }
+.craft-base-levels > button { min-width: 33px; min-height: 31px; padding: 4px 6px; border: 1px solid #514c3b; background: linear-gradient(#31342a, #191c15); color: #d6d0bb; font: 12px Consolas, monospace; }
+.craft-base-levels > button:hover { border-color: #b89d64; background: #4c422b; }
+.craft-base-levels > button[aria-pressed="true"] { color: #221c0e; border-color: #e1c17b; background: linear-gradient(#f1d995, #c6a35c); font-weight: 700; }
+.craft-base-create { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 22px; padding-top: 16px; border-top: 1px solid #4b4534; }
+.craft-base-create p { color: #b8ad91; font-size: 12px; }
+.craft-item-base-settings { display: flex; justify-content: center; gap: 16px; }
+@media (max-width: 1100px) { .craft-base-items { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 800px) { .craft-base-items { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 540px) { .craft-base-picker { padding: 12px; } .craft-base-items { grid-template-columns: 1fr; } .craft-base-search { flex-wrap: wrap; } .craft-base-search label { width: 100%; } .craft-base-options { gap: 8px; padding-inline: 0; } .craft-base-options > button { flex: 1 1 110px; } .craft-base-selection > span { margin-left: 0; } }
 .craft-import-dialog > .inline-alert { margin: 12px 20px 0; }
 @container craftbench (max-width: 1030px) {
   .craft-station-grid { grid-template-columns: minmax(270px, .95fr) minmax(0, 1.2fr); }

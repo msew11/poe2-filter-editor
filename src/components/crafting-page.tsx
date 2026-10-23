@@ -8,12 +8,12 @@ import { CraftingWorkbench, CraftingWorkbenchHeading } from '@/components/crafti
 import { modLines, parseItem, rarityLabels, resolveAffix, restoreSession, unpackCraftData, validateItem, type CraftData, type CraftItem, type CraftSession } from '@/lib/crafting'
 import { baseDisplayName, modDisplayName, statStoredValue } from '@/lib/crafting-localization'
 import { itemClassOptions } from '@/config'
+import { CraftingBasePicker } from '@/components/crafting-base-picker'
+import { createBaseItem, type BaseItemSettings } from '@/lib/crafting-base-item'
 import craftingDataUrl from '@/config/crafting-data.json?url'
 
 const classDisplayName = (value: string) => itemClassOptions.find(option => option.value === value)?.labelZh ?? value
 const SESSION_KEY = 'exile-forge.crafting.v1'
-const DEFAULT_BASE_ID = 'Metadata/Items/Armours/BodyArmours/FourBodyInt3Endgame'
-const DEFAULT_ITEM_LEVEL = '79'
 let pendingData: Promise<CraftData> | undefined
 function loadData() {
   return pendingData ??= fetch(craftingDataUrl).then(response => { if (!response.ok) throw new Error('无法加载做装数据，请重试。'); return response.json() }).then(unpackCraftData).catch(error => { pendingData = undefined; throw error })
@@ -32,8 +32,6 @@ export function CraftingPage() {
   const [attempt, setAttempt] = useState(0)
   const [importOpen, setImportOpen] = useState(false)
   const [importMode, setImportMode] = useState<'paste' | 'base'>('paste')
-  const [newBaseId, setNewBaseId] = useState(DEFAULT_BASE_ID)
-  const [newLevel, setNewLevel] = useState(DEFAULT_ITEM_LEVEL)
   const base = data?.bases.find(base => base.id === draft?.baseId)
 
   useEffect(() => {
@@ -67,15 +65,15 @@ export function CraftingPage() {
   function resetWorkbench() {
     setSession(null); setImportOpen(false); setImportMode('paste')
     setText(''); setDraft(null); setBaseSearch('')
-    setNewBaseId(DEFAULT_BASE_ID); setNewLevel(DEFAULT_ITEM_LEVEL)
     setError(''); setNotice('')
   }
-  function createBase() {
-    const base = data?.bases.find(base => base.id === newBaseId)
-    const level = Number(newLevel)
-    if (!base || !Number.isInteger(level) || level < 1 || level > 100) { setError('请选择底材并填写 1–100 的整数物品等级。'); return }
-    const source = `Item Class: ${base.itemClass}\nRarity: Normal\n${base.name}\n--------\nItem Level: ${level}\n--------`
-    setSession({ original: parseItem(source, data!), steps: [] }); setImportOpen(false); setDraft(null); setError(''); setNotice('已创建普通底材，从选择通货开始。')
+  function createBase(baseId: string, settings: BaseItemSettings) {
+    const base = data?.bases.find(base => base.id === baseId)
+    if (!base || !data) return
+    try {
+      setSession({ original: createBaseItem(base, settings, data), steps: [] })
+      setImportOpen(false); setDraft(null); setError(''); setNotice('已创建普通底材，从选择通货开始。')
+    } catch (error) { setError((error as Error).message) }
   }
 
   return <section className="workspace-panel crafting-page crafting-layout">
@@ -87,7 +85,7 @@ export function CraftingPage() {
     {!session && <div className="craft-station"><CraftingWorkbenchHeading onReset={resetWorkbench} disabled={!data || loading} />{data && <div className="craft-welcome"><span className="craft-welcome-gem"><FlaskConical aria-hidden="true" /></span><p className="page-kicker">YOUR NEXT CRAFT STARTS HERE</p><h2>从一件装备开始</h2><p>输入现有装备，或选择一件普通基底。<br />搭配通货和征兆，一步步尝试你的做装思路。</p><div className="craft-start-options" role="group" aria-label="开始方式"><button type="button" onClick={() => openImport('paste')}><Import aria-hidden="true" /><strong>输入装备</strong><span>输入或粘贴游戏中的物品文本</span></button><button type="button" onClick={() => openImport('base')}><Plus aria-hidden="true" /><strong>选择基底</strong><span>选择基底与物品等级，从零开始</span></button></div><div className="craft-welcome-features"><span>词缀目标追踪</span><span>历史与消耗</span></div></div>}</div>}
     {data && <>
       {session && <CraftingWorkbench key={session.original.source} data={data} session={session} onChange={setSession} onReset={resetWorkbench} onNotice={setNotice} onError={setError} />}
-      <Dialog open={importOpen} onOpenChange={setImportOpen}><DialogContent className="craft-import-dialog"><header className="rule-dialog-header"><p className="page-kicker">CRAFTING / PROJECT</p><DialogTitle>开始做装项目</DialogTitle><DialogDescription>输入或粘贴游戏物品文本，或选择普通基底开始。</DialogDescription></header><div className="craft-import-mode" role="group" aria-label="项目来源"><button type="button" aria-pressed={importMode === 'paste'} onClick={() => { setImportMode('paste'); setError('') }}><Import />输入装备</button><button type="button" aria-pressed={importMode === 'base'} onClick={() => { setImportMode('base'); setError('') }}><Plus />选择基底</button></div>{error && <p className="inline-alert" role="alert">{error}</p>}
+      <Dialog open={importOpen} onOpenChange={setImportOpen}><DialogContent className={`craft-import-dialog ${importMode === 'base' ? 'craft-base-dialog' : ''}`}><header className="rule-dialog-header"><p className="page-kicker">CRAFTING / PROJECT</p><DialogTitle>开始做装项目</DialogTitle><DialogDescription>输入或粘贴游戏物品文本，或选择普通基底开始。</DialogDescription></header><div className="craft-import-mode" role="group" aria-label="项目来源"><button type="button" aria-pressed={importMode === 'paste'} onClick={() => { setImportMode('paste'); setError('') }}><Import />输入装备</button><button type="button" aria-pressed={importMode === 'base'} onClick={() => { setImportMode('base'); setError('') }}><Plus />选择基底</button></div>{error && <p className="inline-alert" role="alert">{error}</p>}
       {importMode === 'paste' ? <>
         <div className="craft-import-body">
           <label htmlFor="craft-item-text">游戏物品文本</label>
@@ -112,7 +110,7 @@ export function CraftingPage() {
             <div className="craft-toolbar"><Button disabled={!!validateItem(draft, data)} onClick={() => { setSession({ original: draft, steps: [] }); setDraft(null); setError(''); setNotice('已导入物品，选择通货开始模拟。'); setImportOpen(false) }}><FlaskConical />开始模拟</Button><Button variant="ghost" onClick={() => { setDraft(null); setNotice('') }}>取消</Button></div>
           </div>}
         </div>
-      </> : <div className="craft-import-body craft-base-form"><label htmlFor="craft-new-base-search">搜索底材名称或类别</label><input id="craft-new-base-search" className="forge-textarea" value={baseSearch} onChange={event => setBaseSearch(event.target.value)} placeholder="长袍 / Robe / 胸甲" /><label htmlFor="craft-new-base">选择底材</label><Select id="craft-new-base" value={newBaseId} onChange={event => setNewBaseId(event.target.value)}>{data.bases.filter(candidate => candidate.id === newBaseId || `${baseDisplayName(candidate)} ${candidate.name} ${classDisplayName(candidate.itemClass)}`.toLowerCase().includes(baseSearch.toLowerCase())).map(base => <option key={base.id} value={base.id}>{baseDisplayName(base)} · {classDisplayName(base.itemClass)}（{base.name}）</option>)}</Select><label htmlFor="craft-new-level">物品等级</label><input id="craft-new-level" type="number" min={1} max={100} step={1} className="forge-textarea" value={newLevel} onChange={event => setNewLevel(event.target.value)} /><p className="field-description">以普通、无显式词缀的底材开始。物等决定可生成的词缀档位。</p><Button onClick={createBase}><FlaskConical />创建项目</Button></div>}
+      </> : <CraftingBasePicker data={data} onCreate={createBase} />}
       </DialogContent></Dialog>
       <details className="craft-scope"><summary>支持范围与数据说明</summary><p>支持基础/高阶/完美通货、15 种征兆、破裂锁定、低阶至完美精华，以及亵渎占位、三选一揭示。腐化提供指定结果分支推演，随后锁定物品；尚未核实各分支概率。亵渎揭示与腐化附魔池使用等概率参考模型。底材与词缀来自固定快照；权重依赖来源数据，概率仅供参考。防御、需求与伤害暂不重算。中文名称为界面说明译名，悬停可查看英文原名；部分底材保留英文名。</p></details>
     </>}

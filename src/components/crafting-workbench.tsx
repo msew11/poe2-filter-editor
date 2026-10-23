@@ -5,6 +5,7 @@ import { applyCurrency, candidates, currencies, currencyError, currentItem, modT
 import { modDisplayRanges } from '@/lib/crafting-localization'
 import { equipmentDisplayName, currencyTypeName, consumableDisplayName, omenDisplayName, localizedCraftAction } from '@/lib/crafting-names'
 import { craftingClipboardText } from '@/lib/crafting-clipboard'
+import { itemBaseSettings } from '@/lib/crafting-base-item'
 import { affixDisplayLines, affixDisplayName, sortEssences, type AffixLanguage } from '@/lib/crafting-presentation'
 import { CraftingConsumableButton } from '@/components/crafting-consumable-button'
 import { craftingIconKey, craftingIcons, omenIconKey } from '@/lib/crafting-icons'
@@ -67,6 +68,7 @@ export function CraftingWorkbench({ data, session, onChange, onReset, onNotice, 
   const [historyIndex, setHistoryIndex] = useState<number | null>(null)
   const liveItem = currentItem(session)
   const item = historyIndex === null ? liveItem : session.steps[historyIndex]?.item ?? session.original
+  const baseSettings = itemBaseSettings(item)
   const base = data.bases.find(base => base.id === item.baseId)!
   const baseDisplayName = () => equipmentDisplayName(base, language)
   const craftActionLabel = (action: Currency, settings: CraftOptions = {}) => localizedCraftAction(action, settings, language, base.itemClass)
@@ -163,7 +165,7 @@ export function CraftingWorkbench({ data, session, onChange, onReset, onNotice, 
         {historyIndex !== null && <Button variant="outline" size="sm" className="craft-return-live" onClick={() => setHistoryIndex(null)}>返回当前进度</Button>}
         {item.pendingDesecration && <div className="craft-reveal-panel"><strong>未揭示的亵渎{item.pendingDesecration.kind === 'prefix' ? '前缀' : '后缀'} · 占用 1 个位置</strong>{item.pendingDesecration.choices ? <div>{item.pendingDesecration.choices.map((affix, index) => <Button variant="outline" key={affix.modId} disabled={historyIndex !== null || session.steps.length >= 200} onClick={() => useCurrency('select-reveal', { revealIndex: index })}>{modLines(data.mods[affix.modId!], affix.values).join(' / ')}</Button>)}</div> : <Button disabled={historyIndex !== null || session.steps.length >= 199 || !!currencyError(liveItem, 'reveal', data)} onClick={() => useCurrency('reveal', {})}>揭示三个选项</Button>}</div>}
         <article className={`craft-item-card craft-rarity-${item.rarity} ${armed ? 'is-currency-target' : ''}`} role="button" tabIndex={0} aria-label={armed ? `对当前物品使用${currencyTypeName(currency, language)}` : '当前装备，先选择通货再点击使用'} aria-disabled={!armed || !!reason} onClick={applySelected} onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); applySelected() } }}>
-          <header><span>{rarityLabels[item.rarity]} · 物品等级 {item.itemLevel}{item.corrupted ? ' · 已腐化' : ''}</span><h2 title={base.name}>{baseDisplayName()}</h2><p>导入名称：{item.name}</p></header>
+          <header><span>{rarityLabels[item.rarity]} · 物品等级 {item.itemLevel}{item.corrupted ? ' · 已腐化' : ''}</span><h2 title={base.name}>{baseDisplayName()}</h2><p>导入名称：{item.name}</p>{(baseSettings.quality !== null || baseSettings.sockets !== null) && <p className="craft-item-base-settings">{baseSettings.quality !== null && <span>品质 {baseSettings.quality}%</span>}{baseSettings.sockets !== null && <span>插槽 {baseSettings.sockets}</span>}</p>}</header>
           {item.corruptionImplicit && <div className="craft-corruption-result"><strong>腐化附魔</strong>{modLines(data.mods[item.corruptionImplicit.modId!], item.corruptionImplicit.values).map((line, i) => <p key={i}>{line}</p>)}</div>}{item.extraSocket && <p className="craft-corruption-result">腐化：额外增加 1 个符文插槽</p>}
           <div className="craft-affix-count"><span>前缀 {item.affixes.filter(affix => affix.kind === 'prefix').length + (item.pendingDesecration?.kind === 'prefix' ? 1 : 0)}/{cap}</span><span>后缀 {item.affixes.filter(affix => affix.kind === 'suffix').length + (item.pendingDesecration?.kind === 'suffix' ? 1 : 0)}/{cap}</span></div>
           <div className="craft-affix-list">{(['prefix', 'suffix'] as const).map(kind => <div className="craft-slot-group" key={kind}>{item.affixes.filter(affix => affix.kind === kind).map(affix => {
